@@ -1,13 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap");
+
+:root {
+  --main-bg-color: #191820;
+  --alt-bg-color: #34659B;
+  --light-main-color: #272532;
+  --contrast-bg-color: #FF9D02;
+  --nav-height: 3.25rem;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Source Code Pro", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-bg-color);
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  position: relative;
+  z-index: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
