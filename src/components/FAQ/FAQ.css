@@ -1,0 +1,13 @@
+.faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.faq-item {
+    width: 30%;
+}

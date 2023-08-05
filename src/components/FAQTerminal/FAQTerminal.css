@@ -1,0 +1,89 @@
+.faq-terminal {
+    background-color: var(--light-main-color);
+    font-family: "Fira Mono", monospace;
+    font-weight: 900;
+    position: relative;
+    border-radius: 28px;
+    text-align: left;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.faq-terminal > code {
+    color: white;
+    margin-left: 1rem;
+}
+
+.content {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-bottom: 1em;
+}
+
+.user {
+    color: var(--terminal-blue);
+    line-height: 1.5em;
+}
+
+.question {
+    color: white; /* if we ever want to change the questions color */
+    line-height: 1.5em;
+}
+
+.text {
+    color: white;
+    line-height: 1.5em;
+}
+
+.terminal-bar {
+    position: relative;
+    height: 2.5em;
+    width: 100%;
+    background-color: var(--light-main-color);
+    /* we could possibly add a bar colour here */
+    border-radius: 28px;
+    display: flex;
+    align-items: left;
+}
+
+.red-circle {
+    position: absolute;
+    top: 0.8em;
+    left: 1em;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: var(--terminal-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.yellow-circle {
+    position: absolute;
+    top: 0.8em;
+    left: 2.5em;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: var(--terminal-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.green-circle {
+    position: absolute;
+    top: 0.8em;
+    left: 4em;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: var(--terminal-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

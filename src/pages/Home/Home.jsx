@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 
 import Logo from "../../assets/EurekaLogo2024.png";
-import FAQTerminal from "../../components/FAQTerminal/FAQTerminal";
+import FAQ from "../../components/FAQ/FAQ";
 
 export default function Home() {
     return (
@@ -17,6 +17,7 @@ export default function Home() {
                     <img class="logo" src={Logo} alt="logo" />
                 </div>
             </div>
+            <FAQ />
         </div>
     );
 }
