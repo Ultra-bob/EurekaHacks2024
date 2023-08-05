@@ -1,15 +1,20 @@
 import React from "react";
+import "./Navbar.css";
+
+import Logo from "../../assets/EurekaIcon2024.png";
 
 export default function NavBar() {
     return (
-        <div>
-            <a href="#main"><img class="header-image" src="/assets/EurekaLogoFinal.png" /></a>
-            <ul class="header-middle">
-                <a href="./schedule.html">SCHEDULE</a>
+        <div className="navbar">
+            <a href="#main">
+                <img class="navbar-icon" src={Logo} alt="Eureka! Icon" />
+            </a>
+            <ul class="links">
+                {/* <a href="/schedule">Schedule</a> We can add this once shedules actually done*/}
+                <a href="#main">Home</a>
                 <a href="#faq">FAQ</a>
-                <a href="#sponsors">SPONSORS</a>
+                <a href="#sponsors">Sponsors</a>
             </ul>
-            <a class="register smallerbutton" target="_blank" rel="noopener noreferrer" href="https://forms.gle/YH7cy4UTepMwE6Qx5">Register!</a>
         </div>
     );
 }
