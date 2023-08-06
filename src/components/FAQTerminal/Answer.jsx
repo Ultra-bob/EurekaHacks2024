@@ -6,7 +6,7 @@ export default function Answer({ hidden, answer, setFinishedTyping }) {
     const [displayAnswer, setDisplayAnswer] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    let delay = 15;
+    let delay = 10;
 
     useEffect(() => {
         if (!hidden && currentIndex < answer.length) {
