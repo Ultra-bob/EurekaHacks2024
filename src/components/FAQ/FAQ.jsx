@@ -13,7 +13,7 @@ export default function FAQ() {
     }
 
     return (
-        <div className="faq">
+        <section className="faq" id="faq">
             {Object.keys(faq).map((key) => {
                 return (
                     <div className="faq-item">
@@ -22,6 +22,6 @@ export default function FAQ() {
                 );
             })
             }
-        </div>
+        </section>
     );
 }

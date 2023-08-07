@@ -8,6 +8,15 @@
     margin: 0 auto;
 }
 
-.faq-item {
-    width: 30.5%;
+/* Phones is 480 but just in case 400*/
+@media screen and (min-width: 400px) {
+    .faq-item {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .faq-item {
+        width: 30.5%;
+    }
 }
