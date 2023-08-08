@@ -13,15 +13,18 @@ export default function FAQ() {
     }
 
     return (
-        <section className="faq" id="faq">
-            {Object.keys(faq).map((key) => {
-                return (
-                    <div className="faq-item">
-                        <FAQTerminal key={key} question={key} answer={faq[key]} />
-                    </div>
-                );
-            })
-            }
+        <section id="faq">
+            <h1>Frequently Asked Questions</h1>
+            <div className="faq">
+                {Object.keys(faq).map((key) => {
+                    return (
+                        <div className="faq-item">
+                            <FAQTerminal key={key} question={key} answer={faq[key]} />
+                        </div>
+                    );
+                })
+                }
+            </div>
         </section>
     );
 }

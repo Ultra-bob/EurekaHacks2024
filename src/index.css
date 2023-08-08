@@ -16,6 +16,11 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  color: #ffffff;
+  font-size: 80px;
+}
+
 body {
   margin: 0;
   font-family: "Source Code Pro", monospace;
