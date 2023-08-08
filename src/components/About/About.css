@@ -1,0 +1,26 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    width: 60%;
+    height: auto;
+    background-image: linear-gradient(155deg, #22F0E7, #8DA9EC, #DF71EF);
+    border-radius: 28px;
+}
+
+.glass {
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+    border-top: 2px solid #FFFFFF75;
+    border-left: 2px solid #FFFFFF75;
+    box-shadow: 5px 5px 12px #00000035;
+    background: #FFFFFF25;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
