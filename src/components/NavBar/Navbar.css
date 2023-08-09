@@ -7,14 +7,28 @@
     top: 0;
     left: 0;
     z-index: 2;
+    transition: all .5s ease-in-out;
+    align-content: center;
+}
+
+.navbar-overlay {
+    height: var(--nav-height);
+    width: 100%;
+    display: flex;
+    background-color: #000000c2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .navbar-icon {
+    display: flex;
     width: auto;
     height: 2.5em;
     margin-left: 1em;
-    margin-top: 0.5em;
-    justify-self: left;
+    margin-top: 0.7em;
+    justify-self: center;
     position: fixed;
 }
 
@@ -34,4 +48,9 @@
     text-decoration: none; 
     color: white;
     font-size: 1.5em;
+}
+
+.register {
+    display: flex;
+    align-content: center;
 }

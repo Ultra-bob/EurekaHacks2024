@@ -1,0 +1,62 @@
+.button-container {
+    text-align: center
+}
+
+a {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.button-block {
+    font-family: "Source Code Pro", monospace;
+    background: linear-gradient(155deg, #22F0E7, #8DA9EC, #DF71EF); 
+    position: relative;
+    width: 100px;
+    height: auto;
+    padding: 0.5em;
+    margin: 10% auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    transition: transform 1s;
+    display: flex;
+}
+
+/* Do a button after maybe .button-glow::after */
+.button-glow::before {
+    background: linear-gradient(45deg, #993333, #ff00ff, #6e0dd0, #099fff, #ff00 ,#993333);
+    background-size: 400%;
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    animation: animate 30s linear infinite;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    z-index: -1;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-glow::before {
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.button-glow:hover::before {
+    opacity: 100;
+}
