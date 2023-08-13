@@ -16,10 +16,12 @@ export default function NavBar() {
                 </a>
             </div>
             <ul className="links">
-                {/* <a href="/schedule">Schedule</a> We can add this once shedules actually done*/}
-                <a href="#home">Home</a>
-                <a href="#faq">FAQ</a>
-                <a href="#sponsors">Sponsors</a>
+                <a href="/#home">Home</a>
+                <a href="#about">About</a>
+                <a href="/schedule">Schedule</a>
+                <a href="/gallery">Gallery</a>
+                <a href="/#faq" >FAQ</a>
+                <a href="/#sponsors">Sponsors</a>
             </ul>
             <div className="register">
                 <Button text="Register" link="https://google.com" />
