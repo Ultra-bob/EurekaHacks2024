@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import InstagramLogo from "../../assets/Instagram_Glyph_Gradient.svg";
+import { BsInstagram } from "react-icons/bs";
 
 export default function Footer() {
     return (
@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="footer-container">
                 <div className="footer-socials">
                     <a href="https://www.instagram.com/eureka_hackathon/" target="_blank" rel="noopener noreferrer">
-                        <img src={InstagramLogo} alt="Instagram Logo" />
+                        <BsInstagram />
                     </a>
                 </div>
                 <div className="footer-copyright">
