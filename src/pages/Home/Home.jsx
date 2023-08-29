@@ -4,8 +4,8 @@ import "./Home.css";
 import Logo from "../../assets/EurekaLogo2024.png";
 import FAQ from "../../components/FAQ/FAQ";
 import About from "../../components/PossibleAbout/PossibleAbout";
-import SponsorPanel from "../../components/SponsorPanel/SponsorPanel"
-import SponsorBG from "../../components/SponsorBG/SponsorBG"
+// import SponsorPanel from "../../components/SponsorPanel/SponsorPanel"
+// import SponsorBG from "../../components/SponsorBG/SponsorBG"
 
 export default function Home() {
     return (
@@ -23,6 +23,7 @@ export default function Home() {
                 </div>
             </section>
             <About />
+            <hr />
             <FAQ />
         </div>
     );
