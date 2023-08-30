@@ -8,6 +8,8 @@ import Logo from "../../assets/EurekaIcon2024.png";
 export default function NavBar() {
     const scrollingUp = useScrollDirection();
 
+    // Some useless code here but if we ever wanna change it it's here.
+    // Decided to remove scroll effects for above
     return (
         <div className={["navbar", scrollingUp === "down" ? "navbar-overlay" : ""].join(" ")}>
             <div className="navbar-box">
