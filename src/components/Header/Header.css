@@ -1,3 +1,11 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
 .banner {
     position: relative;
     padding: 0 5px;
@@ -9,6 +17,7 @@
     margin-bottom: -30rem;
     display: flex;
     justify-content: center;
+    z-index: -10;
 }
 
 .banner-content {
@@ -17,31 +26,70 @@
     justify-content: center;
     align-content: center;
     width: 1800px;
-    height: 100vh;
+    height: 1100px;
 }
 
 .landing-images {
-    width: 27%;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-image-glow {
+    /* border-image:  ;
+    border-width: 8px;
+    border-style: solid; */
+    border: 3px solid #DF71EF;
+    z-index: 10;
+}
+
+.banner-image-glow::after {
+    content: "";
+    position: absolute;
+    height: 105%;
+    width: 105%;
+    background: linear-gradient(110deg, #DF71EF, 38%, #22F0E7);
+    z-index: -1;
+    filter: blur(40px);
+    top: 0px;
+    left: 0px;
+    transition: all 500ms ease;
+    
 }
 
 .landing-1 {
-    width: 100%;
+    width: 85%;
     height: auto;
     position: relative;
-    margin-top: 250px;
-    margin-right: -5rem;
+    align-self: center;
+    margin-top: 55%;
+    margin-right: 17%;
+}
+
+.landing-1 img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .landing-2 {
-    position: relative;
     width: 100%;
     height: auto;
-    /* margin-top */
+    position: relative;
+    align-self: center;
+    margin-top: 14%;
+    margin-left: 75%;
+}
+
+.landing-2 > img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .banner-text {
     display: flex;
-    width: 40%;
+    width: 50%;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -49,7 +97,7 @@
 }
 
 .banner-text > h1 {
-    font-size: 10rem;
+    font-size: 170px;
     color: #fff;
     font-weight: 700;
     margin: 0;
@@ -58,7 +106,7 @@
 }
 
 .banner-text > h2 {
-    font-size: 5rem;
+    font-size: 80px;
     color: #fff;
     font-weight: 400;
     margin: 0;
@@ -74,7 +122,7 @@
     align-content: center;
     flex-wrap: wrap;
     height: 100vh;
-    width: 32%;
+    width: 39%;
     margin: 0;
 }
 
