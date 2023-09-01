@@ -3,8 +3,8 @@ import "./Header.css";
 import Button from "../Button/Button";
 
 import Logo from "../../assets/EurekaLogo2024.png";
-import Landing1 from "../../assets/landing-1.jpg";
-import Landing2 from "../../assets/landing-2.jpg";
+import Landing1 from "../../assets/landing-1.webp";
+import Landing2 from "../../assets/landing-2.webp";
 
 export default function Header() {
     return (
