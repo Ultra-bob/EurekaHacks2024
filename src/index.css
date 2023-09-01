@@ -44,3 +44,26 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+hr {
+  border: 0;
+  height: 4px;
+  background-image: linear-gradient(to right, #22F0E7, #DF71EF, #22F0E7);
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 5rem;
+  background-size: 400%;
+  animation: breathe 60s linear infinite;
+}
+
+@keyframes breathe {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+      background-position: 400% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}

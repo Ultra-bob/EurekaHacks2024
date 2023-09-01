@@ -9,9 +9,10 @@
     z-index: 2;
     transition: all .5s ease-in-out;
     align-content: center;
+    background-color: #ffffff30;
 }
 
-.navbar-overlay {
+/* .navbar-overlay {
     height: var(--nav-height);
     width: 100%;
     display: flex;
@@ -20,7 +21,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-}
+} */
 
 .navbar-icon {
     display: flex;

@@ -12,17 +12,25 @@ a {
 
 .button-block {
     font-family: "Source Code Pro", monospace;
-    background: linear-gradient(155deg, #22F0E7, #8DA9EC, #DF71EF); 
+    background: 
+        linear-gradient(black, black) padding-box,
+        linear-gradient(110deg, #DF71EF, 68%, #22F0E7) border-box;
     position: relative;
     width: 100px;
     height: auto;
-    padding: 0.5em;
+    padding-top: 0.6rem;
+    padding-bottom: 0.7rem;
+    padding-inline: 1rem;
     margin: 10% auto;
-    margin-right: 20px;
+    margin-right: 1rem;
     border-radius: 5px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid transparent;
     transition: transform 1s;
     display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 /* Do a button after maybe .button-glow::after */
