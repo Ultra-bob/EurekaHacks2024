@@ -1,14 +1,11 @@
 .navbar {
     height: var(--nav-height);
-    width: 90%;
-    display: flex;
-    background-color: transparent;
-    position: fixed;
+    width: 100%;
+    display: block;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    transition: all 0.5s ease-in-out;
-    align-content: center;
     background-color: #ffffff30;
 }
 
