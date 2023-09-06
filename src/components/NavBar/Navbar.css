@@ -1,6 +1,6 @@
 .navbar {
     height: var(--nav-height);
-    width: 100%;
+    width: 90%;
     display: flex;
     background-color: transparent;
     position: fixed;
@@ -12,16 +12,21 @@
     background-color: #ffffff30;
 }
 
-/* .navbar-overlay {
-    height: var(--nav-height);
-    width: 100%;
-    display: flex;
-    background-color: #000000c2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-} */
+@media (min-width: 1024px) {
+    .navbar {
+        height: var(--nav-height);
+        width: 100%;
+        display: flex;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+        align-content: center;
+        background-color: #ffffff30;
+    }
+}
 
 .navbar-icon {
     display: flex;
@@ -37,10 +42,22 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     list-style-type: none;
     margin-left: 2.5em;
-    width: 100%;
+    width: 75%;
+}
+
+@media (min-width: 1024px) {
+    .links {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 20px;
+        list-style-type: none;
+        margin-left: 2.5em;
+        width: 100%;
+    }
 }
 
 .links > a {
@@ -48,10 +65,23 @@
     transition: all 0.35s ease-in-out;
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: 5px;
     transition:
         transform 0.2s ease-in-out,
         text-shadow 0.3s ease-in-out;
+}
+
+@media (min-width: 1024px) {
+    .links > a {
+        display: block;
+        transition: all 0.35s ease-in-out;
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        transition:
+            transform 0.2s ease-in-out,
+            text-shadow 0.3s ease-in-out;
+    }
 }
 
 .links > a:hover {

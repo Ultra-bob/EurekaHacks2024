@@ -9,7 +9,6 @@ import Landing2 from "../../assets/landing-2.webp";
 export default function Header() {
     return (
         <section id="home">
-            <div className="header">
                 <div className="banner">
                     <div className="banner-content">
                         <div className="landing-images">
@@ -34,7 +33,6 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     );
 }

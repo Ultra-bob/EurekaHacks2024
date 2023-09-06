@@ -9,7 +9,7 @@ export default function Description() {
                 <p>Something</p>
             </div>
             <div className="description-right">
-                <img src="https://via.placeholder.com/500" alt="placeholder" />
+                <img src="https://via.placeholder.com/300" alt="placeholder" />
             </div>
         </div>
     );

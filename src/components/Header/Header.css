@@ -1,4 +1,4 @@
-.header {
+#home {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -9,15 +9,32 @@
 .banner {
     position: relative;
     padding: 0 5px;
-    height: 120rem;
+    height: auto;
     width: 100%;
-    background: url("../../assets/backgroundGradient.png") no-repeat;
+    background: url("../../assets/mobileBackgroundGradient.png") no-repeat;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-bottom: -30rem;
     display: flex;
     justify-content: center;
     z-index: -10;
+}
+
+
+@media (min-width: 1024px) {
+    .banner {
+        position: relative;
+        padding: 0 5px;
+        height: auto;
+        width: 100%;
+        background: url("../../assets/backgroundGradient.png") no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -30rem;
+        display: flex;
+        justify-content: center;
+        z-index: -10;
+    }
 }
 
 .banner-content {
@@ -25,14 +42,33 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    width: 1800px;
-    height: 1100px;
+    width: 400px;
+    height: auto;
+}
+
+@media (min-width: 1024px) {
+    .banner-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        width: 1800px;
+        height: 1100px;
+    }
 }
 
 .landing-images {
     width: 38%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 1024px) {
+    .landing-images {
+        width: 38%;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .banner-image-glow {
@@ -96,7 +132,7 @@
 }
 
 .banner-text > h1 {
-    font-size: 170px;
+    font-size: 50px;
     color: #fff;
     font-weight: 700;
     margin: 0;
@@ -104,15 +140,38 @@
     text-align: right;
 }
 
+@media (min-width: 1024px) {
+    .banner-text > h1 {
+        font-size: 170px;
+        color: #fff;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+}
+
 .banner-text > h2 {
-    font-size: 80px;
+    font-size: 40px;
     color: #fff;
     font-weight: 400;
     margin: 0;
-    margin-top: -3rem;
     padding: 0;
     text-align: right;
     margin-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .banner-text > h2 {
+        font-size: 80px;
+        color: #fff;
+        font-weight: 400;
+        margin: 0;
+        margin-top: -3rem;
+        padding: 0;
+        text-align: right;
+        margin-right: 1rem;
+    }
 }
 
 .banner-logo-container {
@@ -125,7 +184,26 @@
     margin: 0;
 }
 
+@media (min-width: 1024px) {
+    .banner-logo-container {
+        display: flex;
+        justify-content: left;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 39%;
+        margin: 0;
+    }
+}
+
 .banner-logo {
     width: auto;
-    height: 410px;
+    height: 110px;
+}
+
+@media (min-width: 1024px) {
+    .banner-logo {
+        width: auto;
+        height: 410px;
+    }
 }
