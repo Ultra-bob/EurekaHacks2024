@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     align-content: center;
     background-color: #ffffff30;
 }
@@ -45,11 +45,13 @@
 
 .links > a {
     display: block;
-    transition: all .35s ease-in-out;
-    text-decoration: none; 
+    transition: all 0.35s ease-in-out;
+    text-decoration: none;
     color: white;
     font-size: 1em;
-    transition: transform .2s ease-in-out, text-shadow 0.3s ease-in-out;
+    transition:
+        transform 0.2s ease-in-out,
+        text-shadow 0.3s ease-in-out;
 }
 
 .links > a:hover {
@@ -58,10 +60,10 @@
         0 0 10px #fff,
         0 0 21px #fff,
         0 0 42px #22f0e6de,
-        0 0 82px #22F0E7,
-        0 0 92px #22F0E7,
-        0 0 102px #22F0E7,
-        0 0 151px #22F0E7;
+        0 0 82px #22f0e7,
+        0 0 92px #22f0e7,
+        0 0 102px #22f0e7,
+        0 0 151px #22f0e7;
     transform: scale(1.1);
 }
 

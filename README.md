@@ -1,7 +1,9 @@
 # EurekaHacks2024
+
 Eureka Hacks 2024 Website
 
 ## Running locally
+
 1. Clone the repo
 
 ```bash
@@ -23,9 +25,11 @@ $ serve -s build
 ```
 
 ## Short React Intro
+
 React is a super fun language!
 
 ### Basic Stuff
+
 Once you have installed and successfully ran the application you can start looking at the code, index.html is like the base of everything that is later rendered.
 
 However, index.js is where everything actually starts, you can see it actually takes the App component and renders it to the root element in index.html.
@@ -37,6 +41,7 @@ App.js is where the main component is, it is the parent of all the other compone
 Think of it like the trunk of the tree, whereas index.js is like the roots.
 
 ### Components vs Pages
+
 Technically, pages are really just components, except we call them pages since they'll be the biggest and parent component of a page.
 
 Components are like lego blocks, you literally use them to build the website and section it off into different parts, this makes it a lot easier to collaborate and organize code...
@@ -47,11 +52,11 @@ Then you need to create a component, and export it, this is done like so:
 
 ```js
 function ComponentName() {
-  return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Hello World!</h1>
+        </div>
+    );
 }
 export default ComponentName;
 ```
@@ -61,6 +66,7 @@ You can also directly export it which you'll see me doing pretty much every time
 **Note that all components can only have one parent div, you can't have <div></div> and then another <div></div> straight after, it has to be wrapped in one component.**
 
 ### CSS
+
 You may want to import css files into your components, this is done like so:
 
 ```js
@@ -70,4 +76,7 @@ import "./ComponentName.css";
 Yes, it's that simple, no more stylesheets, that's all you have to do, you should name it the same as the component it's being imported into.
 
 ### Final Notes
-If I remember more stuff I'll add it but you can find everything online, try to stick to the general coding styles and uses double quotes, also pls end lines with semi colons, thanks
+
+If I remember more stuff I'll add it but you can find everything online, try to stick to the general coding styles and uses double quotes.
+
+Also, once you're done writing a component/ready to commit run npm run lint to quickly fix any errors you may have made.

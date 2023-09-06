@@ -6,9 +6,7 @@ export default function Description() {
         <div>
             <div className="description-left">
                 <h1>What is Eureka?</h1>
-                <p>
-                    Something
-                </p>
+                <p>Something</p>
             </div>
             <div className="description-right">
                 <img src="https://via.placeholder.com/500" alt="placeholder" />

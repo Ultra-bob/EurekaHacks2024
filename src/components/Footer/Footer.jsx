@@ -7,7 +7,11 @@ export default function Footer() {
         <footer>
             <div className="footer-container">
                 <div className="footer-socials">
-                    <a href="https://www.instagram.com/eureka_hackathon/" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href="https://www.instagram.com/eureka_hackathon/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <BsInstagram />
                     </a>
                 </div>

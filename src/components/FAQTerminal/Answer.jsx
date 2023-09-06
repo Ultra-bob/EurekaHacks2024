@@ -11,10 +11,17 @@ export default function Answer({ hidden, answer, setFinishedTyping }) {
     useEffect(() => {
         if (!hidden && currentIndex < answer.length) {
             const timeout = setTimeout(() => {
-                setDisplayAnswer(previous => previous.slice(0, currentIndex) + answer[currentIndex] + " _");
-                setCurrentIndex(previousIndex => previousIndex + 1);
+                setDisplayAnswer(
+                    (previous) =>
+                        previous.slice(0, currentIndex) +
+                        answer[currentIndex] +
+                        " _",
+                );
+                setCurrentIndex((previousIndex) => previousIndex + 1);
                 if (currentIndex === answer.length - 1) {
-                    setDisplayAnswer(previous => previous.slice(0, currentIndex +  1));
+                    setDisplayAnswer((previous) =>
+                        previous.slice(0, currentIndex + 1),
+                    );
                     setFinishedTyping(true);
                 }
             }, delay);
@@ -27,7 +34,5 @@ export default function Answer({ hidden, answer, setFinishedTyping }) {
         }
     }, [currentIndex, delay, displayAnswer, hidden, answer, setFinishedTyping]);
 
-    return (
-        <span className="text">{displayAnswer}</span>
-    );
+    return <span className="text">{displayAnswer}</span>;
 }

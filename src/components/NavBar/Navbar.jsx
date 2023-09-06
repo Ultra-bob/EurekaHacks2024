@@ -11,10 +11,19 @@ export default function NavBar() {
     // Some useless code here but if we ever wanna change it it's here.
     // Decided to remove scroll effects for above
     return (
-        <div className={["navbar", scrollingUp === "down" ? "navbar-overlay" : ""].join(" ")}>
+        <div
+            className={[
+                "navbar",
+                scrollingUp === "down" ? "navbar-overlay" : "",
+            ].join(" ")}
+        >
             <div className="navbar-box">
                 <a href="#home">
-                    <img className="navbar-icon" src={Logo} alt="Eureka! Icon" />
+                    <img
+                        className="navbar-icon"
+                        src={Logo}
+                        alt="Eureka! Icon"
+                    />
                 </a>
             </div>
             <ul className="links">
@@ -22,7 +31,7 @@ export default function NavBar() {
                 <a href="#about">About</a>
                 <a href="/schedule">Schedule</a>
                 <a href="/gallery">Gallery</a>
-                <a href="/#faq" >FAQ</a>
+                <a href="/#faq">FAQ</a>
                 <a href="/#sponsors">Sponsors</a>
             </ul>
             <div className="register">

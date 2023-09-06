@@ -26,7 +26,11 @@ export default function Header() {
                             <Button text="Register" link="https://google.com" />
                         </div>
                         <div className="banner-logo-container">
-                            <img className="banner-logo" src={Logo} alt="Eureka Logo" />
+                            <img
+                                className="banner-logo"
+                                src={Logo}
+                                alt="Eureka Logo"
+                            />
                         </div>
                     </div>
                 </div>

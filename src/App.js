@@ -5,15 +5,15 @@ import NavBar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <NavBar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

@@ -1,69 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap|Fira+Mono:wght@700&display=swap");
 
 :root {
-  --main-bg-color: #191820;
-  --alt-bg-color: #34659B;
-  --light-main-color: #272532;
-  --dark-main-color: #131217;
-  --contrast-bg-color: #FF9D02;
-  --nav-height: 5rem;
-  --terminal-blue: #8ED3EC;
-  --terminal-red: #EC3B54;
-  --terminal-yellow: #FFDF63;
-  --terminal-green: #24C68D;
+    --main-bg-color: #191820;
+    --alt-bg-color: #34659b;
+    --light-main-color: #272532;
+    --dark-main-color: #131217;
+    --contrast-bg-color: #ff9d02;
+    --nav-height: 5rem;
+    --terminal-blue: #8ed3ec;
+    --terminal-red: #ec3b54;
+    --terminal-yellow: #ffdf63;
+    --terminal-green: #24c68d;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 h1 {
-  color: #ffffff;
-  font-size: 80px;
+    color: #ffffff;
+    font-size: 80px;
 }
 
 p {
-  color: #ffffff;
-  font-size: 16px;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 body {
-  margin: 0;
-  font-family: "Source Code Pro", monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--main-bg-color);
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  position: relative;
-  z-index: 0;
+    margin: 0;
+    font-family: "Source Code Pro", monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--main-bg-color);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
 
 hr {
-  border: 0;
-  height: 4px;
-  background-image: linear-gradient(to right, #22F0E7, #DF71EF, #22F0E7);
-  width: 90%;
-  border-radius: 10px;
-  margin-top: 5rem;
-  background-size: 400%;
-  animation: breathe 60s linear infinite;
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #22f0e7, #df71ef, #22f0e7);
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 5rem;
+    background-size: 400%;
+    animation: breathe 60s linear infinite;
 }
 
 @keyframes breathe {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-      background-position: 400% 0;
-  }
-  100% {
-      background-position: 0 0;
-  }
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }

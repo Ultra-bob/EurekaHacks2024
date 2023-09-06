@@ -1,5 +1,5 @@
 .button-container {
-    text-align: center
+    text-align: center;
 }
 
 a {
@@ -12,9 +12,9 @@ a {
 
 .button-block {
     font-family: "Source Code Pro", monospace;
-    background: 
+    background:
         linear-gradient(black, black) padding-box,
-        linear-gradient(110deg, #DF71EF, 68%, #22F0E7) border-box;
+        linear-gradient(110deg, #df71ef, 68%, #22f0e7) border-box;
     position: relative;
     width: 100px;
     height: auto;
@@ -35,7 +35,15 @@ a {
 
 /* Do a button after maybe .button-glow::after */
 .button-glow::before {
-    background: linear-gradient(45deg, #993333, #ff00ff, #6e0dd0, #099fff, #ff00 ,#993333);
+    background: linear-gradient(
+        45deg,
+        #993333,
+        #ff00ff,
+        #6e0dd0,
+        #099fff,
+        #ff00,
+        #993333
+    );
     background-size: 400%;
     content: "";
     position: absolute;

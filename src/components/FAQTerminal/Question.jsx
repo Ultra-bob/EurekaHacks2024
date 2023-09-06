@@ -7,13 +7,11 @@ export default function Question({ hidden, question, hovered }) {
 
     useEffect(() => {
         if (hovered && hidden) {
-            setDisplayQuestion(previous => previous + "_");
+            setDisplayQuestion((previous) => previous + "_");
         } else {
             setDisplayQuestion(question);
         }
     }, [hovered, hidden, question]);
 
-    return (
-        <span className="question">{displayQuestion}</span>
-    );
+    return <span className="question">{displayQuestion}</span>;
 }
