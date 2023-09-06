@@ -20,8 +20,35 @@ html {
 }
 
 h1 {
+    font-weight: 700;
     color: #ffffff;
-    font-size: 80px;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 70px;
+}
+
+h3 {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
 }
 
 p {
@@ -56,6 +83,9 @@ hr {
     margin: 5rem;
     background-size: 400%;
     animation: breathe 60s linear infinite;
+}
+
+@media (min-width: 1024px) {
 }
 
 @keyframes breathe {
