@@ -6,7 +6,6 @@
     --light-main-color: #272532;
     --dark-main-color: #131217;
     --contrast-bg-color: #ff9d02;
-    --nav-height: 5rem;
     --terminal-blue: #8ed3ec;
     --terminal-red: #ec3b54;
     --terminal-yellow: #ffdf63;
@@ -98,4 +97,12 @@ hr {
     100% {
         background-position: 0 0;
     }
+}
+
+a {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    display: block;
+    text-decoration: none;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import Button from "../Button/Button";
 
 import Logo from "../../assets/EurekaLogo2024.png";
 import Landing1 from "../../assets/landing-1.webp";
@@ -31,7 +30,16 @@ export default function Header() {
                         <div className="banner-text">
                             <h1>EUREKA!</h1>
                             <h3>2024</h3>
-                            <Button text="Register" link="https://google.com" />
+                            <div className="header-button-container">
+                                <a
+                                    className="header-button-block header-button-glow"
+                                    href="https://google.com"
+                                    target="_blank"
+                                    rel="noopenner noreferrer"
+                                >
+                                    Register
+                                </a>
+                            </div>
                         </div>
                         <div className="banner-logo-container">
                             <img

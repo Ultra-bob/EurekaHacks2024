@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { useScrollDirection } from "../../hooks/useScrollDirection";
 
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import Logo from "../../assets/EurekaIcon2024.png";
 
 export default function NavBar() {
@@ -18,13 +18,12 @@ export default function NavBar() {
             ].join(" ")}
         >
             <div className="navbar-box">
-                <a href="#home">
                     <img
                         className="navbar-icon"
                         src={Logo}
                         alt="Eureka! Icon"
+                        href="/#home"
                     />
-                </a>
             </div>
             <ul className="links">
                 <a href="/#home">Home</a>
@@ -34,9 +33,9 @@ export default function NavBar() {
                 <a href="/#faq">FAQ</a>
                 <a href="/#sponsors">Sponsors</a>
             </ul>
-            <div className="register">
+            {/* <div className="register">
                 <Button text="Register" link="https://google.com" />
-            </div>
+            </div> */}
         </div>
     );
 }

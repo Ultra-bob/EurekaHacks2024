@@ -1,15 +1,6 @@
 .button-container {
     text-align: center;
 }
-
-a {
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-}
-
 .button-block {
     display: none;
 }
