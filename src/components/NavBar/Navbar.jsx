@@ -18,12 +18,12 @@ export default function NavBar() {
             ].join(" ")}
         >
             <div className="navbar-box">
-                    <img
-                        className="navbar-icon"
-                        src={Logo}
-                        alt="Eureka! Icon"
-                        href="/#home"
-                    />
+                <img
+                    className="navbar-icon"
+                    src={Logo}
+                    alt="Eureka! Icon"
+                    href="/#home"
+                />
             </div>
             <ul className="links">
                 <a href="/#home">Home</a>

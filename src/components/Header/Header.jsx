@@ -28,8 +28,8 @@ export default function Header() {
                     </div>
                     <div className="banner-text-logo">
                         <div className="banner-text">
-                            <h1>EUREKA!</h1>
-                            <h3>2024</h3>
+                            <h1>Eureka</h1>
+                            <h3>HACKS</h3>
                             <div className="header-button-container">
                                 <a
                                     className="header-button-block header-button-glow"
