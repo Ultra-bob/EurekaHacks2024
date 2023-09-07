@@ -1,7 +1,7 @@
 .navbar {
-    height: var(--nav-height);
+    height: 65px;
     width: 100%;
-    display: block;
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -9,30 +9,32 @@
     background-color: #ffffff30;
 }
 
+.navbar-icon {
+    display: flex;
+    width: auto;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 0.6em;
+    justify-self: center;
+    position: fixed;
+}
+
 @media (min-width: 1024px) {
     .navbar {
         height: var(--nav-height);
         width: 100%;
-        display: flex;
-        background-color: transparent;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
+        position: absolute;
         transition: all 0.5s ease-in-out;
         align-content: center;
-        background-color: #ffffff30;
     }
-}
 
-.navbar-icon {
-    display: flex;
-    width: auto;
-    height: 2.5em;
-    margin-left: 1em;
-    margin-top: 0.7em;
-    justify-self: center;
-    position: fixed;
+    .navbar-icon {
+        display: flex;
+        width: auto;
+        height: 2.5em;
+        margin-left: 1em;
+        margin-top: 0.7em;
+    }
 }
 
 .links {
