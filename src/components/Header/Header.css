@@ -5,11 +5,11 @@
 
 .banner {
     position: relative;
-    height: auto;
+    height: 650px;
     width: 100%;
     background: url("../../assets/mobileBackgroundGradient.png") no-repeat;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     margin-bottom: -30rem;
     display: flex;
     justify-content: center;
@@ -106,7 +106,8 @@
 @media (min-width: 1024px) {
     .banner {
         background: url("../../assets/backgroundGradient.png") no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
+        height: auto;
     }
 
     .banner-content {
@@ -114,7 +115,6 @@
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        /* width: 1800px; */
         width: 95%;
         height: 800px;
     }
@@ -161,7 +161,6 @@
     .banner-logo {
         width: auto;
         height: 410px;
-        /* margin-bottom: 700px; */
     }
 
     .header-button-block {
