@@ -31,10 +31,83 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 7.5px;
     list-style-type: none;
-    /* margin-left: 2.5em; */
-    width: 75%;
+    height: 100%;
+    width: 50px;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.hamburger-line {
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.35s ease-in-out;
+}
+
+.mobile-menu-open {
+    position: fixed;
+    display: block;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-bg-color);
+}
+
+.mobile-menu-top {
+    background-image: url("/src/assets/backgroundGradientBottom.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 30%;
+}
+
+.mobile-menu-bottom {
+    background-image: url("/src/assets/backgroundGradientTop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu-closed {
+    display: none;
+}
+
+.mobile-menu-closed > a {
+    display: none;
+}
+
+.close-line-1 {
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.35s ease-in-out;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.close-line-2 {
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.35s ease-in-out;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.links {
+    display: none;
 }
 
 .links > a {
@@ -74,7 +147,7 @@
         position: fixed;
         z-index: 2;
         transition: all 0.5s ease-in-out;
-        align-content: left;
+        justify-content: center;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -86,14 +159,13 @@
         justify-content: center;
         flex-wrap: wrap;
         align-content: center;
-        width: 50px;
+        width: 80px;
         height: 100%;
-        padding: 10px;
     }
 
     .navbar-icon {
         height: auto;
-        width: 100%;
+        width: 50px;
         position: relative;
     }
 
@@ -111,7 +183,7 @@
         margin-right: auto;
         flex-grow: 1;
         gap: 30px;
-        margin-left: -30px;
+        margin-left: -40px;
     }
 
     .links > a {
