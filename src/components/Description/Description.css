@@ -3,10 +3,8 @@
     color: white;
     padding: 2em;
     text-align: left;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 3fr 1fr;
-    column-gap: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .description-left {
@@ -15,10 +13,37 @@
 
 .description-right {
     display: inline-block;
-    float: right;
 }
 
 .glow {
     background-image: linear-gradient(200deg, #df71ef, #22f0e7);
     padding: 3px;
+}
+
+@media (min-width: 1024px) {
+    .description {
+        font-size: 2em;
+        color: white;
+        padding: 2em;
+        text-align: left;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 2em;
+        width: 85%;
+    }
+    
+    .description-left {
+        float: left;
+    }
+    
+    .description-right {
+        display: inline-block;
+    }
+    
+    .glow {
+        background-image: linear-gradient(200deg, #df71ef, #22f0e7);
+        padding: 3px;
+    }
+    
 }

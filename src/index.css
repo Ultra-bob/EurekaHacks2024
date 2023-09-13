@@ -36,6 +36,12 @@ h3 {
     font-size: 40px;
 }
 
+h6 {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+}
+
 @media (min-width: 1024px) {
     h1 {
         font-size: 100px;
@@ -47,6 +53,10 @@ h3 {
 
     h3 {
         font-size: 40px;
+    }
+
+    h6 {
+        font-size: 30px;
     }
 }
 
@@ -78,12 +88,15 @@ hr {
     height: 4px;
     background-image: linear-gradient(to right, #22f0e7, #df71ef, #22f0e7);
     border-radius: 10px;
-    margin: 5rem;
+    margin: 1rem;
     background-size: 400%;
     animation: breathe 60s linear infinite;
 }
 
 @media (min-width: 1024px) {
+    hr {
+        margin: 5rem;
+    }
 }
 
 @keyframes breathe {
