@@ -1,8 +1,10 @@
 import "./App.css";
+import { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
 import NavBar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
+
+const Home = lazy(() => import("./pages/Home/Home"));
 
 function App() {
     return (

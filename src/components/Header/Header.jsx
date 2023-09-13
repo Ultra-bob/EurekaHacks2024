@@ -16,6 +16,7 @@ export default function Header() {
                                 src={Landing1}
                                 className="landing-image"
                                 alt="Landing 1"
+                                loading="lazy"
                             />
                         </div>
                         <div className="landing-2 banner-image-glow">
@@ -23,13 +24,14 @@ export default function Header() {
                                 src={Landing2}
                                 className="landing-image"
                                 alt="Landing 2"
+                                loading="lazy"
                             />
                         </div>
                     </div>
                     <div className="banner-text-logo">
                         <div className="banner-text">
-                            <h1>EUREKA!</h1>
-                            <h3>2024</h3>
+                            <h1>Eureka</h1>
+                            <h3>HACKS</h3>
                             <div className="header-button-container">
                                 <a
                                     className="header-button-block header-button-glow"
