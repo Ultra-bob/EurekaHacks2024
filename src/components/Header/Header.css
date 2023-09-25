@@ -96,8 +96,8 @@
         justify-content: center;
         align-content: center;
         width: 1330px;
-        height: 800px;
-        margin-left: -110px;
+        height: 750px;
+        margin-left: -150px;
     }
 
     .landing-images {
@@ -110,7 +110,7 @@
         height: auto;
         position: relative;
         align-self: center;
-        margin-top: 190px;
+        margin-top: 170px;
         margin-left: 120px;
     }
     .landing-2 {

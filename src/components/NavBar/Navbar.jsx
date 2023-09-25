@@ -52,23 +52,37 @@ export default function NavBar() {
                 }`}
             >
                 <div className="mobile-menu-top">
-                    <img
-                        className="navbar-icon"
-                        src={Logo}
-                        alt="Eureka! Icon"
-                        href="/#home"
-                    />
                     <div className="close" onClick={toggleMenu}>
                         <div className="close-line-1" />
                         <div className="close-line-2" />
                     </div>
                 </div>
-                <a href="/#home">Home</a>
-                <a href="#about">About</a>
-                <a href="/schedule">Schedule</a>
-                <a href="/gallery">Gallery</a>
-                <a href="/#faq">FAQ</a>
-                <a href="/#sponsors">Sponsors</a>
+                <div className="mobile-menu-content">
+                    <img
+                        className="mobile-menu-nav-icon"
+                        src={Logo}
+                        alt="Eureka! Icon"
+                        href="/#home"
+                    />
+                    <a href="/#home" onClick={toggleMenu}>
+                        Home
+                    </a>
+                    <a href="#about" onClick={toggleMenu}>
+                        About
+                    </a>
+                    <a href="/schedule" onClick={toggleMenu}>
+                        Schedule
+                    </a>
+                    <a href="/gallery" onClick={toggleMenu}>
+                        Gallery
+                    </a>
+                    <a href="/#faq" onClick={toggleMenu}>
+                        FAQ
+                    </a>
+                    <a href="/#sponsors" onClick={toggleMenu}>
+                        Sponsors
+                    </a>
+                </div>
                 <div className="mobile-menu-bottom">
                     {/* <Button text="Register" link="https://google.com" /> */}
                 </div>
