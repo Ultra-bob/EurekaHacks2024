@@ -5,11 +5,11 @@ import "./Description.css";
 
 export default function Description() {
     return (
-        <div>
+        <>
             <div className="description">
                 <div className="description-left">
-                    Abbey Park's Very Own Hackathon!
-                    <h6 className="description-left">
+                    <h3>Abbey Park's Very Own Hackathon!</h3>
+                    <h6>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Suspendisse auctor eu nisi sed consectetur. Praesent
                         ullamcorper ante sem. Cras sed imperdiet arcu. Cras
@@ -20,12 +20,14 @@ export default function Description() {
                         quam ut ante ultricies tincidunt eget in urna.
                     </h6>
                 </div>
-                <img
-                    className="description-right glow"
-                    src="https://via.placeholder.com/300"
-                    alt="placeholder"
-                />
+                <div className="description-right">
+                    <img
+                        className="description-right glow"
+                        src="https://via.placeholder.com/300"
+                        alt="placeholder"
+                    />
+                </div>
             </div>
-        </div>
+        </>
     );
 }

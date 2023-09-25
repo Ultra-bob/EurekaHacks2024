@@ -23,27 +23,26 @@
 @media (min-width: 1024px) {
     .description {
         font-size: 2em;
-        color: white;
-        padding: 2em;
+        color: #ffffff;
         text-align: left;
-        display: grid;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        grid-template-columns: 3fr 1fr;
-        column-gap: 2em;
         width: 85%;
+        margin: auto;
+        padding: 0;
     }
-    
+
     .description-left {
-        float: left;
+        flex-grow: 1;
     }
-    
+
     .description-right {
-        display: inline-block;
+        padding-left: 50px;
     }
-    
+
     .glow {
         background-image: linear-gradient(200deg, #df71ef, #22f0e7);
         padding: 3px;
     }
-    
 }

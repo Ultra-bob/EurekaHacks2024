@@ -95,9 +95,9 @@
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        width: 95%;
+        width: 1330px;
         height: 800px;
-        margin-left: -7%;
+        margin-left: -110px;
     }
 
     .landing-images {
@@ -110,8 +110,8 @@
         height: auto;
         position: relative;
         align-self: center;
-        margin-top: 170px;
-        margin-left: 100px;
+        margin-top: 190px;
+        margin-left: 120px;
     }
     .landing-2 {
         width: 130%;
@@ -169,7 +169,7 @@
         border: 3px solid #df71ef;
         z-index: 10;
     }
-    
+
     .banner-image-glow::after {
         content: "";
         position: absolute;
