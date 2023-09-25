@@ -5,12 +5,11 @@
 
 .banner {
     position: relative;
-    height: 650px;
+    height: 900px;
     width: 100%;
     background: url("../../assets/mobileBackgroundGradient.png") no-repeat;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-bottom: -30rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -27,15 +26,26 @@
 }
 
 .landing-images {
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .landing-image {
-    width: 100%;
+    width: 60%;
     height: auto;
     display: block;
+}
+
+.landing-1 > img {
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.landing-2 > img {
+    margin-top: 60px;
+    margin-right: 25px;
+    margin-left: auto;
 }
 
 .banner-text {
@@ -71,12 +81,13 @@
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    width: 25%;
+    width: 35%;
 }
 
 .banner-logo {
-    width: auto;
-    height: 40px;
+    height: auto;
+    width: 120%;
+    margin-left: -10px;
 }
 
 .header-button-block {

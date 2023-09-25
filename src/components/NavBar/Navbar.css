@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #ffffff30;
+    background-color: #ffffff1a;
 }
 
 .navbar-box {
@@ -176,7 +176,6 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        background-color: #ffffff30;
     }
 
     .navbar-box {

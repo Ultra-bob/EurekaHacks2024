@@ -88,7 +88,7 @@ hr {
     height: 4px;
     background-image: linear-gradient(to right, #22f0e7, #df71ef, #22f0e7);
     border-radius: 10px;
-    margin: 1rem;
+    margin: 0 30px 0 20px;
     background-size: 400%;
     animation: breathe 60s linear infinite;
 }
