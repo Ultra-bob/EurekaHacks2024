@@ -42,7 +42,7 @@
     margin-top: 50px;
 }
 
-.landing-2 > img {
+.landing-2 > img{
     margin-top: 60px;
     margin-right: 25px;
     margin-left: auto;
@@ -111,6 +111,12 @@
         margin-left: -150px;
     }
 
+    .landing-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
     .landing-images {
         width: 20%;
         flex-direction: column;
@@ -131,6 +137,14 @@
         align-self: center;
         margin-top: 30px;
         margin-left: 500px;
+    }
+
+    .landing-1 > img {
+        margin: 0;
+    }
+
+    .landing-2 > img {
+        margin: 0;
     }
 
     .banner-text > h1 {
