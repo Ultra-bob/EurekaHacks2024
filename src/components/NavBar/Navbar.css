@@ -204,10 +204,9 @@
     .links {
         display: flex;
         position: relative;
-        margin-right: auto;
         flex-grow: 1;
         gap: 30px;
-        margin-left: -40px;
+        margin: auto auto auto -40px;
     }
 
     .links > a {

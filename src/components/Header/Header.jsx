@@ -11,7 +11,7 @@ export default function Header() {
             <div className="banner">
                 <div className="banner-content">
                     <div className="landing-images">
-                        <div className="landing-1 banner-image-glow">
+                        <div className="landing-1 banner-glow">
                             <img
                                 src={Landing1}
                                 className="landing-image"
@@ -19,7 +19,7 @@ export default function Header() {
                                 loading="lazy"
                             />
                         </div>
-                        <div className="landing-2 banner-image-glow">
+                        <div className="landing-2 banner-glow">
                             <img
                                 src={Landing2}
                                 className="landing-image"

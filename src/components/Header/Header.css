@@ -190,21 +190,19 @@
         flex-wrap: wrap;
     }
 
-    .banner-image-glow {
-        border: 3px solid #df71ef;
-        z-index: 10;
+    .banner-glow {
+        border: linear-gradient(110deg, #df71ef, 38%, #22f0e7);
     }
 
-    .banner-image-glow::after {
+    .banner-glow::after {
         content: "";
         position: absolute;
-        height: 105%;
-        width: 105%;
+        height: 110%;
+        width: 110%;
         background: linear-gradient(110deg, #df71ef, 38%, #22f0e7);
         z-index: -1;
         filter: blur(40px);
-        top: 0px;
-        left: 0px;
-        transition: all 500ms ease;
+        top: -20px;
+        left: -20px;
     }
 }
