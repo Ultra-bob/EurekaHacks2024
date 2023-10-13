@@ -12,7 +12,7 @@ export default function FAQ() {
 
     return (
         <section id="faq">
-            <h1>Frequently Asked Questions</h1>
+            <h2>Frequently Asked Questions</h2>
             <div className="faq">{faqStuff}</div>
         </section>
     );
