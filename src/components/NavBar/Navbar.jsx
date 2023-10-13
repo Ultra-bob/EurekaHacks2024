@@ -33,7 +33,7 @@ export default function NavBar() {
             </div>
             <ul className="links">
                 <a href="/#home">Home</a>
-                <a href="#about">About</a>
+                <a href="/#about">About</a>
                 <a href="/schedule">Schedule</a>
                 <a href="/gallery">Gallery</a>
                 <a href="/#faq">FAQ</a>
@@ -67,7 +67,7 @@ export default function NavBar() {
                     <a href="/#home" onClick={toggleMenu}>
                         Home
                     </a>
-                    <a href="#about" onClick={toggleMenu}>
+                    <a href="/#about" onClick={toggleMenu}>
                         About
                     </a>
                     <a href="/schedule" onClick={toggleMenu}>

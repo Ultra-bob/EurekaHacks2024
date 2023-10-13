@@ -1,11 +1,11 @@
 import React from "react";
-import "./Description.css";
+import "./About.css";
 
 // import Description from "../../assets/" i can't find the image
 
 export default function Description() {
     return (
-        <>
+        <section id="about">
             <div className="description">
                 <div className="description-left">
                     <h3>Abbey Park's Very Own Hackathon!</h3>
@@ -28,6 +28,6 @@ export default function Description() {
                     />
                 </div>
             </div>
-        </>
+        </section>
     );
 }

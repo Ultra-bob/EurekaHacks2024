@@ -3,7 +3,7 @@ import "./Home.css";
 
 import FAQ from "../../components/FAQ/FAQ";
 import Header from "../../components/Header/Header";
-import Description from "../../components/Description/Description";
+import Description from "../../components/About/About";
 // import SponsorPanel from "../../components/SponsorPanel/SponsorPanel"
 // import SponsorBG from "../../components/SponsorBG/SponsorBG"
 
