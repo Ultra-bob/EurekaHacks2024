@@ -7,21 +7,43 @@
 }
 
 .footer-socials {
-    margin-right: 20px;
-    margin-left: 20px;
+    padding: 20px;
     display: flex;
+    height: 100%;
+    gap: 20px;
 }
 
 .footer-socials > a {
-    height: 40px;
-    width: 40px;
+    height: 30px;
 }
 
-.footer-socials > img {
-    height: 40px;
-    width: 40px;
+.footer-socials > a > svg {
+    height: 30px;
+    width: 30px;
+    color: var(--lighter-text-color);
 }
 
 .footer-copyright {
     margin-left: auto;
+    margin-right: 20px;
+}
+
+.footer-copyright > p {
+    color: var(--lighter-text-color);
+}
+
+.instagram:hover > svg {
+    color: #e1306c;
+}
+
+.linkedin:hover > svg {
+    color: #0077b5;
+}
+
+.tiktok:hover > svg {
+    color: #000000;
+}
+
+.discord:hover > svg {
+    color: #7289da;
 }
