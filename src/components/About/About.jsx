@@ -8,17 +8,17 @@ export default function Description() {
         <section id="about">
             <div className="description">
                 <div className="description-left">
-                    <h3>Abbey Park's Very Own Hackathon!</h3>
-                    <h6>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse auctor eu nisi sed consectetur. Praesent
-                        ullamcorper ante sem. Cras sed imperdiet arcu. Cras
-                        faucibus, mi sed mattis tristique, metus libero interdum
-                        lectus, vel vestibulum enim ipsum in libero.
-                        Pellentesque dictum vulputate semper. Nullam varius
-                        tempus nulla, ac lacinia mauris mattis vel. Nulla eu
-                        quam ut ante ultricies tincidunt eget in urna.
-                    </h6>
+                    <h3>Oakvilles best Hackathon!</h3>
+                    <p>
+                        Welcome to Eureka! Come to Abbey Park High School for a
+                        12 hour in person hackathon event! Here, you'll get to
+                        create a solution or project related to our theme, and
+                        get the chance to win prizes too! With workshops, coding
+                        challenges, and networking opportunities, participants
+                        will have the chance to unleash their full potential and
+                        bring their ideas to life. So gear up, get ready to
+                        code, and let's build the future together!
+                    </p>
                 </div>
                 <div className="description-right">
                     <img
