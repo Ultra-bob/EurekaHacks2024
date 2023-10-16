@@ -28,11 +28,11 @@ export default function NavBar() {
                     className="navbar-icon"
                     src={Logo}
                     alt="Eureka! Icon"
-                    href="/#home"
+                    href="/"
                 />
             </div>
             <ul className="links">
-                <a href="/#home">Home</a>
+                <a href="/">Home</a>
                 <a href="/#about">About</a>
                 <a href="/schedule">Schedule</a>
                 <a href="/gallery">Gallery</a>
@@ -62,9 +62,9 @@ export default function NavBar() {
                         className="mobile-menu-nav-icon"
                         src={Logo}
                         alt="Eureka! Icon"
-                        href="/#home"
+                        href="/"
                     />
-                    <a href="/#home" onClick={toggleMenu}>
+                    <a href="/" onClick={toggleMenu}>
                         Home
                     </a>
                     <a href="/#about" onClick={toggleMenu}>

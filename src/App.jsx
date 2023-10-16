@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 const Home = lazy(() => import("./pages/Home/Home"));
+const Gallery = lazy(() => import("./pages/Gallery/Gallery"));
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <NavBar />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path ="/gallery" element={<Gallery />} />
             </Routes>
             <Footer />
         </div>
