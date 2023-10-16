@@ -34,11 +34,20 @@
     }
 
     .description-left {
-        flex-grow: 1;
+        width: 65%;
+        padding-right: 30px;
     }
 
     .description-right {
-        padding-left: 50px;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description-image {
+        height: auto;
+        width: 400px;
     }
 
     .glow {

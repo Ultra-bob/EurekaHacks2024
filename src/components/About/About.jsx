@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
-
-// import Description from "../../assets/" i can't find the image
+import About from "../../assets/About.jpg";
 
 export default function Description() {
     return (
@@ -22,8 +21,8 @@ export default function Description() {
                 </div>
                 <div className="description-right">
                     <img
-                        className="description-right glow"
-                        src="https://via.placeholder.com/300"
+                        className="description-image glow"
+                        src={About}
                         alt="placeholder"
                     />
                 </div>
