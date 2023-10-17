@@ -1,9 +1,10 @@
 import React from "react";
 import "./Header.css";
 
-import Logo from "../../assets/EurekaLogo2024.png";
-import Landing1 from "../../assets/landing-1.webp";
-import Landing2 from "../../assets/landing-2.webp";
+// import Logo from "../../assets/EurekaLogo2024.png";
+import Logo from "../../assets/Header/EurekaLogo2024.png";
+import Landing1 from "../../assets/Header/landing-1.jpg";
+import Landing2 from "../../assets/Header/landing-2.jpg";
 
 export default function Header() {
     return (
