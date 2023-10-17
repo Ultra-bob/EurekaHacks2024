@@ -105,11 +105,13 @@ body {
     scroll-behavior: smooth;
     position: relative;
     z-index: 0;
+    font-display: swap;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+    font-display: swap;
 }
 
 

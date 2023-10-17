@@ -21,9 +21,11 @@ export default function Description() {
                 </div>
                 <div className="description-right">
                     <img
-                        className="description-image glow"
+                        className="glow"
                         src={About}
                         alt="placeholder"
+                        height="506px"
+                        width="406px"
                     />
                 </div>
             </div>

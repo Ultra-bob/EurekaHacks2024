@@ -50,11 +50,6 @@
         align-items: center;
     }
 
-    .description-image {
-        height: auto;
-        width: 400px;
-    }
-
     .glow {
         background-image: linear-gradient(200deg, #df71ef, #22f0e7);
         padding: 3px;

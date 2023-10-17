@@ -123,16 +123,16 @@
     }
 
     .landing-1 {
-        width: 110%;
-        height: auto;
+        width: 293px;
+        height: 196px;
         position: relative;
         align-self: center;
         margin-top: 170px;
         margin-left: 120px;
     }
     .landing-2 {
-        width: 130%;
-        height: auto;
+        width: 345px;
+        height: 230px;
         position: relative;
         align-self: center;
         margin-top: 30px;
@@ -165,7 +165,7 @@
     }
 
     .banner-logo {
-        width: auto;
+        width: 410px;
         height: 410px;
     }
 
@@ -188,6 +188,7 @@
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
+        font-display: swap;
     }
 
     .banner-glow {
