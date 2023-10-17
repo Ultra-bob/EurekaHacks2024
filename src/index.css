@@ -48,6 +48,25 @@ p {
     font-size: 12px;
 }
 
+hr {
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #22f0e7, #df71ef, #22f0e7);
+    border-radius: 10px;
+    margin: 0 30px 0 20px;
+    background-size: 400%;
+    animation: breathe 60s linear infinite;
+}
+
+a {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+
 @media (min-width: 1024px) {
     h1 {
         font-size: 100px;
@@ -69,6 +88,10 @@ p {
         color: #ffffff;
         font-size: 24px;
     }
+
+    hr {
+        margin: 5rem;
+    }
 }
 
 body {
@@ -89,21 +112,7 @@ code {
         monospace;
 }
 
-hr {
-    border: 0;
-    height: 4px;
-    background-image: linear-gradient(to right, #22f0e7, #df71ef, #22f0e7);
-    border-radius: 10px;
-    margin: 0 30px 0 20px;
-    background-size: 400%;
-    animation: breathe 60s linear infinite;
-}
 
-@media (min-width: 1024px) {
-    hr {
-        margin: 5rem;
-    }
-}
 
 @keyframes breathe {
     0% {
@@ -115,12 +124,4 @@ hr {
     100% {
         background-position: 0 0;
     }
-}
-
-a {
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    display: block;
-    text-decoration: none;
 }
