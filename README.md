@@ -26,7 +26,7 @@ $ serve -s build
 
 ## Short React Intro
 
-React is a super fun language!
+React is a super fun framework!
 
 ### Basic Stuff
 
@@ -34,7 +34,7 @@ Once you have installed and successfully ran the application you can start looki
 
 However, index.js is where everything actually starts, you can see it actually takes the App component and renders it to the root element in index.html.
 
-This also makes index.css like the global css file that should be imported everywhere automatically.
+This also makes index.css like the global css file that should be imported everywhere automatically (though technically every components css is global).
 
 App.js is where the main component is, it is the parent of all the other components and is where the routing is done.
 
@@ -46,7 +46,7 @@ Technically, pages are really just components, except we call them pages since t
 
 Components are like lego blocks, you literally use them to build the website and section it off into different parts, this makes it a lot easier to collaborate and organize code...
 
-Components need to follow a few rules, as is standard you should have `import React from "react";` since linters will complain if you don't.
+Components need to follow a few rules, you may need to add `import React from "react";` since linters like eslint will occasionally complain if you don't.
 
 Then you need to create a component, and export it, this is done like so:
 
