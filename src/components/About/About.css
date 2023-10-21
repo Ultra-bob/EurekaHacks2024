@@ -1,10 +1,9 @@
-.description {
+#about {
     font-size: 2em;
     color: white;
     padding: 2em;
     text-align: left;
     display: flex;
-    flex-direction: column;
 }
 
 .description-left {
@@ -50,8 +49,7 @@
         align-items: center;
     }
 
-    .glow {
-        background-image: linear-gradient(200deg, #df71ef, #22f0e7);
-        padding: 3px;
+    .description-image {
+        width: 350px;
     }
 }

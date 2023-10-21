@@ -110,7 +110,22 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
-    font-display: swap;
+}
+
+hr {
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #22f0e7, #df71ef, #22f0e7);
+    border-radius: 10px;
+    margin: 0 30px 0 20px;
+    background-size: 400%;
+    animation: breathe 60s linear infinite;
+}
+
+@media (min-width: 1024px) {
+    hr {
+        margin: 1rem;
+    }
 }
 
 @keyframes breathe {
