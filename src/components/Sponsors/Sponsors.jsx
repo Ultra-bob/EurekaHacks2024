@@ -12,7 +12,6 @@ export default function Sponsors() {
                 <div className="gold-sponsors">
                     <SponsorBox
                         name="Abbey Park"
-                        tier="gold"
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
@@ -20,13 +19,11 @@ export default function Sponsors() {
                 <div className="silver-sponsors">
                     <SponsorBox
                         name="Abbey Park"
-                        tier="silver"
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
                     <SponsorBox
                         name="Abbey Park"
-                        tier="silver"
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
@@ -34,19 +31,16 @@ export default function Sponsors() {
                 <div className="bronze-sponsors">
                     <SponsorBox
                         name="Abbey Park"
-                        tier="bronze"
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
                     <SponsorBox
                         name="Abbey Park"
-                        tier="bronze"
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
                     <SponsorBox
                         name="Abbey Park"
-                        tier="bronze"
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />

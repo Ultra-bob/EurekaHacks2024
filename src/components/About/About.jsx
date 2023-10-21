@@ -1,12 +1,12 @@
 import React from "react";
 import "./About.css";
-import About from "../../assets/About/About.jpg";
+import AboutImage from "../../assets/About/About.jpg";
 
-export default function Description() {
+export default function About() {
     return (
         <section id="about">
-            <div className="description-left">
-                <h3>Oakvilles Biggest Hackathon</h3>
+            <div className="about-left">
+                <h2>Oakvilles Biggest Hackathon</h2>
                 <p>
                     Welcome to Eureka! Come to Abbey Park High School for a 12
                     hour in person hackathon event! Here, you'll get to create a
@@ -18,10 +18,10 @@ export default function Description() {
                     future together!
                 </p>
             </div>
-            <div className="description-right">
+            <div className="about-right">
                 <img
-                    className="description-image glow"
-                    src={About}
+                    className="about-image glow"
+                    src={AboutImage}
                     alt="placeholder"
                 />
             </div>

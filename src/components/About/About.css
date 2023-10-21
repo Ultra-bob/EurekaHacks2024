@@ -4,17 +4,19 @@
     padding: 2em;
     text-align: left;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.description-left {
+.about-left {
     float: left;
 }
 
-.description-right {
+.about-right {
     display: inline-block;
 }
 
-.description-image {
+.about-image {
     height: auto;
     width: 200px;
 }
@@ -25,7 +27,7 @@
 }
 
 @media (min-width: 1024px) {
-    .description {
+    #about {
         font-size: 2em;
         color: #ffffff;
         text-align: left;
@@ -34,22 +36,21 @@
         align-items: center;
         width: 85%;
         margin: auto;
-        padding: 0;
     }
 
-    .description-left {
+    .about-left {
         width: 65%;
         padding-right: 30px;
     }
 
-    .description-right {
+    .about-right {
         width: 35%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .description-image {
+    .about-image {
         width: 350px;
     }
 }

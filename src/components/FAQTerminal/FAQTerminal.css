@@ -8,7 +8,6 @@
     margin-bottom: 2em;
     cursor: pointer;
     transition: transform 1s;
-    font-display: swap;
 }
 
 .faq-terminal:hover {
