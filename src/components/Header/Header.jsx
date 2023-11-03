@@ -18,8 +18,6 @@ export default function Header() {
                                 className="landing-image"
                                 alt="Landing 1"
                                 loading="lazy"
-                                height="293px"
-                                width="196px"
                             />
                         </div>
                         <div className="landing-2 banner-glow">
@@ -28,8 +26,6 @@ export default function Header() {
                                 className="landing-image"
                                 alt="Landing 2"
                                 loading="lazy"
-                                height="345px"
-                                width="230px"
                             />
                         </div>
                     </div>
@@ -53,8 +49,6 @@ export default function Header() {
                                 className="banner-logo"
                                 src={Logo}
                                 alt="Eureka Logo"
-                                width="410px"
-                                height="410px"
                             />
                         </div>
                     </div>

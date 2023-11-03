@@ -164,7 +164,7 @@
         margin-left: -50px;
     }
 
-    .banner-logo {
+    .banner-logo, .banner-logo > img {
         width: 410px;
         height: 410px;
     }
