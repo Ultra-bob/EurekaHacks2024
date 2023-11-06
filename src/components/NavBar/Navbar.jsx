@@ -40,7 +40,6 @@ export default function NavBar() {
                 <a href="/#sponsors">Sponsors</a>
             </ul>
 
-            {/* This is the mobile menu stuff, it isn't that much so not splitting into a component */}
             <div className="hamburger-menu" onClick={toggleMenu}>
                 <div className="hamburger-line" />
                 <div className="hamburger-line" />
@@ -83,13 +82,7 @@ export default function NavBar() {
                         Sponsors
                     </a>
                 </div>
-                <div className="mobile-menu-bottom">
-                    {/* <Button text="Register" link="https://google.com" /> */}
-                </div>
             </div>
-            {/* <div className="register">
-                <Button text="Register" link="https://google.com" />
-            </div> */}
         </div>
     );
 }
