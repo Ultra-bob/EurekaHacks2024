@@ -1,10 +1,12 @@
-import React from "react";
+"use client";
+
 import { useState } from "react";
 import "./Navbar.css";
-import { useScrollDirection } from "../../hooks/useScrollDirection";
+import { useScrollDirection } from "@/app/hooks/useScrollDirection";
 
 // import Button from "../Button/Button";
-import Logo from "../../assets/EurekaIcon2024.png";
+import Logo from "@/public/EurekaIcon2024.png";
+import Image from "next/image";
 
 export default function NavBar() {
     const scrollingUp = useScrollDirection();
@@ -24,7 +26,7 @@ export default function NavBar() {
             ].join(" ")}
         >
             <div className="navbar-box">
-                <img
+                <Image
                     className="navbar-icon"
                     src={Logo}
                     alt="Eureka! Icon"
@@ -57,7 +59,7 @@ export default function NavBar() {
                     </div>
                 </div>
                 <div className="mobile-menu-content">
-                    <img
+                    <Image
                         className="mobile-menu-nav-icon"
                         src={Logo}
                         alt="Eureka! Icon"

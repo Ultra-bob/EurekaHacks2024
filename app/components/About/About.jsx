@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
-import AboutImage from "../../assets/About/About.jpg";
+import AboutImage from "@/public/About/About.jpg";
+import Image from "next/image";
 
 export default function About() {
     return (
@@ -30,7 +31,7 @@ export default function About() {
                 </p>
             </div>
             <div className="about-right">
-                <img
+                <Image
                     className="about-image glow"
                     src={AboutImage}
                     alt="placeholder"

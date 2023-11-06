@@ -2,7 +2,7 @@ import React from "react";
 import "./Sponsors.css";
 import SponsorBox from "./SponsorBox.jsx";
 
-import APHS from "../../assets/apicon.png";
+import APHS from "@/public/apicon.png";
 
 export default function Sponsors() {
     return (

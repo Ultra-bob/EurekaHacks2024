@@ -1,14 +1,18 @@
 import React from "react";
-import styles from "@/styles/page.module.css";
+import styles from "@/app/page.module.css";
 
-import FAQ from "@/components/FAQ/FAQ";
-import Header from "@/components/Header/Header";
-import About from "@/components/About/About";
-import Sponsors from "@/components/Sponsors/Sponsors";
+
+
+import FAQ from "@/app/components/FAQ/FAQ";
+import Header from "@/app/components/Header/Header";
+import About from "@/app/components/About/About";
+import Sponsors from "@/app/components/Sponsors/Sponsors";
+import NavBar from "./components/NavBar/Navbar";
 
 export default function Home() {
     return (
         <>
+            <NavBar />
             <Header />
             <div className={styles.home_content}>
                 <hr />
