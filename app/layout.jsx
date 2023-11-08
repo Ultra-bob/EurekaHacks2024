@@ -1,6 +1,5 @@
 import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-import Footer from "@/app/components/Footer/Footer";
 
 const scp = Source_Code_Pro({ subsets: ["latin"] });
 
@@ -33,7 +32,6 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={scp.className}>{children}</body>
-            <Footer />
         </html>
     );
 }

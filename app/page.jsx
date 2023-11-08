@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "@/app/page.module.css";
 
-
-
+import Footer from "@/app/components/Footer/Footer";
 import FAQ from "@/app/components/FAQ/FAQ";
 import Header from "@/app/components/Header/Header";
 import About from "@/app/components/About/About";
@@ -22,6 +21,7 @@ export default function Home() {
                 <hr />
                 <FAQ />
             </div>
+            <Footer />
         </>
     );
 }

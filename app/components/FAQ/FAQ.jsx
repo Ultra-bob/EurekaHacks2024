@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
 import "./FAQ.css";
 import FAQTerminal from "../FAQTerminal/FAQTerminal";
 import { faq } from "./questions.js";
-0;
+
 export default function FAQ() {
     const faqStuff = faq.map((data) => (
         <div className="faq-item" key={data.id}>
