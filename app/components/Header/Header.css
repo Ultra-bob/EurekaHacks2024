@@ -7,7 +7,7 @@
     position: relative;
     height: 900px;
     width: 100%;
-    background: url("../../assets/mobileBackgroundGradient.png") no-repeat;
+    background: url("../../../public/mobileBackgroundGradient.png") no-repeat;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -96,7 +96,7 @@
 
 @media (min-width: 1024px) {
     .banner {
-        background: url("../../assets/backgroundGradient.png") no-repeat;
+        background: url("../../../public/backgroundGradient.png") no-repeat;
         background-size: 100% 100%;
         height: auto;
     }

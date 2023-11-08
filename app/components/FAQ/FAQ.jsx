@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import "./FAQ.css";
 import FAQTerminal from "../FAQTerminal/FAQTerminal";
 import { faq } from "./questions.js";

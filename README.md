@@ -7,19 +7,12 @@ Eureka Hacks 2024 Website
 1. Clone the repo
 
 ```bash
-$ git clone https://github.com/Eureka.git
+$ git clone https://github.com/EurekaHackathon/EurekaHacks2024.git
 ```
 
 2. Install dependencies and run
 
 ```bash
 $ npm install
-$ npm start
-```
-
-To build for production and test response times you can use the following
-
-```bash
-$ npm run build
-$ serve -s build
+$ npm run dev
 ```

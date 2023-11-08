@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 export default function SponsorBox({ name, image, link }) {
     return (
@@ -8,7 +8,7 @@ export default function SponsorBox({ name, image, link }) {
             className="sponsorbox"
             rel="noopenner noreferrer"
         >
-            <img src={image} alt={name} />
+            <Image src={image} alt={name} />
         </a>
     );
 }

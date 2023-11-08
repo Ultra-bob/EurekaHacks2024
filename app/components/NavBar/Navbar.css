@@ -56,7 +56,7 @@
 }
 
 .mobile-menu-top {
-    background-image: url("/src/assets/backgroundGradientBottom.png");
+    background-image: url("/public/backgroundGradientBottom.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 30%;
@@ -85,7 +85,7 @@
 }
 
 .mobile-menu-bottom {
-    background-image: url("/src/assets/backgroundGradientTop.png");
+    background-image: url("/public/backgroundGradientTop.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 30%;

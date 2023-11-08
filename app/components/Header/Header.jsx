@@ -1,10 +1,10 @@
 import React from "react";
 import "./Header.css";
 
-// import Logo from "../../assets/EurekaLogo2024.png";
-import Logo from "../../assets/Header/EurekaLogo2024.png";
-import Landing1 from "../../assets/Header/landing-1.jpg";
-import Landing2 from "../../assets/Header/landing-2.jpg";
+import Logo from "@/public/Header/EurekaLogo2024.png";
+import Landing1 from "@/public/Header/landing-1.jpg";
+import Landing2 from "@/public/Header/landing-2.jpg";
+import Image from "next/image";
 
 export default function Header() {
     return (
@@ -13,7 +13,7 @@ export default function Header() {
                 <div className="banner-content">
                     <div className="landing-images">
                         <div className="landing-1 banner-glow">
-                            <img
+                            <Image
                                 src={Landing1}
                                 className="landing-image"
                                 alt="Landing 1"
@@ -21,7 +21,7 @@ export default function Header() {
                             />
                         </div>
                         <div className="landing-2 banner-glow">
-                            <img
+                            <Image
                                 src={Landing2}
                                 className="landing-image"
                                 alt="Landing 2"
@@ -45,7 +45,7 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="banner-logo-container">
-                            <img
+                            <Image
                                 className="banner-logo"
                                 src={Logo}
                                 alt="Eureka Logo"

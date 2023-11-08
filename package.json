@@ -1,48 +1,19 @@
 {
-    "name": "eurekahack2024",
+    "name": "eurekahacks2024",
     "version": "0.1.0",
     "private": true,
-    "dependencies": {
-        "@testing-library/jest-dom": "^5.17.0",
-        "@testing-library/react": "^13.4.0",
-        "@testing-library/user-event": "^13.5.0",
-        "@vitejs/plugin-react-swc": "^3.4.1",
-        "mongodb": "^6.2.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-icons": "^4.10.1",
-        "react-router-dom": "^6.14.2",
-        "vite": "^4.5.0",
-        "vite-plugin-svgr": "^4.1.0",
-        "vite-tsconfig-paths": "^4.2.1",
-        "web-vitals": "^2.1.4"
-    },
     "scripts": {
-        "start": "vite",
-        "build": "prettier --write . && react-scripts build",
-        "serve": "vite preview",
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
         "format": "prettier --write ."
     },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-        "prettier": "^3.0.3"
+    "dependencies": {
+        "next": "14.0.1",
+        "prettier": "^3.0.3",
+        "react": "^18",
+        "react-dom": "^18",
+        "react-icons": "^4.11.0"
     }
 }
