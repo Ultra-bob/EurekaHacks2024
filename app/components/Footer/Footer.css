@@ -21,6 +21,9 @@
     height: 30px;
     width: 30px;
     color: var(--lighter-text-color);
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
 }
 
 .footer-copyright {
