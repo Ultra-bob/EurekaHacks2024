@@ -1,10 +1,16 @@
+"use client";
+
 import React from "react";
+import { useRef } from "react";
 import "./Header.css";
+import { motion } from "framer-motion";
 
 import Logo from "@/public/Header/EurekaLogo2024.png";
 import Landing1 from "@/public/Header/landing-1.jpg";
 import Landing2 from "@/public/Header/landing-2.jpg";
 import Image from "next/image";
+
+import { useFollowPointer } from "@/app/hooks/usePointer";
 
 export default function Header() {
     return (
@@ -12,22 +18,32 @@ export default function Header() {
             <div className="banner">
                 <div className="banner-content">
                     <div className="landing-images">
-                        <div className="landing-1 banner-glow">
+                        <motion.div
+                            className="landing-1 banner-glow"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                        >
                             <Image
                                 src={Landing1}
                                 className="landing-image"
                                 alt="Landing 1"
                                 loading="lazy"
                             />
-                        </div>
-                        <div className="landing-2 banner-glow">
+                        </motion.div>
+                        <motion.div
+                            className="landing-2 banner-glow"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 0.5 }}
+                        >
                             <Image
                                 src={Landing2}
                                 className="landing-image"
                                 alt="Landing 2"
                                 loading="lazy"
                             />
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="banner-text-logo">
                         <div className="banner-text">
