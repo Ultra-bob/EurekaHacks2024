@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { useRef } from "react";
 import "./Header.css";
 import { motion } from "framer-motion";
 
@@ -9,8 +8,6 @@ import Logo from "@/public/Header/EurekaLogo2024.png";
 import Landing1 from "@/public/Header/landing-1.jpg";
 import Landing2 from "@/public/Header/landing-2.jpg";
 import Image from "next/image";
-
-import { useFollowPointer } from "@/app/hooks/usePointer";
 
 export default function Header() {
     return (
@@ -46,10 +43,20 @@ export default function Header() {
                         </motion.div>
                     </div>
                     <div className="banner-text-logo">
-                        <div className="banner-text">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 1.7 }}
+                            className="banner-text"
+                        >
                             <h1>Eureka</h1>
                             <h3>HACKS</h3>
-                            <div className="header-button-container">
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 2.5 }}
+                                className="header-button-container"
+                            >
                                 <a
                                     className="header-button-block header-button-glow"
                                     href="https://google.com"
@@ -58,14 +65,20 @@ export default function Header() {
                                 >
                                     Register
                                 </a>
-                            </div>
-                        </div>
+                            </motion.div>
+                        </motion.div>
                         <div className="banner-logo-container">
-                            <Image
-                                className="banner-logo"
-                                src={Logo}
-                                alt="Eureka Logo"
-                            />
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 1 }}
+                            >
+                                <Image
+                                    className="banner-logo"
+                                    src={Logo}
+                                    alt="Eureka Logo"
+                                />
+                            </motion.div>
                         </div>
                     </div>
                 </div>

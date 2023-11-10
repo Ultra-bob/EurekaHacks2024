@@ -1,10 +1,13 @@
 import React from "react";
 import "./Footer.css";
 import { BsInstagram, BsLinkedin, BsTiktok, BsDiscord } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 export default function Footer() {
     return (
-        <div className="footer-container">
+        <div
+            className="footer-container"
+        >
             <div className="footer-socials">
                 <a
                     className="instagram"
