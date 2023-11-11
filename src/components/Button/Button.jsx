@@ -1,14 +1,14 @@
 import React from "react";
-import "./Button.css";
+import styles from "./Button.module.css";
 
 export default function Button({ text, link }) {
     return (
-        <div className="button-container">
+        <div className={styles["button-container"]}>
             <a
-                className="button-block button-glow"
+                className={`${styles["button-block"]} ${styles["button-glow"]}`}
                 href={link}
                 target="_blank"
-                rel="noopenner noreferrer"
+                rel="noopener noreferrer"
             >
                 {text}
             </a>

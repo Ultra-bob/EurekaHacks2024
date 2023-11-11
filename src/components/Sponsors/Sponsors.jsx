@@ -1,22 +1,22 @@
 import React from "react";
-import "./Sponsors.css";
+import styles from "./Sponsors.module.css";
 import SponsorBox from "./SponsorBox.jsx";
 
-import APHS from "@/public/apicon.png";
+import APHS from "@/../public/apicon.png";
 
 export default function Sponsors() {
     return (
-        <section id="sponsors">
+        <section id="sponsors" className={styles.sponsors}>
             <h1>Sponsors</h1>
-            <div className="sponsor-panel">
-                <div className="gold-sponsors">
+            <div className={styles["sponsor-panel"]}>
+                <div className={styles["gold-sponsors"]}>
                     <SponsorBox
                         name="Abbey Park"
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
                 </div>
-                <div className="silver-sponsors">
+                <div className={styles["silver-sponsors"]}>
                     <SponsorBox
                         name="Abbey Park"
                         image={APHS}
@@ -28,7 +28,7 @@ export default function Sponsors() {
                         link="https://aph.hdsb.ca/"
                     />
                 </div>
-                <div className="bronze-sponsors">
+                <div className={styles["bronze-sponsors"]}>
                     <SponsorBox
                         name="Abbey Park"
                         image={APHS}

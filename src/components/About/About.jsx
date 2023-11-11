@@ -1,13 +1,13 @@
 import React from "react";
-import "./About.css";
-import AboutImage from "@/public/About/About.jpg";
+import styles from "./About.module.css";
+import AboutImage from "@/../public/About/About.jpg";
 import Image from "next/image";
 
 export default function About() {
     return (
-        <section id="about">
-            <div className="about-left">
-                <h2>Oakvilles Biggest Hackathon</h2>
+        <section id={styles.about}>
+            <div className={styles["about-left"]}>
+                <h2>Oakville's Biggest Hackathon</h2>
                 <p>
                     EurekaHACKS is an annual 12-hour hackathon hosted at Abbey
                     Park High School in Oakville, Canada. It is the largest high
@@ -30,9 +30,9 @@ export default function About() {
                     along the way!
                 </p>
             </div>
-            <div className="about-right">
+            <div className={styles["about-right"]}>
                 <Image
-                    className="about-image glow"
+                    className={`${styles["about-image"]} ${styles["glow"]}`}
                     src={AboutImage}
                     alt="placeholder"
                 />

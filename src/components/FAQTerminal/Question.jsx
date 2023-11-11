@@ -1,6 +1,5 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import "./FAQTerminal.css";
+import React, { useState, useEffect } from "react";
+import styles from "./FAQTerminal.module.css";
 
 export default function Question({ hidden, question, hovered }) {
     const [displayQuestion, setDisplayQuestion] = useState(question);
@@ -13,5 +12,5 @@ export default function Question({ hidden, question, hovered }) {
         }
     }, [hovered, hidden, question]);
 
-    return <span className="question">{displayQuestion}</span>;
+    return <span className={styles.question}>{displayQuestion}</span>;
 }

@@ -1,6 +1,5 @@
-import React from "react";
-import { useState } from "react";
-import "./FAQTerminal.css";
+import React, { useState } from "react";
+import styles from "./FAQTerminal.module.css";
 
 import Answer from "./Answer";
 import Question from "./Question";
@@ -28,19 +27,19 @@ export default function FAQTerminal({ question, answer }) {
 
     return (
         <div
-            className="faq-terminal"
+            className={styles["faq-terminal"]}
             onClick={handleClick}
             onMouseEnter={handleHoverEnter}
             onMouseLeave={handleHoverLeave}
         >
-            <div className="terminal-bar">
-                <div className="red-circle" />
-                <div className="yellow-circle" />
-                <div className="green-circle" />
+            <div className={styles["terminal-bar"]}>
+                <div className={styles["red-circle"]} />
+                <div className={styles["yellow-circle"]} />
+                <div className={styles["green-circle"]} />
             </div>
-            <div className="content">
+            <div className={styles["content"]}>
                 <code>
-                    <span className="user">eureka@hacker:~$ </span>
+                    <span className={styles["user"]}>eureka@hacker:~$ </span>
                     <Question
                         hidden={hidden}
                         question={question}

@@ -1,6 +1,5 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import "./FAQTerminal.css";
+import React, { useState, useEffect } from "react";
+import styles from "./FAQTerminal.module.css";
 
 export default function Answer({ hidden, answer, setFinishedTyping }) {
     const [displayAnswer, setDisplayAnswer] = useState("");
@@ -11,12 +10,13 @@ export default function Answer({ hidden, answer, setFinishedTyping }) {
     useEffect(() => {
         if (!hidden && currentIndex < answer.length) {
             const timeout = setTimeout(() => {
-                setDisplayAnswer(
-                    (previous) =>
+                setDisplayAnswer((previous) => {
+                    const updatedAnswer =
                         previous.slice(0, currentIndex) +
                         answer[currentIndex] +
-                        " _",
-                );
+                        " _";
+                    return updatedAnswer;
+                });
                 setCurrentIndex((previousIndex) => previousIndex + 1);
                 if (currentIndex === answer.length - 1) {
                     setDisplayAnswer((previous) =>
@@ -34,5 +34,5 @@ export default function Answer({ hidden, answer, setFinishedTyping }) {
         }
     }, [currentIndex, delay, displayAnswer, hidden, answer, setFinishedTyping]);
 
-    return <span className="text">{displayAnswer}</span>;
+    return <span className={styles.text}>{displayAnswer}</span>;
 }

@@ -1,12 +1,9 @@
-"use client";
-
 import { useState } from "react";
-import "./Navbar.css";
-import { useScrollDirection } from "@/app/hooks/useScrollDirection";
-
-// import Button from "../Button/Button";
-import Logo from "@/public/EurekaIcon2024.png";
+import styles from "./Navbar.module.css";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
 import Image from "next/image";
+
+import Logo from "@/../public/EurekaIcon2024.png";
 
 export default function NavBar() {
     const scrollingUp = useScrollDirection();
@@ -16,24 +13,22 @@ export default function NavBar() {
         setMenuOpen(!menuOpen);
     }
 
-    // Some useless code here but if we ever wanna change it it's here.
-    // Decided to remove scroll effects for above
     return (
         <div
             className={[
-                "navbar",
-                scrollingUp === "down" ? "navbar-overlay" : "",
+                styles.navbar,
+                scrollingUp === "down" ? styles["navbar-overlay"] : "",
             ].join(" ")}
         >
-            <div className="navbar-box">
+            <div className={styles["navbar-box"]}>
                 <Image
-                    className="navbar-icon"
+                    className={styles["navbar-icon"]}
                     src={Logo}
                     alt="Eureka! Icon"
                     href="/"
                 />
             </div>
-            <ul className="links">
+            <ul className={styles.links}>
                 <a href="/">Home</a>
                 <a href="/#about">About</a>
                 <a href="/schedule">Schedule</a>
@@ -42,25 +37,25 @@ export default function NavBar() {
                 <a href="/#sponsors">Sponsors</a>
             </ul>
 
-            <div className="hamburger-menu" onClick={toggleMenu}>
-                <div className="hamburger-line" />
-                <div className="hamburger-line" />
-                <div className="hamburger-line" />
+            <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
+                <div className={styles["hamburger-line"]} />
+                <div className={styles["hamburger-line"]} />
+                <div className={styles["hamburger-line"]} />
             </div>
             <div
-                className={`mobile-menu ${
-                    menuOpen ? "mobile-menu-open" : "mobile-menu-closed"
+                className={`${styles["mobile-menu"]} ${
+                    menuOpen ? styles["mobile-menu-open"] : styles["mobile-menu-closed"]
                 }`}
             >
-                <div className="mobile-menu-top">
-                    <div className="close" onClick={toggleMenu}>
-                        <div className="close-line-1" />
-                        <div className="close-line-2" />
+                <div className={styles["mobile-menu-top"]}>
+                    <div className={styles["close"]} onClick={toggleMenu}>
+                        <div className={styles["close-line-1"]} />
+                        <div className={styles["close-line-2"]} />
                     </div>
                 </div>
-                <div className="mobile-menu-content">
+                <div className={styles["mobile-menu-content"]}>
                     <Image
-                        className="mobile-menu-nav-icon"
+                        className={styles["mobile-menu-nav-icon"]}
                         src={Logo}
                         alt="Eureka! Icon"
                         href="/"

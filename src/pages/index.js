@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "@/app/page.module.css";
+import styles from "@/styles/Home.module.css";
 
-import Footer from "@/app/components/Footer/Footer";
-import FAQ from "@/app/components/FAQ/FAQ";
-import Header from "@/app/components/Header/Header";
-import About from "@/app/components/About/About";
-import Sponsors from "@/app/components/Sponsors/Sponsors";
-import NavBar from "./components/NavBar/Navbar";
+import Footer from "@/components/Footer/Footer";
+import FAQ from "@/components/FAQ/FAQ";
+import Header from "@/components/Header/Header";
+import About from "@/components/About/About";
+import Sponsors from "@/components/Sponsors/Sponsors";
+import NavBar from "@/components/NavBar/Navbar";
 
 export default function Home() {
     return (

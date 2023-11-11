@@ -1,7 +1,24 @@
-import { Source_Code_Pro } from "next/font/google";
-import "./globals.css";
+import { Html, Head, Main, NextScript } from "next/document";
 
-const scp = Source_Code_Pro({ subsets: ["latin"] });
+export const metadata = {
+    title: "EurekaHacks 2024",
+    description:
+        "Official site for the 2024 Eureka Hackathon, hosted by Eureka Hacks.",
+    image: "https://i.imgur.com/pPsYsv6.png",
+    // url: "",
+};
+
+export default function Document() {
+    return (
+        <Html lang="en">
+            <Head />
+            <body>
+                <Main />
+                <NextScript />
+            </body>
+        </Html>
+    );
+}
 
 /*
 <meta name="theme-color" content="#22F0E7" />
@@ -19,19 +36,3 @@ const scp = Source_Code_Pro({ subsets: ["latin"] });
             content="Official site for the 2024 Eureka Hackathon, hosted by Eureka Hacks."
         />
 */
-
-export const metadata = {
-    title: "EurekaHacks 2024",
-    description:
-        "Official site for the 2024 Eureka Hackathon, hosted by Eureka Hacks.",
-    image: "https://i.imgur.com/pPsYsv6.png",
-    // url: "",
-};
-
-export default function RootLayout({ children }) {
-    return (
-        <html lang="en">
-            <body className={scp.className}>{children}</body>
-        </html>
-    );
-}
