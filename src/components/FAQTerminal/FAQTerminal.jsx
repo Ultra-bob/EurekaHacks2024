@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./FAQTerminal.module.css";
+import { motion } from "framer-motion";
 
 import Answer from "./Answer";
 import Question from "./Question";
@@ -26,11 +27,14 @@ export default function FAQTerminal({ question, answer }) {
     }
 
     return (
-        <div
+        <motion.div
             className={styles["faq-terminal"]}
             onClick={handleClick}
             onMouseEnter={handleHoverEnter}
             onMouseLeave={handleHoverLeave}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 300, damping: 25 }}
         >
             <div className={styles["terminal-bar"]}>
                 <div className={styles["red-circle"]} />
@@ -58,6 +62,6 @@ export default function FAQTerminal({ question, answer }) {
                     />
                 </code>
             </div>
-        </div>
+        </motion.div>
     );
 }

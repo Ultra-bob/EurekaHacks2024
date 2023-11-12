@@ -14,11 +14,15 @@ export default function Header() {
                 <div className={styles["banner-content"]}>
                     <div className={styles["landing-images"]}>
                         <motion.div
-                            className={`${styles["landing-1"]} ${styles["banner-glow"]}`}
+                            className={`${styles["landing-1"]} ${styles["glow"]}`}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0 }}
+                            transition={{
+                                duration: 1,
+                                delay: 0,
+                            }}
                         >
+                            <div className={styles["image-glow1"]}></div>
                             <Image
                                 src={Landing1}
                                 className={styles["landing-image"]}
@@ -27,11 +31,15 @@ export default function Header() {
                             />
                         </motion.div>
                         <motion.div
-                            className={`${styles["landing-2"]} ${styles["banner-glow"]}`}
+                            className={`${styles["landing-2"]} ${styles["glow"]}`}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.5 }}
+                            transition={{
+                                duration: 1,
+                                delay: 0.5,
+                            }}
                         >
+                            <div className={styles["image-glow2"]}></div>
                             <Image
                                 src={Landing2}
                                 className={styles["landing-image"]}

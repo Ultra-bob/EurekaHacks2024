@@ -21,7 +21,7 @@
 
 .about-text > p {
     font-size: 1.6rem;
-    line-height: 1.5;
+    line-height: 1.8;
     padding-right: 2rem;
 }
 
@@ -31,8 +31,39 @@
 }
 
 .glow {
-    background-image: linear-gradient(200deg, #df71ef, #22f0e7);
+    background-image: linear-gradient(
+        30deg,
+        #22f0e7,
+        #df71ef,
+        #22f0e7,
+        #df71ef
+    );
+    background-size: 400%;
     padding: 3px;
+    animation: breathe 20s linear infinite;
+}
+
+.image-glow {
+    position: absolute;
+    background-image: linear-gradient(
+        30deg,
+        #22f0e7,
+        #df71ef,
+        #22f0e7,
+        #df71ef
+    );
+    height: 343px;
+    width: 270px;
+    filter: blur(40px);
+    z-index: -1;
+    margin: -20px 0 0 -10px;
+    background-size: 400%;
+    animation: breathe 20s linear infinite;
+    transform: translate3d(
+        0px,
+        0px,
+        0px
+    ); /* Force gpu to render because cpu fails */
 }
 
 @media (min-width: 1024px) {
@@ -47,6 +78,12 @@
         margin: -2rem auto auto auto;
     }
 
+    .image-glow {
+        height: 463px;
+        width: 370px;
+        margin-left: -5px;
+    }
+
     .about-image {
         width: 350px;
     }
@@ -54,6 +91,18 @@
     .about-text {
         display: flex;
         align-items: center;
+        flex-direction: row;
     }
-    
+}
+
+@keyframes breathe {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
