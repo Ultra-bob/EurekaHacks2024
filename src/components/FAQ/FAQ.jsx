@@ -11,7 +11,7 @@ export default function FAQ() {
 
     return (
         <section id="faq">
-            <h2>Frequently Asked Questions</h2>
+            <h2 style={{textAlign: "center"}}>Frequently Asked Questions</h2>
             <div className={styles.faq}>{faqStuff}</div>
         </section>
     );

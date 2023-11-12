@@ -1,12 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import Logo from "@/../public/EurekaIcon2024.png";
+import Link from "next/link";
 
 export default function NavBar() {
-    const scrollingUp = useScrollDirection();
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        function handleScroll() {
+            setScrollY(window.scrollY);
+        }
+        handleScroll();
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     function toggleMenu() {
@@ -14,11 +28,14 @@ export default function NavBar() {
     }
 
     return (
-        <div
+        <motion.div
             className={[
                 styles.navbar,
-                scrollingUp === "down" ? styles["navbar-overlay"] : "",
+                scrollY !== 0 ? styles["navbar-overlay"] : "",
             ].join(" ")}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2 }}
         >
             <div className={styles["navbar-box"]}>
                 <Image
@@ -29,12 +46,10 @@ export default function NavBar() {
                 />
             </div>
             <ul className={styles.links}>
-                <a href="/">Home</a>
-                <a href="/#about">About</a>
-                <a href="/schedule">Schedule</a>
-                <a href="/gallery">Gallery</a>
-                <a href="/#faq">FAQ</a>
-                <a href="/#sponsors">Sponsors</a>
+                <Link href="/">Home</Link>
+                <Link href="/#about">About</Link>
+                <Link href="/#sponsors">Sponsors</Link>
+                <Link href="/#faq">FAQ</Link>
             </ul>
 
             <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
@@ -44,7 +59,9 @@ export default function NavBar() {
             </div>
             <div
                 className={`${styles["mobile-menu"]} ${
-                    menuOpen ? styles["mobile-menu-open"] : styles["mobile-menu-closed"]
+                    menuOpen
+                        ? styles["mobile-menu-open"]
+                        : styles["mobile-menu-closed"]
                 }`}
             >
                 <div className={styles["mobile-menu-top"]}>
@@ -60,26 +77,20 @@ export default function NavBar() {
                         alt="Eureka! Icon"
                         href="/"
                     />
-                    <a href="/" onClick={toggleMenu}>
+                    <Link href="/" onClick={toggleMenu}>
                         Home
-                    </a>
-                    <a href="/#about" onClick={toggleMenu}>
+                    </Link>
+                    <Link href="/#about" onClick={toggleMenu}>
                         About
-                    </a>
-                    <a href="/schedule" onClick={toggleMenu}>
-                        Schedule
-                    </a>
-                    <a href="/gallery" onClick={toggleMenu}>
-                        Gallery
-                    </a>
-                    <a href="/#faq" onClick={toggleMenu}>
-                        FAQ
-                    </a>
-                    <a href="/#sponsors" onClick={toggleMenu}>
+                    </Link>
+                    <Link href="/#sponsors" onClick={toggleMenu}>
                         Sponsors
-                    </a>
+                    </Link>
+                    <Link href="/#faq" onClick={toggleMenu}>
+                        FAQ
+                    </Link>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }

@@ -7,7 +7,7 @@ import APHS from "@/../public/apicon.png";
 export default function Sponsors() {
     return (
         <section id="sponsors" className={styles.sponsors}>
-            <h1>Sponsors</h1>
+            <h2>Sponsors</h2>
             <div className={styles["sponsor-panel"]}>
                 <div className={styles["gold-sponsors"]}>
                     <SponsorBox

@@ -17,7 +17,7 @@ export default function Header() {
                             className={`${styles["landing-1"]} ${styles["banner-glow"]}`}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }}
+                            transition={{ duration: 1, delay: 0 }}
                         >
                             <Image
                                 src={Landing1}
@@ -42,9 +42,9 @@ export default function Header() {
                     </div>
                     <div className={styles["banner-text-logo"]}>
                         <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 1.7 }}
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, delay: 1 }}
                             className={styles["banner-text"]}
                         >
                             <h1>Eureka</h1>
@@ -52,7 +52,7 @@ export default function Header() {
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, delay: 2.5 }}
+                                transition={{ duration: 1, delay: 0.5 }}
                                 className={styles["header-button-container"]}
                             >
                                 <a
