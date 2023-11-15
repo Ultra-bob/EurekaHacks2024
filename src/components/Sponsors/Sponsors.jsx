@@ -32,8 +32,23 @@ export default function Sponsors() {
             <div className={styles["sponsor-panel"]}>
                 <motion.div
                     {...sponsorBoxFadeIn}
+                    className={styles["plat-sponsors"]}
+                >
+                    <SponsorBox
+                        name="Abbey Park"
+                        image={APHS}
+                        link="https://aph.hdsb.ca/"
+                    />
+                </motion.div>
+                <motion.div
+                    {...sponsorBoxFadeIn}
                     className={styles["gold-sponsors"]}
                 >
+                    <SponsorBox
+                        name="Abbey Park"
+                        image={APHS}
+                        link="https://aph.hdsb.ca/"
+                    />
                     <SponsorBox
                         name="Abbey Park"
                         image={APHS}
@@ -54,11 +69,21 @@ export default function Sponsors() {
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
+                    <SponsorBox
+                        name="Abbey Park"
+                        image={APHS}
+                        link="https://aph.hdsb.ca/"
+                    />
                 </motion.div>
                 <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["bronze-sponsors"]}
                 >
+                    <SponsorBox
+                        name="Abbey Park"
+                        image={APHS}
+                        link="https://aph.hdsb.ca/"
+                    />
                     <SponsorBox
                         name="Abbey Park"
                         image={APHS}

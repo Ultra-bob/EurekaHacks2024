@@ -23,6 +23,7 @@
     display: flex;
     background-color: white;
     justify-content: center;
+    padding: 1rem;
 }
 
 .sponsorbox > img {
@@ -30,18 +31,23 @@
     height: auto;
 }
 
-.gold-sponsors {
+.plat-sponsors {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
 }
 
-.silver-sponsors {
+.gold-sponsors {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
 }
 
+.silver-sponsors {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .bronze-sponsors {
     display: grid;
     width: 100%;
@@ -52,5 +58,9 @@
     .sponsorbox > img {
         width: auto;
         height: auto;
+    }
+
+    .bronze-sponsors {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-        <section id={styles.home}>
+        <section className={styles.home}>
             <div className={styles.banner}>
                 <div className={styles["banner-content"]}>
                     <div className={styles["landing-images"]}>
@@ -36,7 +36,7 @@ export default function Header() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{
                                 duration: 1,
-                                delay: 0.5,
+                                delay: 0.25,
                             }}
                         >
                             <div className={styles["image-glow2"]}></div>
@@ -52,7 +52,7 @@ export default function Header() {
                         <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 1, delay: 1 }}
+                            transition={{ duration: 1, delay: 0.75 }}
                             className={styles["banner-text"]}
                         >
                             <h1>Eureka</h1>
@@ -77,7 +77,7 @@ export default function Header() {
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, delay: 1 }}
+                                transition={{ duration: 1, delay: 0.75 }}
                             >
                                 <Image
                                     className={styles["banner-logo"]}
