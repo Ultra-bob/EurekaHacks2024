@@ -19,11 +19,11 @@
 }
 
 .sponsorbox {
-    margin: 1em;
+    margin: 0.5rem;
     display: flex;
     background-color: white;
     justify-content: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .sponsorbox > img {
@@ -55,12 +55,18 @@
 }
 
 @media (min-width: 1024px) {
+
+    .sponsorbox {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
     .sponsorbox > img {
         width: auto;
         height: auto;
     }
 
     .bronze-sponsors {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

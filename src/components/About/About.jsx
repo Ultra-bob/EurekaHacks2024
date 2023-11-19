@@ -8,11 +8,10 @@ export default function About() {
     return (
         <section id="about" className={styles.about}>
             <motion.h2
-                initial={{ y: -80, opacity: 0 }}
+                initial={{ opacity: 0 }}
                 whileInView={{
-                    y: 0,
                     opacity: 1,
-                    transition: { delay: 0.5, duration: 1 },
+                    transition: { duration: 1 },
                 }}
                 viewport={{ once: true, amount: 0.8 }}
             >
@@ -20,11 +19,10 @@ export default function About() {
             </motion.h2>
             <div className={styles["about-text"]}>
                 <motion.p
-                    initial={{ x: -100, opacity: 0 }}
+                    initial={{ opacity: 0 }}
                     whileInView={{
-                        x: 0,
                         opacity: 1,
-                        transition: { delay: 0.5, duration: 1 },
+                        transition: {  duration: 1 },
                     }}
                     viewport={{ once: true, amount: 0.8 }}
                 >
@@ -38,11 +36,10 @@ export default function About() {
                 </motion.p>
                 <motion.div
                     className={styles["about-image"]}
-                    initial={{ x: 100, opacity: 0 }}
+                    initial={{  opacity: 0 }}
                     whileInView={{
-                        x: 0,
                         opacity: 1,
-                        transition: { delay: 0.5, duration: 1 },
+                        transition: { duration: 1 },
                     }}
                     viewport={{ once: true, amount: 0.8 }}
                     whileHover={{ scale: 1.07 }}

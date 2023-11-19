@@ -15,12 +15,15 @@ export default function Header() {
                     <div className={styles["landing-images"]}>
                         <motion.div
                             className={`${styles["landing-1"]} ${styles["glow"]}`}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
                             transition={{
-                                duration: 1,
-                                delay: 0,
+                                duration: 2,
+                                type: "spring",
+                                stiffness: 300,
+                                damping: 25,
                             }}
+                            whileHover={{ scale: 1.07 }}
                         >
                             <div className={styles["image-glow1"]}></div>
                             <Image
@@ -32,12 +35,15 @@ export default function Header() {
                         </motion.div>
                         <motion.div
                             className={`${styles["landing-2"]} ${styles["glow"]}`}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
                             transition={{
-                                duration: 1,
-                                delay: 0.25,
+                                duration: 2,
+                                type: "spring",
+                                stiffness: 300,
+                                damping: 25,
                             }}
+                            whileHover={{ scale: 1.07 }}
                         >
                             <div className={styles["image-glow2"]}></div>
                             <Image
@@ -50,17 +56,17 @@ export default function Header() {
                     </div>
                     <div className={styles["banner-text-logo"]}>
                         <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 1, delay: 0.75 }}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 2 }}
                             className={styles["banner-text"]}
                         >
                             <h1>Eureka</h1>
                             <h3>HACKS</h3>
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, delay: 0.5 }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 1 }}
                                 className={styles["header-button-container"]}
                             >
                                 <a
@@ -75,9 +81,9 @@ export default function Header() {
                         </motion.div>
                         <div className={styles["banner-logo-container"]}>
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, delay: 0.75 }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 2 }}
                             >
                                 <Image
                                     className={styles["banner-logo"]}
