@@ -71,8 +71,8 @@ export default function Header() {
                             >
                                 <a
                                     className={`${styles["header-button-block"]} ${styles["header-button-glow"]}`}
-                                    href="https://google.com"
-                                    target="_blank"
+                                    href="/register"
+                                    target="_self"
                                     rel="noopenner noreferrer"
                                 >
                                     Register
