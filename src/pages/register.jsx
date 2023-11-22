@@ -6,6 +6,8 @@ export default function Register() {
     return (
         <>
             <HomeIcon />
+            <hr />
+            <RegistrationForm />
         </>
     )
 }

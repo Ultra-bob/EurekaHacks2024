@@ -1,0 +1,34 @@
+.banner {
+    text-align: center;
+}
+
+input.field::placeholder {
+    color: #4b485b;
+    opacity: 1;
+    font-family: "Source Code Pro", monospace;
+}
+
+.form {
+    padding: 0 15em;
+    font-family: "Source Code Pro", monospace;
+    justify-content: space-between;
+}
+
+.field {
+    width: 100%;
+    padding: 0.8em;
+    margin: 1em;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2.5px solid #4b485b;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+}
+
+.dropdown {
+
+}
+
+.check {
+
+}
