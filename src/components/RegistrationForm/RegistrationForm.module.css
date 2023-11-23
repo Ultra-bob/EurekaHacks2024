@@ -2,33 +2,65 @@
     text-align: center;
 }
 
+input.field::placeholder, .form, .dropdown, .check, .field, .options {
+    font-family: "Source Code Pro", monospace;
+}
+
 input.field::placeholder {
     color: #4b485b;
     opacity: 1;
-    font-family: "Source Code Pro", monospace;
 }
 
 .form {
     padding: 0 15em;
-    font-family: "Source Code Pro", monospace;
     justify-content: space-between;
 }
 
-.field {
+.field, .dropdown {
+    display: flex;
     width: 100%;
-    padding: 0.8em;
+    height: 3.3em;
+    padding: 0.6em;
     margin: 1em;
     background-color: transparent;
     border-radius: 10px;
     border: 2.5px solid #4b485b;
     color: white;
-    font-family: "Source Code Pro", monospace;
+    box-sizing: border-box;
 }
 
 .dropdown {
-
+    color: #4b485b;
 }
 
 .check {
-
+    margin: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
+
+.check > input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    width: 3.3em;
+    height: 3.3em;
+
+    border: 2.5px solid #4b485b;
+    border-radius: 10px;
+}
+
+.check > input:checked {
+    width: 3.3em;
+    height: 3.3em;
+    border: solid white;
+}
+
+.label {
+    color: white;
+}
+
