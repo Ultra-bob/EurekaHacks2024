@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/index.module.css";
 import { motion } from "framer-motion";
 
 import Footer from "@/components/Footer/Footer";

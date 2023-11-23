@@ -62,8 +62,10 @@ export default function Header() {
                             transition={{ duration: 2 }}
                             className={styles["banner-text"]}
                         >
+                            <h4>March 2nd, 2024</h4>
                             <h1>Eureka</h1>
                             <h3>HACKS</h3>
+                            
                             <motion.div
                                 transition={{
                                     duration: 2,

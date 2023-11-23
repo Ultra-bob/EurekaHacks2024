@@ -164,6 +164,12 @@
     display: none;
 }
 
+.button {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
 @media (min-width: 1024px) {
     .navbar {
         height: 70px;
