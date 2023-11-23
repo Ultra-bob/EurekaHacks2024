@@ -53,6 +53,30 @@ export default function NavBar() {
                 <Link href="/#sponsors">Sponsors</Link>
                 <Link href="/#faq">FAQ</Link>
             </ul>
+            <motion.div
+                transition={{
+                    duration: 2,
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 25,
+                }}
+                whileHover={{ scale: 1.07 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles["register-outline"]}
+            >
+                <div className={styles["register"]}>
+                    <div className={styles["button"]}>
+                        <a
+                            href="https://google.com"
+                            target="_blank"
+                            rel="noopenner noreferrer"
+                            className
+                        >
+                            Register
+                        </a>
+                    </div>
+                </div>
+            </motion.div>
 
             <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
                 <div className={styles["hamburger-line"]} />

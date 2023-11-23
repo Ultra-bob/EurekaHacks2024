@@ -12,11 +12,14 @@ export default function Header() {
         <section className={styles.home}>
             <div className={styles.banner}>
                 <div className={styles["banner-content"]}>
-                    <div className={styles["landing-images"]}>
+                    <motion.div
+                        className={styles["landing-images"]}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                    >
                         <motion.div
                             className={`${styles["landing-1"]} ${styles["glow"]}`}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
                             transition={{
                                 duration: 2,
                                 type: "spring",
@@ -35,8 +38,6 @@ export default function Header() {
                         </motion.div>
                         <motion.div
                             className={`${styles["landing-2"]} ${styles["glow"]}`}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
                             transition={{
                                 duration: 2,
                                 type: "spring",
@@ -53,7 +54,7 @@ export default function Header() {
                                 loading="lazy"
                             />
                         </motion.div>
-                    </div>
+                    </motion.div>
                     <div className={styles["banner-text-logo"]}>
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -64,19 +65,27 @@ export default function Header() {
                             <h1>Eureka</h1>
                             <h3>HACKS</h3>
                             <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 1 }}
-                                className={styles["header-button-container"]}
+                                transition={{
+                                    duration: 2,
+                                    type: "spring",
+                                    stiffness: 300,
+                                    damping: 25,
+                                }}
+                                whileHover={{ scale: 1.07 }}
+                                whileTap={{ scale: 0.9 }}
+                                className={styles["register-outline"]}
                             >
-                                <a
-                                    className={`${styles["header-button-block"]} ${styles["header-button-glow"]}`}
-                                    href="https://google.com"
-                                    target="_blank"
-                                    rel="noopenner noreferrer"
-                                >
-                                    Register
-                                </a>
+                                <div className={styles["register"]}>
+                                    <div className={` ${styles["button"]}`}>
+                                        <a
+                                            href="https://google.com"
+                                            target="_blank"
+                                            rel="noopenner noreferrer"
+                                        >
+                                            Register
+                                        </a>
+                                    </div>
+                                </div>
                             </motion.div>
                         </motion.div>
                         <div className={styles["banner-logo-container"]}>

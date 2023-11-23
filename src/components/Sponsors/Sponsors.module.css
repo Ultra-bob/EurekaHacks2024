@@ -55,12 +55,11 @@
 }
 
 @media (min-width: 1024px) {
-
     .sponsorbox {
         margin: 1rem;
         padding: 1rem;
     }
-    
+
     .sponsorbox > img {
         width: auto;
         height: auto;

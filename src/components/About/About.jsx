@@ -22,7 +22,7 @@ export default function About() {
                     initial={{ opacity: 0 }}
                     whileInView={{
                         opacity: 1,
-                        transition: {  duration: 1 },
+                        transition: { duration: 1 },
                     }}
                     viewport={{ once: true, amount: 0.8 }}
                 >
@@ -36,7 +36,7 @@ export default function About() {
                 </motion.p>
                 <motion.div
                     className={styles["about-image"]}
-                    initial={{  opacity: 0 }}
+                    initial={{ opacity: 0 }}
                     whileInView={{
                         opacity: 1,
                         transition: { duration: 1 },
