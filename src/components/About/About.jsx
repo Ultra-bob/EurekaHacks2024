@@ -7,33 +7,35 @@ import { motion } from "framer-motion";
 export default function About() {
     return (
         <section id="about" className={styles.about}>
-            <motion.h2
-                initial={{ opacity: 0 }}
-                whileInView={{
-                    opacity: 1,
-                    transition: { duration: 1 },
-                }}
-                viewport={{ once: true, amount: 0.8 }}
-            >
-                Oakville's Largest Hackathon
-            </motion.h2>
             <div className={styles["about-text"]}>
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{
-                        opacity: 1,
-                        transition: { duration: 1 },
-                    }}
-                    viewport={{ once: true, amount: 0.8 }}
-                >
-                    EurekaHACKS is an annual 12-hour hackathon hosted at Abbey
-                    Park High School in Oakville, Canada. It is the largest high
-                    school hackathon in Halton. Our exciting event features
-                    workshops, fun activities, and over $1,000 worth of prizes!
-                    We're committed to inspiring students of all skill levels to
-                    put their creativity and knowledge into practice by building
-                    something awesome.
-                </motion.p>
+                <div className={styles["about-info"]}>
+                    <motion.h3
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: { duration: 1 },
+                        }}
+                        viewport={{ once: true, amount: 0.8 }}
+                    >
+                        Oakville's Largest Hackathon
+                    </motion.h3>
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: { duration: 1 },
+                        }}
+                        viewport={{ once: true, amount: 0.8 }}
+                    >
+                        EurekaHACKS is an annual 12-hour hackathon hosted at
+                        Abbey Park High School in Oakville, Canada. It is the
+                        largest high school hackathon in Halton. Our exciting
+                        event features workshops, fun activities, and over
+                        $1,000 worth of prizes! We're committed to inspiring
+                        students of all skill levels to put their creativity and
+                        knowledge into practice by building something awesome.
+                    </motion.p>
+                </div>
                 <motion.div
                     className={styles["about-image"]}
                     initial={{ opacity: 0 }}
