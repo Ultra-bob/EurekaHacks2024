@@ -12,28 +12,33 @@ input.field::placeholder {
 }
 
 .form {
-    padding: 0 15em;
+    padding: 0 30em;
     justify-content: space-between;
 }
 
 .field, .dropdown {
     display: flex;
     width: 100%;
-    height: 3.3em;
-    padding: 0.6em;
+    height: 3.5em;
+    padding: 0.8em;
     margin: 1em;
     background-color: transparent;
     border-radius: 10px;
     border: 2.5px solid #4b485b;
     color: white;
     box-sizing: border-box;
+
+}
+
+.field:hover, .dropdown:hover, .check:hover:before {
+    background-color: #131217;
 }
 
 .dropdown {
     color: #4b485b;
 }
 
-.check {
+.check, .multicheck {
     margin: 0.5em;
     display: flex;
     flex-direction: row;
@@ -41,26 +46,37 @@ input.field::placeholder {
     gap: 10px;
 }
 
-.check > input {
+.check > input, .multicheck > input {
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;
 
-    width: 3.3em;
-    height: 3.3em;
+    width: 3.5em;
+    height: 3.5em;
 
     border: 2.5px solid #4b485b;
     border-radius: 10px;
 }
 
-.check > input:checked {
-    width: 3.3em;
-    height: 3.3em;
-    border: solid white;
+.check > input:checked, .multicheck > input:checked + label {
+    width: 3.5em;
+    height: 3.5em;
+    border-color: white;
 }
 
 .label {
+    color: #4b485b;
+}
+
+.check > input:checked + label, .multicheck > input:checked + label {
     color: white;
 }
 
+.multicheck {
+    display: list-item;
+    list-style-type: none;
+    color: #4b485b;
+    width: 100%;
+
+}
