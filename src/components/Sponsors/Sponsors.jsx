@@ -6,21 +6,19 @@ import { motion } from "framer-motion";
 import APHS from "@/../public/apicon.png";
 
 const fadeIn = {
-    initial: { y: -80, opacity: 0 },
+    initial: { opacity: 0 },
     whileInView: {
-        y: 0,
         opacity: 1,
-        transition: { delay: 0.5, duration: 1 },
+        transition: { duration: 1 },
     },
     viewport: { once: true, amount: 0.8 },
 };
 
 const sponsorBoxFadeIn = {
-    initial: { y: -20, opacity: 0 },
+    initial: { opacity: 0 },
     whileInView: {
-        y: 0,
         opacity: 1,
-        transition: { delay: 0.5, duration: 1 },
+        transition: { duration: 1 },
     },
     viewport: { once: true, amount: 0.8 },
 };

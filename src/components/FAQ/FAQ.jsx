@@ -8,11 +8,10 @@ export default function FAQ() {
         <motion.div
             className={styles["faq-item"]}
             key={data.id}
-            initial={{ y: -20, opacity: 0 }}
+            initial={{ opacity: 0 }}
             whileInView={{
-                y: 0,
                 opacity: 1,
-                transition: { duration: 1, delay: 1 + 0.4 * data.id },
+                transition: { duration: 1, delay: 0.2 * data.id },
             }}
             viewport={{ once: true, amount: 0.8 }}
         >
@@ -23,11 +22,10 @@ export default function FAQ() {
     return (
         <section id="faq">
             <motion.h2
-                initial={{ y: -80, opacity: 0 }}
+                initial={{ opacity: 0 }}
                 whileInView={{
-                    y: 0,
                     opacity: 1,
-                    transition: { delay: 0.5, duration: 1 },
+                    transition: { duration: 1 },
                 }}
                 viewport={{ once: true, amount: 0.8 }}
                 style={{ textAlign: "center" }}

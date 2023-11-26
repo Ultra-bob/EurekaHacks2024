@@ -32,7 +32,7 @@ export default function FAQTerminal({ question, answer }) {
             onClick={handleClick}
             onMouseEnter={handleHoverEnter}
             onMouseLeave={handleHoverLeave}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
         >
