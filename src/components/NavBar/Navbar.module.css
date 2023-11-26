@@ -167,7 +167,7 @@
 .button {
     font-size: 1.5rem;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @media (min-width: 1024px) {
