@@ -27,6 +27,12 @@ export default function NavBar() {
 
     function toggleMenu() {
         setMenuOpen(!menuOpen);
+
+        if (!menuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
     }
 
     return (
@@ -114,12 +120,15 @@ export default function NavBar() {
                             <Link href="/" onClick={toggleMenu}>
                                 Home
                             </Link>
+
                             <Link href="/#about" onClick={toggleMenu}>
                                 About
                             </Link>
+
                             <Link href="/#sponsors" onClick={toggleMenu}>
                                 Sponsors
                             </Link>
+
                             <Link href="/#faq" onClick={toggleMenu}>
                                 FAQ
                             </Link>
