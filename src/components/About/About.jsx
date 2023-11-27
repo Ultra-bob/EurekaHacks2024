@@ -16,6 +16,7 @@ export default function About() {
             }}
             viewport={{ once: true, amount: 0.8 }}
         >
+            
             <div className={styles["about-text"]}>
                 <div className={styles["about-info"]}>
                     <h3>Oakville's Largest Hackathon</h3>
@@ -48,6 +49,10 @@ export default function About() {
                     />
                 </motion.div>
             </div>
+            <div className={styles.shape1} />
+            <div className={styles.shape2} />
+            <div className={styles.shape3} />
+            <div className={styles.shape4} />
         </motion.section>
     );
 }

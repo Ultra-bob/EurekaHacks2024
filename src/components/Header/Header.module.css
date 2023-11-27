@@ -208,7 +208,7 @@
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        width: 1330px;
+        width: 1000px;
         height: 750px;
     }
 
@@ -284,8 +284,8 @@
 
     .banner-logo,
     .banner-logo > img {
-        width: 410px;
-        height: 410px;
+        width: 270px;
+        height: 270px;
     }
 
     .image-glow2 {
@@ -300,6 +300,18 @@
         height: 4.5rem;
         width: 14rem;
         margin: 2rem 0 -3rem 0;
+    }
+}
+
+@media (min-width: 1366px) {
+    .banner-content {
+        width: 1330px;
+    }
+
+    .banner-logo,
+    .banner-logo > img {
+        width: 410px;
+        height: 410px;
     }
 }
 

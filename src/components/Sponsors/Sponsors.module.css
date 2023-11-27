@@ -40,20 +40,22 @@
 .gold-sponsors {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .silver-sponsors {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .bronze-sponsors {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+
 
 @media (min-width: 1024px) {
     .sponsors {
@@ -72,6 +74,14 @@
     }
 
     .bronze-sponsors {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1350px) {
+    .bronze-sponsors {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
