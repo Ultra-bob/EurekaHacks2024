@@ -1,9 +1,11 @@
 import NavBar from "@/components/NavBar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import styles from "@/styles/register.module.css";
 import { signIn, signOut, useSession } from "next-auth/react";
+import HomeIcon from "@/components/HomeIcon/HomeIcon";
+import RegistrationForm from "@/components/RegistrationForm/RegistrationForm"
 
 export default function Register() {
+    // <button onClick={() => signOut()}>Logout</button>
     const { data, status } = useSession({
         required: true,
         onUnauthenticated() {
@@ -13,16 +15,10 @@ export default function Register() {
     return (
         <>
             <NavBar />
-            <div className={styles["header"]}>
-                <div className={styles["header-content"]}>
-                    <h1>Register</h1>
-                </div>
-                <button onClick={() => signOut()}>Logout</button>
-            </div>
-            <div className={styles.content}>
-                <p>Content</p>
-            </div>
+            <HomeIcon />
+            <hr />
+            <RegistrationForm />
             <Footer />
         </>
-    );
+    )
 }
