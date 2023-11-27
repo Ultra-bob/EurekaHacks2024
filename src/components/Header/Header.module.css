@@ -95,7 +95,7 @@
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    width: 34%;
+    width: 32%;
     overflow-x: visible;
     margin-top: -1.4rem;
 }
@@ -260,14 +260,18 @@
         margin: 0;
     }
 
+    .banner-text {
+        width: 75%;
+    }
+
     .banner-text > h1 {
-        font-size: 150px;
+        font-size: 120px;
     }
 
     .banner-text > h3 {
         font-size: 70px;
         margin: 0;
-        margin-top: -3rem;
+        margin-top: -2rem;
     }
 
     .banner-text > h4 {

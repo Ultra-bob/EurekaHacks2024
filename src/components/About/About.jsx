@@ -16,7 +16,6 @@ export default function About() {
             }}
             viewport={{ once: true, amount: 0.8 }}
         >
-            
             <div className={styles["about-text"]}>
                 <div className={styles["about-info"]}>
                     <h3>Oakville's Largest Hackathon</h3>

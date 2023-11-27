@@ -2,7 +2,12 @@
     text-align: center;
 }
 
-input.field::placeholder, .form, .dropdown, .check, .field, .options {
+input.field::placeholder,
+.form,
+.dropdown,
+.check,
+.field,
+.options {
     font-family: "Source Code Pro", monospace;
 }
 
@@ -16,7 +21,8 @@ input.field::placeholder {
     justify-content: space-between;
 }
 
-.field, .dropdown {
+.field,
+.dropdown {
     display: flex;
     width: 100%;
     height: 3.5em;
@@ -27,10 +33,11 @@ input.field::placeholder {
     border: 2.5px solid #4b485b;
     color: white;
     box-sizing: border-box;
-
 }
 
-.field:hover, .dropdown:hover, .check:hover:before {
+.field:hover,
+.dropdown:hover,
+.check:hover:before {
     background-color: #131217;
 }
 
@@ -38,7 +45,8 @@ input.field::placeholder {
     color: #4b485b;
 }
 
-.check, .multicheck {
+.check,
+.multicheck {
     margin: 0.5em;
     display: flex;
     flex-direction: row;
@@ -46,7 +54,8 @@ input.field::placeholder {
     gap: 10px;
 }
 
-.check > input, .multicheck > input {
+.check > input,
+.multicheck > input {
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -59,7 +68,8 @@ input.field::placeholder {
     border-radius: 10px;
 }
 
-.check > input:checked, .multicheck > input:checked + label {
+.check > input:checked,
+.multicheck > input:checked + label {
     width: 3.5em;
     height: 3.5em;
     border-color: white;
@@ -69,7 +79,8 @@ input.field::placeholder {
     color: #4b485b;
 }
 
-.check > input:checked + label, .multicheck > input:checked + label {
+.check > input:checked + label,
+.multicheck > input:checked + label {
     color: white;
 }
 
@@ -78,5 +89,4 @@ input.field::placeholder {
     list-style-type: none;
     color: #4b485b;
     width: 100%;
-
 }

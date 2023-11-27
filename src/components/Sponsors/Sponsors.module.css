@@ -55,8 +55,6 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-
-
 @media (min-width: 1024px) {
     .sponsors {
         margin-top: -6rem;
@@ -69,7 +67,7 @@
     }
 
     .sponsorbox > img {
-        width: 15rem;
+        width: 13rem;
         height: auto;
     }
 
@@ -79,6 +77,11 @@
 }
 
 @media (min-width: 1350px) {
+    .sponsorbox > img {
+        width: 15rem;
+        height: auto;
+    }
+
     .bronze-sponsors {
         display: grid;
         width: 100%;

@@ -15,5 +15,5 @@ export default function HomeIcon() {
                 />
             </Link>
         </div>
-    )
+    );
 }

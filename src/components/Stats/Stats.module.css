@@ -46,6 +46,15 @@
     background: linear-gradient(157deg, #f12711, #f5af19);
 }
 
+@media (min-width: 760px) {
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 20rem;
+        height: 10rem;
+    }
+}
+
 @media (min-width: 1024px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
