@@ -3,11 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1em;
+    margin-top: -3rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 .sponsors > h2 {
-    margin: 10px 0 10px 0;
     padding: 0 auto 0 auto;
 }
 
@@ -40,33 +40,48 @@
 .gold-sponsors {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .silver-sponsors {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
+
 .bronze-sponsors {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
+
+
 @media (min-width: 1024px) {
+    .sponsors {
+        margin-top: -6rem;
+        padding: 2rem 4rem 2rem 4rem;
+    }
 
     .sponsorbox {
         margin: 1rem;
         padding: 1rem;
     }
-    
+
     .sponsorbox > img {
-        width: auto;
+        width: 15rem;
         height: auto;
     }
 
     .bronze-sponsors {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1350px) {
+    .bronze-sponsors {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
     }
 }

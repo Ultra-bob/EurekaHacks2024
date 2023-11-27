@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { signOut, useSession } from "next-auth/react";
 
 import Logo from "@/../public/EurekaIcon2024.png";
 import Link from "next/link";
 
 export default function NavBar() {
+    // const { data, status } = useSession();
     const [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
@@ -25,6 +27,12 @@ export default function NavBar() {
 
     function toggleMenu() {
         setMenuOpen(!menuOpen);
+
+        if (!menuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
     }
 
     return (
@@ -35,24 +43,42 @@ export default function NavBar() {
             ].join(" ")}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.25 }}
+            transition={{ duration: 1, delay: 0.25 }}
         >
-            <div className={styles["navbar-box"]}>
-                <Link href="/">
-                    <Image
-                        className={styles["navbar-icon"]}
-                        src={Logo}
-                        alt="Eureka! Icon"
-                        href="/"
-                    />
-                </Link>
-            </div>
+            <Link href="/" className={styles["navbar-box"]}>
+                <Image
+                    className={styles["navbar-icon"]}
+                    src={Logo}
+                    alt="Eureka! Icon"
+                />
+            </Link>
             <ul className={styles.links}>
                 <Link href="/">Home</Link>
                 <Link href="/#about">About</Link>
                 <Link href="/#sponsors">Sponsors</Link>
                 <Link href="/#faq">FAQ</Link>
             </ul>
+            <motion.div
+                transition={{
+                    duration: 2,
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 25,
+                }}
+                whileHover={{ scale: 1.07 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles["register-outline"]}
+            >
+                {/* {data ? (
+                    <div className={styles["register"]} onClick={signOut("/;")}>
+                        <div className={styles["button"]}>Sign Out</div>
+                    </div>
+                ) : ( */}
+                <Link href="/register" className={styles["register"]}>
+                    <div className={styles["button"]}>Register</div>
+                </Link>
+                {/* )} */}
+            </motion.div>
 
             <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
                 <div className={styles["hamburger-line"]} />
@@ -94,12 +120,15 @@ export default function NavBar() {
                             <Link href="/" onClick={toggleMenu}>
                                 Home
                             </Link>
+
                             <Link href="/#about" onClick={toggleMenu}>
                                 About
                             </Link>
+
                             <Link href="/#sponsors" onClick={toggleMenu}>
                                 Sponsors
                             </Link>
+
                             <Link href="/#faq" onClick={toggleMenu}>
                                 FAQ
                             </Link>

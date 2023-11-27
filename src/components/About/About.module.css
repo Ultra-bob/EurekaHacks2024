@@ -1,28 +1,29 @@
 .about {
     font-size: 2em;
     color: white;
-    padding: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.about > h2 {
-    margin: 4rem 0 0 0;
+.about-info > h3 {
+    text-align: center;
+    font-size: 2rem;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     align-items: center;
 }
 
-.about-text > p {
+.about-info > p {
     font-size: 1rem;
     line-height: 1.8;
-    padding-right: 2rem;
+    text-align: center;
 }
 
 .about-image {
@@ -68,6 +69,56 @@
     ); /* Force gpu to render because cpu fails */
 }
 
+.shape1 {
+    position: absolute;
+    background-image: url("../../../public/Shapes/shape1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(100vh + 2.5rem);
+    left: calc(50vw - 12rem);
+    height: 200px;
+    width: 200px;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+
+.shape2 {
+    position: absolute;
+    background-image: url("../../../public/Shapes/shape2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(100vh + 31rem);
+    left: calc(50vw + 3rem);
+    height: 120px;
+    width: 120px;
+    z-index: -10;
+    overflow-x: hidden;
+}
+
+.shape3 {
+    position: absolute;
+    background-image: url("../../../public/Shapes/shape3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(100vh + 49rem);
+    left: calc(50vw - 14rem);
+    height: 200px;
+    width: 200px;
+    z-index: -10;
+}
+
+.shape4 {
+    position: absolute;
+    background-image: url("../../../public/Shapes/shape4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(100vh + 70rem);
+    left: calc(50vw);
+    height: 200px;
+    width: 200px;
+    z-index: -10;
+}
+
 @media (min-width: 1024px) {
     .about {
         font-size: 2em;
@@ -80,12 +131,88 @@
         margin: -2rem auto auto auto;
     }
 
-    .about-text > p {
-        font-size: 1.6rem;
+    .about-info > p {
+        font-size: 1rem;
         line-height: 1.8;
         padding-right: 2rem;
+        font-weight: 400;
+        text-align: left;
     }
-    
+
+    .image-glow {
+        height: 353px;
+        width: 260px;
+        margin-left: -5px;
+    }
+
+    .about-image {
+        width: 250px;
+    }
+
+    .about-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .about-info > h3 {
+        font-size: 2.9rem;
+    }
+
+    .about-info {
+        padding-right: 2rem;
+    }
+
+    .shape1 {
+        top: calc(100vh + 5.5rem);
+        left: calc(50vw - 26.5rem);
+        height: 300px;
+        width: 300px;
+    }
+
+    .shape2 {
+        top: calc(100vh + 26rem);
+        left: calc(50vw + 9rem);
+    }
+
+    .shape3 {
+        top: calc(100vh + 31rem);
+        left: calc(50vw - 35rem);
+    }
+
+    .shape4 {
+        top: calc(100vh + 43rem);
+        left: calc(50vw + 19rem);
+    }
+}
+
+@media (min-width: 1350px) {
+
+    .about-info > p {
+        font-size: 1.4rem;
+    }
+
+    .shape1 {
+        top: calc(100vh + 6.4rem);
+        left: calc(50vw - 37.4rem);
+        height: 300px;
+        width: 300px;
+    }
+
+    .shape2 {
+        top: calc(100vh + 33rem);
+        left: calc(50vw + 7rem);
+    }
+
+    .shape3 {
+        top: calc(100vh + 39rem);
+        left: calc(50vw - 39rem);
+    }
+
+    .shape4 {
+        top: calc(100vh + 52rem);
+        left: calc(50vw + 23rem);
+    }
 
     .image-glow {
         height: 463px;
@@ -95,12 +222,6 @@
 
     .about-image {
         width: 350px;
-    }
-
-    .about-text {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
     }
 }
 
