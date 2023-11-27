@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./RegistrationForm.module.css";
-import "../../pages/_app.jsx";
-
 
 
 export default function RegistrationForm() {
@@ -10,7 +8,6 @@ export default function RegistrationForm() {
             <div className={styles.banner}>
                 <h2>SIGN UP</h2>
             </div>
-
             <div>
                 <input className={styles.field} type="text" placeholder="Full Name" name="name" required></input>
                 <input className={styles.field} type="text" placeholder="Email" name="email"  required></input>
