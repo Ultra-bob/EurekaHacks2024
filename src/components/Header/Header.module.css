@@ -312,6 +312,10 @@
         width: 1330px;
     }
 
+    .banner-text {
+        width: 60%;
+    }
+
     .banner-logo,
     .banner-logo > img {
         width: 410px;
