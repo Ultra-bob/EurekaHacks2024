@@ -98,6 +98,8 @@ export default function Sponsors() {
                         link="https://aph.hdsb.ca/"
                     />
                 </motion.div>
+                <div className={styles.shape1} />
+                <div className={styles.shape2} />
             </div>
         </section>
     );

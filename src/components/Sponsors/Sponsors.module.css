@@ -53,7 +53,37 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
+
 }
+
+.shape1 {
+    position: absolute;
+    background-image: url("../../../public/Shapes/shape11.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(100vh + 64rem);
+    left: calc(50vw);
+    height: 250px;
+    width: 250px;
+    z-index: -1;
+    transform: rotate(-190deg) scaleX(-1);
+}
+
+
+.shape2 {
+    position: absolute;
+    background-image: url("../../../public/Shapes/shape5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(100vh + 70rem);
+    left: calc(50vw - 36rem);
+    height: 200px;
+    width: 200px;
+    z-index: -1;
+    transform: rotate(-165deg);
+    /* transform: ; */
+}
+
 
 @media (min-width: 1024px) {
     .sponsors {

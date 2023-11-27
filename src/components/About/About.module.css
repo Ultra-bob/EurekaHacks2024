@@ -78,7 +78,7 @@
     left: calc(50vw - 12rem);
     height: 200px;
     width: 200px;
-    z-index: -1;
+    z-index: -10;
     transform: rotate(-45deg);
 }
 
