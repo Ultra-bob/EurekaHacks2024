@@ -58,7 +58,7 @@
 
 .shape1 {
     position: absolute;
-    background-image: url("../../../public/Shapes/shape11.png");
+    background-image: url("../../../public/Shapes/shape1.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: calc(100vh + 64rem);
@@ -72,7 +72,7 @@
 
 .shape2 {
     position: absolute;
-    background-image: url("../../../public/Shapes/shape5.png");
+    background-image: url("../../../public/Shapes/hex5.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: calc(100vh + 70rem);

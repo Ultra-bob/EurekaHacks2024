@@ -71,7 +71,7 @@
 
 .shape1 {
     position: absolute;
-    background-image: url("../../../public/Shapes/shape1.png");
+    background-image: url("../../../public/Shapes/shape1darker.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: calc(100vh + 2.5rem);
@@ -84,7 +84,7 @@
 
 .shape2 {
     position: absolute;
-    background-image: url("../../../public/Shapes/shape2.png");
+    background-image: url("../../../public/Shapes/hex1.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: calc(100vh + 31rem);
@@ -97,7 +97,7 @@
 
 .shape3 {
     position: absolute;
-    background-image: url("../../../public/Shapes/shape3.png");
+    background-image: url("../../../public/Shapes/hex2.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: calc(100vh + 49rem);
@@ -109,7 +109,7 @@
 
 .shape4 {
     position: absolute;
-    background-image: url("../../../public/Shapes/shape4.png");
+    background-image: url("../../../public/Shapes/hex3.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: calc(100vh + 70rem);

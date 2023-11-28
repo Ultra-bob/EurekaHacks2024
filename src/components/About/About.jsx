@@ -4,6 +4,15 @@ import AboutImage from "@/../public/About/About.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const shapeFadeIn = {
+    initial: { opacity: 0 },
+    whileInView: {
+        opacity: 1,
+        transition: { duration: 1 },
+    },
+    viewport: { once: true, amount: 0.8 },
+};
+
 export default function About() {
     return (
         <motion.section
@@ -48,10 +57,10 @@ export default function About() {
                     />
                 </motion.div>
             </div>
-            <div className={styles.shape1} />
-            <div className={styles.shape2} />
-            <div className={styles.shape3} />
-            <div className={styles.shape4} />
+            <motion.div className={styles.shape1} {...shapeFadeIn} />
+            <motion.div className={styles.shape2} {...shapeFadeIn} />
+            <motion.div className={styles.shape3} {...shapeFadeIn} />
+            <motion.div className={styles.shape4} {...shapeFadeIn} />
         </motion.section>
     );
 }

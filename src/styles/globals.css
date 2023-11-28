@@ -23,6 +23,7 @@ h1 {
     font-weight: 700;
     color: #ffffff;
     font-size: 40px;
+    /* text-shadow: 10px 10px 10px #000000, 10px 10px 10px #000000; */
 }
 
 h2 {
@@ -30,24 +31,28 @@ h2 {
     color: #ffffff;
     font-size: 38px;
     text-align: center;
+    /* text-shadow: 10px 10px 10px #000000, 10px 10px 10px #000000; */
 }
 
 h3 {
     font-weight: 700;
     color: #ffffff;
     font-size: 35px;
+    /* box-shadow: 10px 10px 10px #000000; */
 }
 
 h6 {
     font-weight: 500;
     color: #ffffff;
     font-size: 32px;
+    /* text-shadow: 10px 10px 10px #000000, 10px 10px 10px #000000; */
 }
 
 p {
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
+    /* text-shadow: 10px 10px 10px #000000, 10px 10px 10px #000000; */
 }
 
 hr {
