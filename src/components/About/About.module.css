@@ -69,6 +69,10 @@
     ); /* Force gpu to render because cpu fails */
 }
 
+.shape1, .shape2, .shape3, .shape4 {
+    transition: filter 0.5s ease-in-out;
+}
+
 .shape1 {
     position: absolute;
     background-image: url("../../../public/Shapes/shape1darker.png");
@@ -83,19 +87,26 @@
     filter: drop-shadow(0px 0px 15px #92a7f0);
 }
 
+.about:hover .shape1 {
+    filter: drop-shadow(0px 0px 20px #92a7f0);
+}
+
 .shape2 {
     position: absolute;
     background-image: url("../../../public/Shapes/hex1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(100vh + 31rem);
-    left: calc(50vw + 3rem);
+    top: calc(100vh + 32.5rem);
+    left: calc(50vw + 4.5rem);
     height: 120px;
     width: 120px;
     z-index: -10;
     overflow-x: hidden;
-    /* filter: drop-shadow(0px 0px 20px #92a7f0); */
-    filter: drop-shadow(0px 0px 25px #d38ff3);
+    filter: drop-shadow(0px 0px 20px #92a7f0);
+}
+
+.about:hover .shape2 {
+    filter: drop-shadow(0px 0px 30px #d38ff3);
 }
 
 .shape3 {
@@ -103,13 +114,16 @@
     background-image: url("../../../public/Shapes/hex2.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(100vh + 49rem);
-    left: calc(50vw - 14rem);
+    top: calc(100vh + 47rem);
+    left: calc(50vw - 11rem);
     height: 200px;
     width: 200px;
     z-index: -10;
-    /* filter: drop-shadow(0px 0px 25px #d38ff3); */
-    filter: drop-shadow(0px 0px 20px #92a7f0);
+    filter: drop-shadow(0px 0px 25px #d38ff3);
+}
+
+.about:hover .shape3 {
+    filter: drop-shadow(0px 0px 35px #d38ff3);
 }
 
 .shape4 {
@@ -117,12 +131,16 @@
     background-image: url("../../../public/Shapes/hex3.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(100vh + 70rem);
+    top: calc(100vh + 68rem);
     left: calc(50vw - 1rem);
     height: 200px;
     width: 200px;
     z-index: -10;
-    filter: drop-shadow(0px 0px 25px #d38ff3);
+    filter: drop-shadow(0px 0px 30px #9d1cd9);
+}
+
+.about:hover .shape4 {
+    filter: drop-shadow(0px 0px 40px #9d1cd9);
 }
 
 @media (min-width: 760px) {
@@ -137,13 +155,13 @@
     }
 
     .shape3 {
-        top: calc(100vh + 36rem);
-        left: calc(50vw - 15rem);
+        top: calc(100vh + 34rem);
+        left: calc(50vw - 11rem);
     }
 
     .shape4 {
-        top: calc(100vh + 53rem);
-        left: calc(50vw + 2rem);
+        top: calc(100vh + 59rem);
+        left: calc(50vw + 8rem);
     }
 }
 
