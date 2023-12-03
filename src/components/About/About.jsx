@@ -61,6 +61,7 @@ export default function About() {
             <motion.div className={styles.shape2} {...shapeFadeIn} />
             <motion.div className={styles.shape3} {...shapeFadeIn} />
             <motion.div className={styles.shape4} {...shapeFadeIn} />
+            <motion.div className={styles.shape5} {...shapeFadeIn} />
         </motion.section>
     );
 }

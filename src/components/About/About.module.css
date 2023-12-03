@@ -143,6 +143,19 @@
     filter: drop-shadow(0px 0px 40px #9d1cd9);
 }
 
+.shape5 {
+    position: absolute;
+    background-image: url("../../../public/Shapes/hex4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(100vh + 7rem);
+    left: calc(50vw + 29.5rem);
+    height: 100px;
+    width: 200px;
+    z-index: -10;
+    filter: drop-shadow(0px 0px 30px #00e800);
+}
+
 @media (min-width: 760px) {
     .shape1 {
         top: calc(100vh + 2.5rem);
@@ -210,25 +223,30 @@
     }
 
     .shape1 {
-        top: calc(100vh + 5.5rem);
-        left: calc(50vw - 26.5rem);
+        top: calc(100vh + 7rem);
+        left: calc(50vw - 34rem);
         height: 300px;
         width: 300px;
     }
 
     .shape2 {
-        top: calc(100vh + 26rem);
-        left: calc(50vw + 9rem);
+        top: calc(100vh + 25.5rem);
+        left: calc(50vw + 11.5rem);
     }
 
     .shape3 {
         top: calc(100vh + 31rem);
-        left: calc(50vw - 35rem);
+        left: calc(50vw - 32rem);
     }
 
     .shape4 {
         top: calc(100vh + 43rem);
-        left: calc(50vw + 19rem);
+        left: calc(50vw + 21.5rem);
+    }
+
+    .shape5 {
+        top: calc(100vh + 7rem);
+        left: calc(50vw + 34vw);
     }
 }
 
