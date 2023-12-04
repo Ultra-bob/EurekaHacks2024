@@ -100,6 +100,17 @@ export default function Sponsors() {
                 </motion.div>
                 {/* <div className={styles.shape1} />
                 <div className={styles.shape2} /> */}
+                <motion.h2 {...fadeIn}>Our Partners</motion.h2>
+                <motion.div
+                    {...sponsorBoxFadeIn}
+                    className={styles["partners"]}
+                >
+                    <SponsorBox
+                        name="Abbey Park"
+                        image={APHS}
+                        link="https://aph.hdsb.ca/"
+                    />
+                </motion.div>
             </div>
         </section>
     );
