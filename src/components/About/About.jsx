@@ -57,11 +57,13 @@ export default function About() {
                     />
                 </motion.div>
             </div>
-            <motion.div className={styles.shape1} {...shapeFadeIn} />
-            <motion.div className={styles.shape2} {...shapeFadeIn} />
-            <motion.div className={styles.shape3} {...shapeFadeIn} />
-            <motion.div className={styles.shape4} {...shapeFadeIn} />
-            <motion.div className={styles.shape5} {...shapeFadeIn} />
+            <div className={styles["shape-container"]}>
+                <motion.div className={styles.shape1} {...shapeFadeIn} />
+                <motion.div className={styles.shape2} {...shapeFadeIn} />
+                <motion.div className={styles.shape3} {...shapeFadeIn} />
+                <motion.div className={styles.shape4} {...shapeFadeIn} />
+                <motion.div className={styles.shape5} {...shapeFadeIn} />
+            </div>
         </motion.section>
     );
 }

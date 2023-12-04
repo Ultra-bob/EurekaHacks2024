@@ -21,6 +21,10 @@ export default function FAQ() {
 
     return (
         <section id="faq">
+            <div className={styles["shape-container"]}>
+                <motion.div className={styles.shape1} />
+                <motion.div className={styles.shape2} />
+            </div>
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{
