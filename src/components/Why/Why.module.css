@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0rem 1rem
+    padding: 0rem 1rem;
 }
 
 .content {
@@ -39,7 +39,8 @@
     margin-top: 2rem;
 }
 
-.image2, .image3 {
+.image2,
+.image3 {
     height: auto;
     width: 250px;
     margin-top: 2rem;

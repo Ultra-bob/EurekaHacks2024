@@ -27,15 +27,16 @@ export default function About() {
         >
             <div className={styles["about-text"]}>
                 <div className={styles["about-info"]}>
-                    <h3>Oakville's Largest Hackathon</h3>
+                    <h3>Oakville&apos;s Largest Hackathon</h3>
                     <p>
                         EurekaHACKS is an annual 12-hour hackathon hosted at
                         Abbey Park High School in Oakville, Canada. It is the
                         largest high school hackathon in Halton. Our exciting
                         event features workshops, fun activities, and over
-                        $1,000 worth of prizes! We're committed to inspiring
-                        students of all skill levels to put their creativity and
-                        knowledge into practice by building something awesome.
+                        $1,000 worth of prizes! We&apos;re committed to
+                        inspiring students of all skill levels to put their
+                        creativity and knowledge into practice by building
+                        something awesome.
                     </p>
                 </div>
                 <motion.div

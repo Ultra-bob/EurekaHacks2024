@@ -54,7 +54,6 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
-
 }
 
 .shape1 {
@@ -69,7 +68,6 @@
     z-index: -1;
     transform: rotate(-190deg) scaleX(-1);
 }
-
 
 .shape2 {
     position: absolute;
@@ -92,7 +90,6 @@
     margin-top: -3rem;
     padding: 1rem;
 }
-
 
 @media (min-width: 1024px) {
     .sponsors {

@@ -47,7 +47,6 @@
     transform: rotate(45deg);
 }
 
-
 @media (min-width: 760px) {
     .shape1 {
         top: -2.4rem;
