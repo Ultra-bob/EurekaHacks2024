@@ -1,6 +1,8 @@
-import React from "react";
+import Image from "next/image";
 import styles from "./Why.module.css";
 import { motion } from "framer-motion";
+import People from "@/../public/Why/people.jpg";
+import AboutImage from "@/../public/About/about.jpg";
 
 const shapeFadeIn = {
     initial: { opacity: 0 },
@@ -16,13 +18,20 @@ export default function Why() {
         <motion.section
             id="why"
             className={styles.why}
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 1 }}
             whileInView={{
                 opacity: 1,
                 transition: { duration: 1 },
             }}
             viewport={{ once: true, amount: 0.8 }}
         >
+            {/* <div className={styles["shape-container"]}>
+                <motion.div className={styles.shape1} {...shapeFadeIn} />
+                <motion.div className={styles.shape2} {...shapeFadeIn} />
+                <motion.div className={styles.shape3} {...shapeFadeIn} />
+                <motion.div className={styles.shape4} {...shapeFadeIn} />
+                <motion.div className={styles.shape5} {...shapeFadeIn} />
+            </div> */}
             <h2>No Experience? No Problem.</h2>
             <div className={styles.content}>
                 <p>
@@ -31,14 +40,27 @@ export default function Why() {
                     new skills and build something awesome. We encourage you to
                     learn new skills and try something new!
                 </p>
+                <div className={styles.images}>
+                    <div className={styles["image-glow1"]}></div>
+                    <Image
+                        className={`${styles["image1"]} ${styles["glow"]}`}
+                        src={People}
+                        alt="placeholder"
+                    />
+                    <div className={styles["image-glow2"]}></div>
+                    <Image
+                        className={`${styles["image2"]} ${styles["alternate-glow"]}`}
+                        src={AboutImage}
+                        alt="placeholder"
+                    />
+                    <div className={styles["image-glow3"]}></div>
+                    <Image
+                        className={`${styles["image3"]} ${styles["glow"]}`}
+                        src={AboutImage}
+                        alt="placeholder"
+                    />
+                </div>
             </div>
-            {/* <div className={styles["shape-container"]}>
-                <motion.div className={styles.shape1} {...shapeFadeIn} />
-                <motion.div className={styles.shape2} {...shapeFadeIn} />
-                <motion.div className={styles.shape3} {...shapeFadeIn} />
-                <motion.div className={styles.shape4} {...shapeFadeIn} />
-                <motion.div className={styles.shape5} {...shapeFadeIn} />
-            </div> */}
         </motion.section>
     );
 }

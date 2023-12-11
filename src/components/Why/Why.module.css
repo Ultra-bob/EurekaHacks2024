@@ -14,8 +14,120 @@
     width: 80%;
 }
 
+.why > h2 {
+    margin: 0.5rem auto;
+}
+
 .content > p {
     font-weight: 400;
     line-height: 1.8;
     text-align: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 4rem auto 2rem auto;
+}
+
+.image1 {
+    height: auto;
+    width: 500px;
+    margin-top: 2rem;
+}
+
+.image2, .image3 {
+    height: auto;
+    width: 250px;
+    margin-top: 2rem;
+}
+
+.glow {
+    background-image: linear-gradient(
+        30deg,
+        #22f0e7,
+        #df71ef,
+        #22f0e7,
+        #df71ef
+    );
+    background-size: 400%;
+    padding: 3px;
+    animation: breathe 20s linear infinite;
+    margin-top: -0.5rem;
+}
+
+.alternate-glow {
+    background-image: linear-gradient(
+        30deg,
+        #df71ef,
+        #22f0e7,
+        #df71ef,
+        #22f0e7
+    );
+    background-size: 400%;
+    padding: 3px;
+    animation: breathe 20s linear infinite;
+    margin-top: -0.5rem;
+}
+
+/* .image-glow1 {
+    position: absolute;
+    background-image: linear-gradient(
+        30deg,
+        #22f0e7,
+        #df71ef,
+        #22f0e7,
+        #df71ef
+    );
+    height: 343px;
+    width: 270px;
+    filter: blur(40px);
+    z-index: -1;
+    margin: -20px 0 0 -10px;
+    background-size: 400%;
+    animation: breathe 20s linear infinite;
+    transform: translate3d(
+        0px,
+        0px,
+        0px
+    );
+}
+
+.image-glow2 {
+    position: absolute;
+    background-image: linear-gradient(
+        30deg,
+        #df71ef,
+        #22f0e7,
+        #df71ef,
+        #22f0e7
+    );
+    height: 343px;
+    width: 270px;
+    filter: blur(40px);
+    z-index: -1;
+    margin: -20px 44rem 0 -10px;
+    background-size: 400%;
+    animation: breathe 20s linear infinite;
+    transform: translate3d(
+        0px,
+        0px,
+        0px
+    );
+}
+ */
+
+@keyframes breathe {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
