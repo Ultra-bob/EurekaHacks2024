@@ -20,6 +20,7 @@ export default function Stats() {
     const countUpRef = useRef(null);
 
     useEffect(() => {
+        const currentCountUpRef = countUpRef.current;
         const options = {
             root: null,
             rootMargin: "0px",
@@ -40,8 +41,8 @@ export default function Stats() {
         }
 
         return () => {
-            if (countUpRef.current) {
-                observer.unobserve(countUpRef.current);
+            if (currentCountUpRef) {
+                observer.unobserve(currentCountUpRef);
             }
         };
     }, []);
