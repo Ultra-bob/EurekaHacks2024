@@ -60,7 +60,7 @@ export default function About() {
             </div>
             <h2 className={styles.lastyear}>Last year, we had...</h2>
             <div className={styles["shape-container"]}>
-                <motion.div className={styles.shape1} {...shapeFadeIn} />
+                <motion.div className={styles.shape1} />
                 <motion.div className={styles.shape2} {...shapeFadeIn} />
                 <motion.div className={styles.shape3} {...shapeFadeIn} />
                 <motion.div className={styles.shape4} {...shapeFadeIn} />
