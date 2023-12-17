@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./Why.module.css";
 import { motion } from "framer-motion";
 import People from "@/../public/Why/people.jpg";
-import AboutImage from "@/../public/About/about.jpg";
+import AboutImage from "@/../public/About/img.jpg";
 
 const shapeFadeIn = {
     initial: { opacity: 0 },

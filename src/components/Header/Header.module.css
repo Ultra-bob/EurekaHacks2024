@@ -39,6 +39,13 @@
     width: 216px;
     height: auto;
     margin: 4rem 0 0 2rem;
+    display: none;
+}
+
+@media (min-height: 800px) {
+    .landing-1 {
+        display: block;
+    }
 }
 
 .landing-2 {
@@ -51,6 +58,7 @@
     height: 100%;
     width: 100%;
 }
+
 .landing-2 > img {
     height: 100%;
     width: 100%;

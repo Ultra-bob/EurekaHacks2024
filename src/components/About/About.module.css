@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.about-info {
+    width: 300px;
+}
+
 .about-info > h3 {
     text-align: center;
     font-size: 1.9rem;
@@ -87,12 +91,13 @@
     background-image: url("../../../public/Shapes/shape1darker.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(2.4rem);
+    top: 2.4rem;
     left: calc(50vw - 11.7rem);
     height: 200px;
     width: 200px;
     z-index: -10;
     transform: rotate(-45deg);
+    overflow-x: hidden;
     filter: drop-shadow(0px 0px 15px #92a7f0);
 }
 
@@ -101,7 +106,7 @@
     background-image: url("../../../public/Shapes/hex1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(30.5rem);
+    top: 32rem;
     left: calc(50vw + 4rem);
     height: 120px;
     width: 120px;
@@ -115,11 +120,12 @@
     background-image: url("../../../public/Shapes/hex2.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(45rem);
+    top: 60rem;
     left: calc(50vw - 11rem);
     height: 200px;
     width: 200px;
     z-index: -10;
+    overflow-x: hidden;
     filter: drop-shadow(0px 0px 25px #d38ff3);
 }
 
@@ -128,15 +134,24 @@
     background-image: url("../../../public/Shapes/hex3.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(68rem);
+    top: 75rem;
     left: calc(50vw - 1rem);
     height: 200px;
     width: 200px;
     z-index: -10;
+    overflow-x: hidden;
     filter: drop-shadow(0px 0px 30px #9d1cd9);
 }
 
+.lastyear {
+    margin: -1rem 0rem;
+}
+
 @media (min-width: 760px) {
+    .about-info {
+        width: auto;
+    }
+
     .shape-container {
         margin-top: -4.3rem;
         margin-left: 1rem;
@@ -219,22 +234,26 @@
     }
 
     .shape2 {
-        top: calc(27.5rem);
-        left: calc(50vw + 5.5rem);
+        top: 27.5rem;
+        left: calc(50vw + 4.5rem);
     }
 
     .shape3 {
-        top: calc(35rem);
-        left: calc(50vw - 30rem);
+        top: 37rem;
+        left: calc(50vw - 29.5rem);
     }
 
     .shape4 {
-        top: calc(46rem);
+        top: 49rem;
         left: calc(50vw + 18rem);
     }
 }
 
 @media (min-width: 1350px) {
+    .about-info {
+        width: 656px;
+    }
+
     .shape-container {
         margin-top: -8.3rem;
         margin-right: 1rem;
@@ -245,24 +264,24 @@
     }
 
     .shape1 {
-        top: calc(6.4rem);
-        left: calc(50vw - 37.4rem);
+        top: 6.4rem;
+        left: calc(50vw - 37rem);
         height: 300px;
         width: 300px;
     }
 
     .shape2 {
-        top: calc(33rem);
-        left: calc(50vw + 7rem);
+        top: 33rem;
+        left: calc(50vw + 8rem);
     }
 
     .shape3 {
-        top: calc(39rem);
+        top: 40rem;
         left: calc(50vw - 36rem);
     }
 
     .shape4 {
-        top: calc(51rem);
+        top: 54rem;
         left: calc(50vw + 23rem);
     }
 

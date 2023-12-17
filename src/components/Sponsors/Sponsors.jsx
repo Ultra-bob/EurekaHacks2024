@@ -38,7 +38,7 @@ export default function Sponsors() {
                         link="https://aph.hdsb.ca/"
                     />
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["gold-sponsors"]}
                 >
@@ -52,8 +52,8 @@ export default function Sponsors() {
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
-                </motion.div>
-                <motion.div
+                </motion.div> */}
+                {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["silver-sponsors"]}
                 >
@@ -72,8 +72,8 @@ export default function Sponsors() {
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
-                </motion.div>
-                <motion.div
+                </motion.div> */}
+                {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["bronze-sponsors"]}
                 >
@@ -97,7 +97,7 @@ export default function Sponsors() {
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
-                </motion.div>
+                </motion.div> */}
                 {/* <div className={styles.shape1} />
                 <div className={styles.shape2} /> */}
                 <motion.h2 {...fadeIn}>Our Partners</motion.h2>

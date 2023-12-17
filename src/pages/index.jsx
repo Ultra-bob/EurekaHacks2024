@@ -35,7 +35,7 @@ export default function Home() {
                 <About />
                 <Stats />
                 {hr}
-                <Why />
+                {/* <Why /> */}
                 {hr}
                 <Sponsors />
                 {hr}
