@@ -96,9 +96,9 @@
     height: 200px;
     width: 200px;
     z-index: -10;
-    transform: rotate(-45deg) translate3d(0, 0, 0);
     overflow-x: hidden;
     filter: drop-shadow(0px 0px 15px #92a7f0);
+    transform: rotate(-45deg) translate3d(0, 0, 0);
 }
 
 .shape2 {
@@ -112,8 +112,8 @@
     width: 120px;
     z-index: -10;
     overflow-x: hidden;
-    transform: translate3d(0, 0, 0);
     filter: drop-shadow(0px 0px 20px #92a7f0);
+    transform: translate3d(0, 0, 0);
 }
 
 .shape3 {
@@ -127,8 +127,8 @@
     width: 200px;
     z-index: -10;
     overflow-x: hidden;
-    transform: translate3d(0, 0, 0);
     filter: drop-shadow(0px 0px 25px #d38ff3);
+    transform: translate3d(0, 0, 0);
 }
 
 .shape4 {
@@ -142,8 +142,8 @@
     width: 200px;
     z-index: -10;
     overflow-x: hidden;
-    transform: translate3d(0, 0, 0);
     filter: drop-shadow(0px 0px 30px #9d1cd9);
+    transform: translate3d(0, 0, 0);
 }
 
 .lastyear {
