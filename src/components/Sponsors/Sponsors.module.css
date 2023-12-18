@@ -89,8 +89,9 @@
     align-items: center;
     justify-content: center;
     margin-top: -1rem;
-    padding: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
     grid-template-columns: 1fr;
+    max-width: 1366px;
 }
 
 @media (min-width: 1024px) {
