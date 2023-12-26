@@ -3,6 +3,8 @@ import styles from "./Why.module.css";
 import { motion } from "framer-motion";
 import People from "@/../public/Why/people.jpg";
 import AboutImage from "@/../public/About/img.jpg";
+import Bot from "@/../public/Why/bot.jpg";
+import Winners from "@/../public/Why/idk.jpg";
 
 const shapeFadeIn = {
     initial: { opacity: 0 },
@@ -35,7 +37,7 @@ export default function Why() {
             <h2>No Experience? No Problem.</h2>
             <div className={styles.content}>
                 <p>
-                    Our Hackathon is open to all skill levels, from beginners to
+                    Our hackathon is open to all skill levels, from beginners to
                     experts. We provide workshops and mentors to help you learn
                     new skills and build something awesome. We encourage you to
                     learn new skills and try something new!
@@ -50,13 +52,13 @@ export default function Why() {
                     <div className={styles["image-glow2"]}></div>
                     <Image
                         className={`${styles["image2"]} ${styles["alternate-glow"]}`}
-                        src={AboutImage}
+                        src={Winners}
                         alt="placeholder"
                     />
                     <div className={styles["image-glow3"]}></div>
                     <Image
                         className={`${styles["image3"]} ${styles["glow"]}`}
-                        src={AboutImage}
+                        src={Bot}
                         alt="placeholder"
                     />
                 </div>
