@@ -97,8 +97,8 @@
     }
 } */
 
-/* @media (min-width: 2500px) {
-    .shape-container {
-        margin-right: 1.5rem;
+@media (min-width: 2500px) {
+    .shape2 {
+        left: calc(50vw + 20.2rem);
     }
-} */
+}
