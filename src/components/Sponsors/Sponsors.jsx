@@ -14,6 +14,15 @@ const fadeIn = {
     viewport: { once: true, amount: 0.8 },
 };
 
+const shapeFadeIn = {
+    initial: { opacity: 0 },
+    whileInView: {
+        opacity: 1,
+        transition: { duration: 1, delay: 0.5 },
+    },
+    viewport: { once: true, amount: 1 },
+};
+
 const sponsorBoxFadeIn = {
     initial: { opacity: 0 },
     whileInView: {
@@ -26,6 +35,10 @@ const sponsorBoxFadeIn = {
 export default function Sponsors() {
     return (
         <section id="sponsors" className={styles.sponsors}>
+            <div className={styles["shape-container"]}>
+                <motion.div className={styles.shape1} {...shapeFadeIn} />
+                <motion.div className={styles.shape2} {...shapeFadeIn} />
+            </div>
             <motion.h2 {...fadeIn}>Sponsors</motion.h2>
             <div className={styles["sponsor-panel"]}>
                 <motion.div
@@ -98,8 +111,6 @@ export default function Sponsors() {
                         link="https://aph.hdsb.ca/"
                     />
                 </motion.div> */}
-                {/* <div className={styles.shape1} />
-                <div className={styles.shape2} /> */}
                 <motion.h2 {...fadeIn}>Our Partners</motion.h2>
                 <motion.div
                     {...sponsorBoxFadeIn}
