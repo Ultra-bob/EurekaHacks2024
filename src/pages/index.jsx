@@ -8,6 +8,7 @@ import Header from "@/components/Header/Header";
 import About from "@/components/About/About";
 import Sponsors from "@/components/Sponsors/Sponsors";
 import NavBar from "@/components/NavBar/Navbar";
+import Team from "@/components/Team/Team"
 
 // // initial={{ x: 100, opacity: 0 }}
 // whileInView={{
@@ -43,6 +44,10 @@ export default function Home() {
                     <hr />
                 </motion.div>
                 <FAQ />
+                <motion.div {...hrFadeIn}>
+                    <hr />
+                </motion.div>
+                <Team />
             </div>
             <Footer />
         </>

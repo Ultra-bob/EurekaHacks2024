@@ -1,0 +1,47 @@
+.member {
+    width: 100%;
+    height: 100%;
+}
+
+.headshot {
+    --offsetX: 10px;
+    --offsetY: 10px;
+    margin: 0 0 var(--offsetY) var(--offsetY);
+    position: relative; 
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    display: block;
+}
+
+.headshot::before {
+    content: "";
+    position: absolute;
+    top: var(--offsetY);
+    left: calc(var(--offsetX) * -1);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #df71ef, #22f0e7);
+    background-attachment: fixed;
+    animation: gradientSpin 3s ease alternate infinite;
+}
+
+.name, .position {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+.name {
+    margin-top: 1em;
+    color: white;
+}
+
+.position {
+    font-size: 12px;
+    color: var(--lighter-text-color);
+}
