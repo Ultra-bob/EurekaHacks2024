@@ -8,15 +8,10 @@ import Header from "@/components/Header/Header";
 import About from "@/components/About/About";
 import Sponsors from "@/components/Sponsors/Sponsors";
 import NavBar from "@/components/NavBar/Navbar";
+import Stats from "@/components/Stats/Stats";
+import Why from "@/components/Why/Why";
 import Team from "@/components/Team/Team"
 
-// // initial={{ x: 100, opacity: 0 }}
-// whileInView={{
-//     x: 0,
-//     opacity: 1,
-//     transition: { delay: 0.5, duration: 1 },
-// }}
-// viewport={{ once: true, amount: 0.8 }}
 const hrFadeIn = {
     initial: { opacity: 0 },
     whileInView: {
@@ -27,22 +22,24 @@ const hrFadeIn = {
 };
 
 export default function Home() {
+    const hr = (
+        <motion.div {...hrFadeIn}>
+            <hr />
+        </motion.div>
+    );
     return (
         <>
             <NavBar />
             <Header />
             <div className={styles.home_content}>
-                <motion.div {...hrFadeIn}>
-                    <hr />
-                </motion.div>
+                {hr}
                 <About />
-                <motion.div {...hrFadeIn}>
-                    <hr />
-                </motion.div>
+                <Stats />
+                {hr}
+                <Why />
+                {hr}
                 <Sponsors />
-                <motion.div {...hrFadeIn}>
-                    <hr />
-                </motion.div>
+                {hr}
                 <FAQ />
                 <motion.div {...hrFadeIn}>
                     <hr />

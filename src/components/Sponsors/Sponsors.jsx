@@ -6,21 +6,28 @@ import { motion } from "framer-motion";
 import APHS from "@/../public/apicon.png";
 
 const fadeIn = {
-    initial: { y: -80, opacity: 0 },
+    initial: { opacity: 0 },
     whileInView: {
-        y: 0,
         opacity: 1,
-        transition: { delay: 0.5, duration: 1 },
+        transition: { duration: 1 },
     },
     viewport: { once: true, amount: 0.8 },
 };
 
-const sponsorBoxFadeIn = {
-    initial: { y: -20, opacity: 0 },
+const shapeFadeIn = {
+    initial: { opacity: 0 },
     whileInView: {
-        y: 0,
         opacity: 1,
-        transition: { delay: 0.5, duration: 1 },
+        transition: { duration: 1, delay: 0.5 },
+    },
+    viewport: { once: true, amount: 1 },
+};
+
+const sponsorBoxFadeIn = {
+    initial: { opacity: 0 },
+    whileInView: {
+        opacity: 1,
+        transition: { duration: 1 },
     },
     viewport: { once: true, amount: 0.8 },
 };
@@ -28,6 +35,10 @@ const sponsorBoxFadeIn = {
 export default function Sponsors() {
     return (
         <section id="sponsors" className={styles.sponsors}>
+            <div className={styles["shape-container"]}>
+                <motion.div className={styles.shape1} {...shapeFadeIn} />
+                <motion.div className={styles.shape2} {...shapeFadeIn} />
+            </div>
             <motion.h2 {...fadeIn}>Sponsors</motion.h2>
             <div className={styles["sponsor-panel"]}>
                 <motion.div
@@ -40,7 +51,7 @@ export default function Sponsors() {
                         link="https://aph.hdsb.ca/"
                     />
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["gold-sponsors"]}
                 >
@@ -54,8 +65,8 @@ export default function Sponsors() {
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
-                </motion.div>
-                <motion.div
+                </motion.div> */}
+                {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["silver-sponsors"]}
                 >
@@ -74,8 +85,8 @@ export default function Sponsors() {
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
-                </motion.div>
-                <motion.div
+                </motion.div> */}
+                {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["bronze-sponsors"]}
                 >
@@ -94,6 +105,17 @@ export default function Sponsors() {
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
+                    <SponsorBox
+                        name="Abbey Park"
+                        image={APHS}
+                        link="https://aph.hdsb.ca/"
+                    />
+                </motion.div> */}
+                <motion.h2 {...fadeIn}>Our Partners</motion.h2>
+                <motion.div
+                    {...sponsorBoxFadeIn}
+                    className={styles["partners"]}
+                >
                     <SponsorBox
                         name="Abbey Park"
                         image={APHS}

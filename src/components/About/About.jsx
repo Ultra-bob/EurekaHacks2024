@@ -1,8 +1,17 @@
 import React from "react";
 import styles from "./About.module.css";
-import AboutImage from "@/../public/About/About.jpg";
+import AboutImage from "@/../public/About/img.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
+
+const shapeFadeIn = {
+    initial: { opacity: 0 },
+    whileInView: {
+        opacity: 1,
+        transition: { duration: 1, delay: 0.5 },
+    },
+    viewport: { once: true, amount: 1 },
+};
 
 export default function About() {
     return (
@@ -18,15 +27,16 @@ export default function About() {
         >
             <div className={styles["about-text"]}>
                 <div className={styles["about-info"]}>
-                    <h3>Oakville's Largest Hackathon</h3>
+                    <h3>Where Ideas Meet Innovation</h3>
                     <p>
                         EurekaHACKS is an annual 12-hour hackathon hosted at
-                        Abbey Park High School in Oakville, Canada. It is the
-                        largest high school hackathon in Halton. Our exciting
-                        event features workshops, fun activities, and over
-                        $1,000 worth of prizes! We're committed to inspiring
-                        students of all skill levels to put their creativity and
-                        knowledge into practice by building something awesome.
+                        Abbey Park High School in Oakville, Canada. It is one of
+                        the largest high school hackathons in Halton. Last year,
+                        our exciting event featured workshops, fun activities,
+                        and over $1,000 worth of prizes! We&apos;re committed to
+                        inspiring students of all skill levels to put their
+                        creativity and knowledge into practice by building
+                        something awesome.
                     </p>
                 </div>
                 <motion.div
@@ -47,6 +57,14 @@ export default function About() {
                         alt="placeholder"
                     />
                 </motion.div>
+            </div>
+            <h2 className={styles.lastyear}>Last year, we had...</h2>
+            <div className={styles["shape-container"]}>
+                <motion.div className={styles.shape1} />
+                <motion.div className={styles.shape2} {...shapeFadeIn} />
+                <motion.div className={styles.shape3} {...shapeFadeIn} />
+                <motion.div className={styles.shape4} {...shapeFadeIn} />
+                <motion.div className={styles.shape5} {...shapeFadeIn} />
             </div>
         </motion.section>
     );

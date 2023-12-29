@@ -1,0 +1,15 @@
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 55px;
+    height: 100%;
+}
+
+.icon {
+    height: auto;
+    width: 45px;
+    position: relative;
+    padding-top: 10px;
+}
