@@ -7,14 +7,13 @@
     --offsetX: 10px;
     --offsetY: 10px;
     margin: 0 0 var(--offsetY) var(--offsetY);
-    position: relative;
+    position: relative; 
+    aspect-ratio: 1;
 }
 
 .image {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
     display: block;
+    width: 100%;
 }
 
 .headshot::before {
