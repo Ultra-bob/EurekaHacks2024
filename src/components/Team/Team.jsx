@@ -27,7 +27,7 @@ export default function Team() {
                     let gridY = Math.floor((rect.y - gridRect.y) / rect.height);
                     child.style.animationName = styles.fadeIn;
                     child.style.animationDelay = `${
-                        (gridX + gridY) * 100 + 1000
+                        (gridX + gridY) * 100 + 1500
                     }ms`;
                 }
             }
