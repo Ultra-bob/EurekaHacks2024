@@ -53,13 +53,38 @@
     position: relative;
 }
 
-.icon, .blurIcon {
+.icon {
     height: auto;
     width: 80%;
+    filter: drop-shadow(0px 0px 15px #92a7f0);
 }
 
-.blurIcon {
-    position: absolute;
-    filter: blur(20px);
-    z-index: -1;
+
+@media (max-width: 1020px) {
+    .grid {
+        grid-template-areas: unset;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        padding: 0 1em;
+    }
+
+    .grid :nth-child(3) {
+        grid-column: initial;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .text {
+        grid-area: unset;
+        grid-column: span 4;
+        margin-bottom: 1em;
+    }
+
+    .logo {
+        display: none;
+        grid-area: unset;
+    }
+
 }

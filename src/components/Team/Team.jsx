@@ -36,10 +36,6 @@ export default function Team() {
 
                 <div className={styles.logo}>
                     <Image
-                        className={styles.blurIcon}
-                        src={Logo}
-                    />
-                    <Image
                         className={styles.icon}
                         src={Logo}
                         alt="Eureka! Icon"
