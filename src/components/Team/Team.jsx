@@ -1,18 +1,37 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image"
 import Member from "./Member"
 import { members } from "./Members"
 import styles from "./Team.module.css";
 import Logo from "@/../public/EurekaIcon2024.png";
-
-import shape1 from "@/../public/Shapes/shape1.png"
-import hex1 from "@/../public/Shapes/hex1.png"
+import useOnScreen from "@/hooks/useOnScreen";
 
 export default function Team() {
+    const gridRef = useRef(null);
+    const isOnScreen = useOnScreen(gridRef);
+
+    useEffect(() => {
+        let grid = gridRef.current;
+
+        if (isOnScreen && !grid.classList.contains(styles.active)) {
+            grid.classList.add(styles.active);
+            let gridRect = grid.getBoundingClientRect();
+            for (let child of grid.children) {
+                if (!child.classList.contains(styles.text) && ! child.classList.contains(styles.logo)) {
+                    const rect = child.getBoundingClientRect();
+                    let gridX = Math.floor((rect.x - gridRect.x) / rect.width);
+                    let gridY = Math.floor((rect.y - gridRect.y) / rect.height);
+                    child.style.animationName = styles.fadeIn;
+                    child.style.animationDelay = `${(gridX + gridY) * 100 + 1000}ms`;
+                }
+            }
+        }
+    }, [isOnScreen])
+
     return (
         <section id="team" className={styles.team}>
-            <div className={styles.grid}>
+            <div className={styles.grid} ref={gridRef}>
                 <div className={styles.text}>
                     <motion.div
                         initial={{ y: -80, opacity: 0 }}
@@ -47,8 +66,8 @@ export default function Team() {
 
             </div>
 
-            <Image className={styles.shape1} src={shape1} />
-            <Image className={styles.hex1} src={hex1} />
+            <img className={styles.shape1} src="Shapes/shape1.png" />
+            <img className={styles.hex1} src="Shapes/hex1.png" />
             
         </section>
 
