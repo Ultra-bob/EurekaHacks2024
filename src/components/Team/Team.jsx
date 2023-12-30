@@ -6,6 +6,9 @@ import { members } from "./Members"
 import styles from "./Team.module.css";
 import Logo from "@/../public/EurekaIcon2024.png";
 
+import shape1 from "@/../public/Shapes/shape1.png"
+import hex1 from "@/../public/Shapes/hex1.png"
+
 export default function Team() {
     return (
         <section id="team" className={styles.team}>
@@ -43,6 +46,10 @@ export default function Team() {
                 </div>
 
             </div>
+
+            <Image className={styles.shape1} src={shape1} />
+            <Image className={styles.hex1} src={hex1} />
+            
         </section>
 
     );

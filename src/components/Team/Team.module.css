@@ -1,5 +1,6 @@
 .team {
     margin: 0 1em;
+    position: relative;
 }
 
 .grid {
@@ -59,6 +60,26 @@
     filter: drop-shadow(0px 0px 15px #92a7f0);
 }
 
+.shape1, .hex1, .hex5 {
+    position: absolute;
+    z-index: -2;
+    height: auto;
+}
+
+.shape1 {
+    left: 10%;
+    top: 5%;
+    width: 25%;
+    filter: drop-shadow(0px 0px 15px #f19fe7);
+    transform: rotate(-115deg);
+}
+
+.hex1 {
+    width: 10%;
+    filter: drop-shadow(0px 0px 15px #92a7f0);
+    right: 15%;
+    top: 5%;
+}
 
 @media (max-width: 1020px) {
     .grid {
@@ -86,5 +107,4 @@
         display: none;
         grid-area: unset;
     }
-
 }
