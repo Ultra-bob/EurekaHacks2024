@@ -10,6 +10,5 @@ export default function Member({ name, position, image }) {
             <p className={styles.name}>{name}</p>
             <p className={styles.position}>{position}</p>
         </div>
-
     );
 }

@@ -10,7 +10,7 @@ import Sponsors from "@/components/Sponsors/Sponsors";
 import NavBar from "@/components/NavBar/Navbar";
 import Stats from "@/components/Stats/Stats";
 import Why from "@/components/Why/Why";
-import Team from "@/components/Team/Team"
+import Team from "@/components/Team/Team";
 
 const hrFadeIn = {
     initial: { opacity: 0 },
@@ -36,7 +36,7 @@ export default function Home() {
                 <About />
                 <Stats />
                 {hr}
-                <Why />
+                {/* <Why /> */}
                 {hr}
                 <Sponsors />
                 {hr}

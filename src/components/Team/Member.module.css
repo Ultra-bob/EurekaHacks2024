@@ -7,7 +7,7 @@
     --offsetX: 10px;
     --offsetY: 10px;
     margin: 0 0 var(--offsetY) var(--offsetY);
-    position: relative; 
+    position: relative;
 }
 
 .image {
@@ -29,7 +29,8 @@
     background-attachment: fixed;
 }
 
-.name, .position {
+.name,
+.position {
     text-align: center;
     font-size: 16px;
     margin: 0;

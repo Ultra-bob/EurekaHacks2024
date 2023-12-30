@@ -75,7 +75,9 @@
     filter: drop-shadow(0px 0px 15px #92a7f0);
 }
 
-.shape1, .hex1, .hex5 {
+.shape1,
+.hex1,
+.hex5 {
     position: absolute;
     z-index: -2;
     height: auto;
