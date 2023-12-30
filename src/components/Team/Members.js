@@ -1,12 +1,12 @@
 export const members = [
     {
         name: "Adam Selim",
-        position: "Logistics Manager",
+        position: "Co-President",
         image: "Team/Adam.jpg",
     },
     {
         name: "David Lim",
-        position: "Logistics Manager",
+        position: "Co-President",
         image: "Team/David.jpg",
     },
     {
@@ -26,7 +26,7 @@ export const members = [
     },
     {
         name: "Rahul patel",
-        position: "Sponsorhip Coordinator",
+        position: "Director of Sponsorhips",
         image: "Team/Rahul.jpg",
     },
     {
@@ -91,7 +91,7 @@ export const members = [
     },
     {
         name: "Mahiya Majeed",
-        position: "Social Media Manager",
+        position: "Director of Social Media",
         image: "Team/Mahiya.jpg",
     },
     {
