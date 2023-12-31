@@ -56,7 +56,8 @@ export default function Sponsors() {
                     <div className={styles["howtosponsor"]}>
                         <div className={styles["button"]}>
                             <a href="mailto:sponsorships@eurekahacks.ca">
-                                Interested in sponsoring our event? Email us at sponsorships@eurekahacks.ca
+                                Interested in sponsoring our event? Email us at
+                                sponsorships@eurekahacks.ca
                             </a>
                         </div>
                     </div>

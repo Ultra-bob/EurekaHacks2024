@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image"
-import styles from "./Footer.module.css"
+import Image from "next/image";
+import styles from "./Footer.module.css";
 import Logo from "@/../public/EurekaLogo2024.png";
 import { BsInstagram, BsLinkedin, BsTiktok, BsDiscord } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -18,8 +18,12 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.content}>
                 <div className={styles.grid}>
-                    <div className={styles.left} >
-                        <Image className={styles.logo} src={Logo} alt="EurekaIcon" />
+                    <div className={styles.left}>
+                        <Image
+                            className={styles.logo}
+                            src={Logo}
+                            alt="EurekaIcon"
+                        />
                         <div className={styles.textLogo}>
                             <p>EUREKA!</p>
                             <p>HACKS</p>
@@ -65,7 +69,9 @@ export default function Footer() {
                         <p className={styles.title}>Links</p>
                         <ul className={styles.items}>
                             <li className={styles.item}>
-                                <Link className={styles.link} href="/">Home</Link>
+                                <Link className={styles.link} href="/">
+                                    Home
+                                </Link>
                             </li>
                             {/* <li className={styles.item}>
                                 <Link className={styles.link} href="/register">Registration</Link>
@@ -74,15 +80,22 @@ export default function Footer() {
                     </div>
                     <div>
                         <p className={styles.title}>Partners</p>
-                        <ul className={styles.items} >
-                            <li className={styles.item} >
-                                <a className={styles.link} href="https://aph.hdsb.ca">Abbey Park</a>
+                        <ul className={styles.items}>
+                            <li className={styles.item}>
+                                <a
+                                    className={styles.link}
+                                    href="https://aph.hdsb.ca"
+                                >
+                                    Abbey Park
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className={styles.divider}></div>
-                <p className={styles.copywrite}>Copyright © EurekaHacks, 2023</p>
+                <p className={styles.copywrite}>
+                    Copyright © EurekaHacks, 2023
+                </p>
             </div>
         </footer>
     );
