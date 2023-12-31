@@ -11,6 +11,7 @@ import NavBar from "@/components/NavBar/Navbar";
 import Stats from "@/components/Stats/Stats";
 import Why from "@/components/Why/Why";
 import Team from "@/components/Team/Team";
+import Head from "next/head";
 
 const hrFadeIn = {
     initial: { opacity: 0 },
@@ -29,6 +30,25 @@ export default function Home() {
     );
     return (
         <>
+            <Head>
+                <title>EurekaHacks 2024</title>
+                <meta name="theme-color" content="#22F0E7" />
+                <meta property="og:title" content="EurekaHacks" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://eurekahacks.ca" />
+                <meta
+                    property="og:image"
+                    content="https://i.imgur.com/pPsYsv6.png"
+                />
+                <meta
+                    property="og:description"
+                    content="Official Site for the 2024 Eureka Hackathon."
+                />
+                <meta
+                    property="description"
+                    content="Official site for the 2024 Eureka Hackathon."
+                />
+            </Head>
             <NavBar />
             <Header />
             <div className={styles.home_content}>
