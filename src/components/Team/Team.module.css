@@ -49,7 +49,7 @@
 
 .grid > *:not(.text):not(.logo) {
     opacity: 0;
-    animation-duration: 200ms;
+    animation-duration: 400ms;
     animation-fill-mode: forwards;
 }
 
