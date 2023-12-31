@@ -157,22 +157,22 @@
 
     .shape-container {
         margin-top: -4.3rem;
-        margin-left: 1rem;
+        margin-left: 0rem;
     }
 
     .shape1 {
         top: calc(2.5rem);
-        left: calc(50vw - 17rem);
+        left: calc(50vw - 16.5rem);
     }
 
     .shape2 {
         top: calc(19.8rem);
-        left: calc(50vw + 4rem);
+        left: calc(50vw + 5rem);
     }
 
     .shape3 {
         top: calc(34rem);
-        left: calc(50vw - 11rem);
+        left: calc(50vw - 12rem);
     }
 
     .shape4 {

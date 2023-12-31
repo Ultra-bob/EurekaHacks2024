@@ -36,14 +36,12 @@ export default function Home() {
                 <About />
                 <Stats />
                 {hr}
-                {<Why />}
+                <Why />
                 {hr}
                 <Sponsors />
                 {hr}
                 <FAQ />
-                <motion.div {...hrFadeIn}>
-                    <hr />
-                </motion.div>
+                {hr}
                 <Team />
             </div>
             <Footer />
