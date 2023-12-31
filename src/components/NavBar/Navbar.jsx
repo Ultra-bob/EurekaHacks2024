@@ -57,7 +57,9 @@ export default function NavBar() {
                 <Link href="/#about">About</Link>
                 <Link href="/#sponsors">Sponsors</Link>
                 <Link href="/#faq">FAQ</Link>
-                <Link href="https://2023.eurekahacks.ca" target="_blank">2023</Link>
+                <Link href="https://2023.eurekahacks.ca" target="_blank">
+                    2023
+                </Link>
             </ul>
             <motion.div
                 transition={{

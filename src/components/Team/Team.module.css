@@ -43,7 +43,8 @@
     margin: 0;
 }
 
-.grid :nth-child(7), .grid :nth-child(15) {
+.grid :nth-child(7),
+.grid :nth-child(15) {
     grid-row: 2;
 }
 

@@ -7,7 +7,7 @@
     --offsetX: 10px;
     --offsetY: 10px;
     margin: 0 0 var(--offsetY) var(--offsetY);
-    position: relative; 
+    position: relative;
     aspect-ratio: 1;
 }
 
@@ -31,7 +31,7 @@
 
 .headshot:hover .image {
     transform: translateX(-4px) translateY(4px);
-    box-shadow: rgba(0, 0, 0, 0.20) -4px 4px 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) -4px 4px 4px;
 }
 
 .name,
