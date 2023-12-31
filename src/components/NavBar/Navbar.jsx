@@ -2,13 +2,11 @@ import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { signOut, useSession } from "next-auth/react";
 
 import Logo from "@/../public/EurekaIcon2024.png";
 import Link from "next/link";
 
 export default function NavBar() {
-    // const { data, status } = useSession();
     const [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
@@ -61,7 +59,7 @@ export default function NavBar() {
                     2023
                 </Link>
             </ul>
-            <motion.div
+            {/* <motion.div
                 transition={{
                     duration: 2,
                     type: "spring",
@@ -71,17 +69,11 @@ export default function NavBar() {
                 whileHover={{ scale: 1.07 }}
                 whileTap={{ scale: 0.9 }}
                 className={styles["register-outline"]}
-            >
-                {/* {data ? (
-                    <div className={styles["register"]} onClick={signOut("/;")}>
-                        <div className={styles["button"]}>Sign Out</div>
-                    </div>
-                ) : ( */}
-                <Link href="/register" className={styles["register"]}>
-                    <div className={styles["button"]}>Register</div>
+            >  
+                <Link href="/" className={styles["register"]}>
+                    <div className={styles["button"]}>Registrations Open Soon</div>
                 </Link>
-                {/* )} */}
-            </motion.div>
+            </motion.div> */}
 
             <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
                 <div className={styles["hamburger-line"]} />

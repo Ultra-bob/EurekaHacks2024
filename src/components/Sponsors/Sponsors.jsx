@@ -123,6 +123,25 @@ export default function Sponsors() {
                     />
                 </motion.div>
             </div>
+            <motion.div
+                transition={{
+                    duration: 2,
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 25,
+                }}
+                whileHover={{ scale: 1.07 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles["howtosponsor-outline"]}
+            >
+                <div className={styles["howtosponsor"]}>
+                    <div className={styles["button"]}>
+                        <a href="mailto:sponsorships@eurekahacks.ca">
+                            Interested in sponsoring our event?
+                        </a>
+                    </div>
+                </div>
+            </motion.div>
         </section>
     );
 }

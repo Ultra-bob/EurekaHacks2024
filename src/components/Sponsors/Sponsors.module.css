@@ -39,7 +39,6 @@
     align-items: center;
     margin-top: -3rem;
     padding: 1rem 2rem 1rem 2rem;
-    margin-bottom: -3rem;
 }
 
 .sponsors > h2 {
@@ -101,6 +100,57 @@
     max-width: 1366px;
 }
 
+.button {
+    font-size: 1rem;
+}
+
+.howtosponsor {
+    height: 3.5rem;
+    width: 18.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: black;
+    border-radius: 0.6rem;
+}
+
+.howtosponsor-outline {
+    height: 4rem;
+    width: 19rem;
+    align-self: end;
+    border-radius: 0.8rem;
+    background-image: linear-gradient(
+        184deg,
+        #22f0e7,
+        #df71ef,
+        #22f0e7,
+        #df71ef
+    );
+    background-size: 400%;
+    animation: breathe 20s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto auto auto;
+}
+
+@media (min-width: 760px) {
+    .shape1 {
+        top: -0.5rem;
+        left: calc(50vw - 8.9rem);
+        height: 110px;
+        width: 110px;
+    }
+
+    .shape2 {
+        top: 2.2rem;
+        left: calc(50vw + 3.1rem);
+        height: 50px;
+        width: 50px;
+    }
+}
+
 @media (min-width: 1024px) {
     .sponsors {
         margin-top: -6rem;
@@ -120,25 +170,7 @@
     .bronze-sponsors {
         grid-template-columns: repeat(3, 1fr);
     }
-}
 
-@media (min-width: 760px) {
-    .shape1 {
-        top: -0.5rem;
-        left: calc(50vw - 8.9rem);
-        height: 110px;
-        width: 110px;
-    }
-
-    .shape2 {
-        top: 2.2rem;
-        left: calc(50vw + 3.1rem);
-        height: 50px;
-        width: 50px;
-    }
-}
-
-@media (min-width: 1020px) {
     .shape1 {
         top: -1.8rem;
         left: calc(50vw - 15rem);
@@ -151,6 +183,21 @@
         left: calc(50vw + 5.1rem);
         height: 70px;
         width: 70px;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+
+    .howtosponsor {
+        height: 5rem;
+        width: 40rem;
+    }
+
+    .howtosponsor-outline {
+        height: 6rem;
+        width: 41rem;
+        margin: 2rem auto -2rem auto;
     }
 }
 
@@ -178,5 +225,17 @@
     .shape2 {
         top: 3.5rem;
         left: calc(50vw + 4.6rem);
+    }
+}
+
+@keyframes breathe {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
     }
 }

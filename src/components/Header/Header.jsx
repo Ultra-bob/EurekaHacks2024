@@ -78,7 +78,7 @@ export default function Header() {
                                 className={styles["register-outline"]}
                             >
                                 <div className={styles["register"]}>
-                                    <div className={` ${styles["button"]}`}>
+                                    <div className={styles["button"]}>
                                         <a
                                             href="https://google.com"
                                             target="_blank"

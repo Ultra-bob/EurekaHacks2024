@@ -250,3 +250,15 @@
         border-radius: 0.6rem;
     }
 }
+
+@keyframes breathe {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
