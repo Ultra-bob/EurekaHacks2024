@@ -4,6 +4,7 @@ import styles from "./Footer.module.css"
 import Logo from "@/../public/EurekaLogo2024.png";
 import { BsInstagram, BsLinkedin, BsTiktok, BsDiscord } from "react-icons/bs";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Footer() {
     const iconAnimations = {
@@ -64,11 +65,11 @@ export default function Footer() {
                         <p className={styles.title}>Links</p>
                         <ul className={styles.items}>
                             <li className={styles.item}>
-                                <a className={styles.link} href="./">Home</a>
+                                <Link className={styles.link} href="/">Home</Link>
                             </li>
-                            <li className={styles.item}>
-                                <a className={styles.link} href="./register">Registration</a>
-                            </li>
+                            {/* <li className={styles.item}>
+                                <Link className={styles.link} href="/register">Registration</Link>
+                            </li> */}
                         </ul>
                     </div>
                     <div>
