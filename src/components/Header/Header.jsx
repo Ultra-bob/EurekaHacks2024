@@ -82,7 +82,7 @@ export default function Header() {
                                     <div className={styles["button"]}>
                                         <Link
                                             href="/"
-                                            target="_blank"
+                                            // target="_blank"
                                             rel="noopenner noreferrer"
                                         >
                                             Registrations Open Soon

@@ -42,6 +42,26 @@ export default function Sponsors() {
             <motion.h2 {...fadeIn}>Sponsors</motion.h2>
             <div className={styles["sponsor-panel"]}>
                 <motion.div
+                    transition={{
+                        duration: 2,
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 25,
+                    }}
+                    whileHover={{ scale: 1.07 }}
+                    whileTap={{ scale: 0.9 }}
+                    className={styles["howtosponsor-outline"]}
+                    {...fadeIn}
+                >
+                    <div className={styles["howtosponsor"]}>
+                        <div className={styles["button"]}>
+                            <a href="mailto:sponsorships@eurekahacks.ca">
+                                Interested in sponsoring our event? Email us at sponsorships@eurekahacks.ca
+                            </a>
+                        </div>
+                    </div>
+                </motion.div>
+                {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["plat-sponsors"]}
                 >
@@ -50,7 +70,7 @@ export default function Sponsors() {
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
-                </motion.div>
+                </motion.div> */}
                 {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["gold-sponsors"]}
@@ -123,26 +143,8 @@ export default function Sponsors() {
                     />
                 </motion.div>
             </div>
-            <motion.div
-                transition={{
-                    duration: 2,
-                    type: "spring",
-                    stiffness: 300,
-                    damping: 25,
-                }}
-                whileHover={{ scale: 1.07 }}
-                whileTap={{ scale: 0.9 }}
-                className={styles["howtosponsor-outline"]}
-                {...fadeIn}
-            >
-                <div className={styles["howtosponsor"]}>
-                    <div className={styles["button"]}>
-                        <a href="mailto:sponsorships@eurekahacks.ca">
-                            Interested in sponsoring our event?
-                        </a>
-                    </div>
-                </div>
-            </motion.div>
+
+            <p></p>
         </section>
     );
 }

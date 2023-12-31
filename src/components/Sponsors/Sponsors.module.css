@@ -105,7 +105,7 @@
 }
 
 .howtosponsor {
-    height: 3.5rem;
+    height: 5rem;
     width: 18.5rem;
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@
 }
 
 .howtosponsor-outline {
-    height: 4rem;
+    height: 5.5rem;
     width: 19rem;
     align-self: end;
     border-radius: 0.8rem;
@@ -133,6 +133,7 @@
     justify-content: center;
     align-items: center;
     margin: 1rem auto auto auto;
+    cursor: pointer;
 }
 
 @media (min-width: 760px) {
@@ -186,17 +187,17 @@
     }
 
     .button {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .howtosponsor {
         height: 5rem;
-        width: 40rem;
+        width: 50rem;
     }
 
     .howtosponsor-outline {
         height: 6rem;
-        width: 41rem;
+        width: 51rem;
         margin: 2rem auto -2rem auto;
     }
 }
