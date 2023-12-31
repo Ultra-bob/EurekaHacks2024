@@ -135,6 +135,13 @@ export default function NavBar() {
                             <Link href="/#faq" onClick={toggleMenu}>
                                 FAQ
                             </Link>
+                            <Link
+                                href="https://2023.eurekahacks.ca"
+                                target="_blank"
+                                onClick={toggleMenu}
+                            >
+                                2023
+                            </Link>
                         </div>
                         <div className={styles["mobile-menu-bottom"]}></div>
                     </motion.div>
