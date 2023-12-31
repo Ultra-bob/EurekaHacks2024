@@ -6,6 +6,7 @@ import Logo from "@/../public/Header/EurekaLogo2024.png";
 import Landing1 from "@/../public/Header/landing-1.jpg";
 import Landing2 from "@/../public/Header/landing-2.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -79,13 +80,13 @@ export default function Header() {
                             >
                                 <div className={styles["register"]}>
                                     <div className={styles["button"]}>
-                                        <a
-                                            href="https://google.com"
+                                        <Link
+                                            href="/"
                                             target="_blank"
                                             rel="noopenner noreferrer"
                                         >
-                                            Register
-                                        </a>
+                                            Registrations Open Soon
+                                        </Link>
                                     </div>
                                 </div>
                             </motion.div>

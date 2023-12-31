@@ -201,7 +201,7 @@
 }
 
 .button {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -305,7 +305,7 @@
     }
 
     .button {
-        font-size: 38px;
+        font-size: 20px;
     }
 
     .register-outline {
