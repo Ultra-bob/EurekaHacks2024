@@ -59,7 +59,7 @@ export default function NavBar() {
                     2023
                 </Link>
             </ul>
-            {/* <motion.div
+            <motion.div
                 transition={{
                     duration: 2,
                     type: "spring",
@@ -70,10 +70,10 @@ export default function NavBar() {
                 whileTap={{ scale: 0.9 }}
                 className={styles["register-outline"]}
             >  
-                <Link href="/" className={styles["register"]}>
-                    <div className={styles["button"]}>Registrations Open Soon</div>
+                <Link href="https://tally.so/r/nGlK5o" className={styles["register"]} target="_blank">
+                    <div className={styles["button"]}>Register</div>
                 </Link>
-            </motion.div> */}
+            </motion.div>
 
             <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
                 <div className={styles["hamburger-line"]} />

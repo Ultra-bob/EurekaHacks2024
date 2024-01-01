@@ -80,13 +80,13 @@ export default function Header() {
                             >
                                 <div className={styles["register"]}>
                                     <div className={styles["button"]}>
-                                        <Link
-                                            href="/"
-                                            // target="_blank"
+                                        <a
+                                            href="https://tally.so/r/nGlK5o"
+                                            target="_blank"
                                             rel="noopenner noreferrer"
                                         >
-                                            Registrations Open Soon
-                                        </Link>
+                                            Register
+                                        </a>
                                     </div>
                                 </div>
                             </motion.div>
