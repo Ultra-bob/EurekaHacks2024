@@ -25,7 +25,7 @@ export const members = [
         image: "Team/Leo.jpg",
     },
     {
-        name: "Rahul patel",
+        name: "Rahul Patel",
         position: "Director of Sponsorhips",
         image: "Team/Rahul.jpg",
     },
