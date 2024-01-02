@@ -73,9 +73,11 @@ export default function Footer() {
                                     Home
                                 </Link>
                             </li>
-                            {/* <li className={styles.item}>
-                                <Link className={styles.link} href="/register">Registration</Link>
-                            </li> */}
+                            <li className={styles.item}>
+                                <a className={styles.link} href="/register">
+                                    Registration
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -91,7 +93,6 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                    
                 </div>
                 <div className={styles.divider}></div>
                 <p className={styles.copywrite}>
