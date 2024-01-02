@@ -74,9 +74,9 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li className={styles.item}>
-                                <a className={styles.link} href="/register">
+                                <Link className={styles.link} href="/register" prefetch={false}>
                                     Registration
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
