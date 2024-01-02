@@ -69,7 +69,7 @@ export default function NavBar() {
                 whileHover={{ scale: 1.07 }}
                 whileTap={{ scale: 0.9 }}
                 className={styles["register-outline"]}
-            >  
+            >
                 <Link href="/register" className={styles["register"]}>
                     <div className={styles["button"]}>Register</div>
                 </Link>
