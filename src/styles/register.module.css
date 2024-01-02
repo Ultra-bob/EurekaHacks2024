@@ -1,26 +1,5 @@
-.content {
-    max-width: 1366px;
-    margin: auto;
+.tally {
+    height: auto;
     min-height: 100vh;
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url("../../public/mobileBackgroundGradient.png") no-repeat;
-    object-fit: cover;
-    background-size: 100% auto;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-@media (min-width: 1024px) {
+    width: 100%;
 }
