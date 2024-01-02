@@ -70,7 +70,7 @@ export default function NavBar() {
                 whileTap={{ scale: 0.9 }}
                 className={styles["register-outline"]}
             >  
-                <Link href="https://tally.so/r/nGlK5o" className={styles["register"]} target="_blank">
+                <Link href="/register" className={styles["register"]}>
                     <div className={styles["button"]}>Register</div>
                 </Link>
             </motion.div>
