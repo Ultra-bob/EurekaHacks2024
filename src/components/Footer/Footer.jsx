@@ -79,18 +79,19 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <p className={styles.title}>Partners</p>
+                        <p className={styles.title}>Contact Us</p>
                         <ul className={styles.items}>
                             <li className={styles.item}>
                                 <a
                                     className={styles.link}
-                                    href="https://aph.hdsb.ca"
+                                    href="mailto:hello@eurekahacks.ca"
                                 >
-                                    Abbey Park
+                                    hello@eurekahacks.ca
                                 </a>
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
                 <div className={styles.divider}></div>
                 <p className={styles.copywrite}>
