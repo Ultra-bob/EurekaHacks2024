@@ -25,7 +25,7 @@ export default function Footer() {
                             alt="EurekaIcon"
                         />
                         <div className={styles.textLogo}>
-                            <p>EUREKA!</p>
+                            <p>Eureka</p>
                             <p>HACKS</p>
                         </div>
                     </div>
