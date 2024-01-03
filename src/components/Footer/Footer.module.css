@@ -26,19 +26,24 @@
     gap: 1em;
 }
 
-.textLogo p {
+.textLogo h2 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
-.textLogo p:nth-child(2) {
-    font-size: 75%;
+.textLogo h3 {
+    margin-top: -0.4em;
+    font-size: 1.2em;
     text-align: right;
 }
 
 .logo {
-    width: 65px;
+    width: 100px;
     height: auto;
+}
+
+.title {
+    font-size: 1.2em;
 }
 
 .link {
@@ -84,7 +89,7 @@
 }
 
 .item {
-    margin: 1em 0;
+    margin: 0.5em 0;
 }
 
 .socials {
@@ -131,6 +136,6 @@
 @media (min-width: 1024px) {
     .grid {
         grid-template-columns: repeat(4, 1fr);
-        gap: 8vw;
+        gap: 6vw;
     }
 }

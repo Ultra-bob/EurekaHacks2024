@@ -25,8 +25,8 @@ export default function Footer() {
                             alt="EurekaIcon"
                         />
                         <div className={styles.textLogo}>
-                            <p>Eureka</p>
-                            <p>HACKS</p>
+                            <h2>Eureka</h2>
+                            <h3>HACKS</h3>
                         </div>
                     </div>
                     <div>
@@ -76,6 +76,11 @@ export default function Footer() {
                             <li className={styles.item}>
                                 <Link className={styles.link} href="/register" prefetch={false}>
                                     Registration
+                                </Link>
+                            </li>
+                            <li className={styles.item}>
+                                <Link className={styles.link} href="/code-of-conduct">
+                                    Code of Conduct
                                 </Link>
                             </li>
                         </ul>
