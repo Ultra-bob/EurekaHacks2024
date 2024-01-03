@@ -10,7 +10,7 @@ export const members = [
         image: "Team/David.jpg",
     },
     {
-        name: "Yohance Pawani",
+        name: "Yohance Pawania",
         position: "Director of Logistics",
         image: "Team/Yohance.jpg",
     },
