@@ -38,3 +38,30 @@
     color: #df71ef;
     display: inline;
 }
+
+.privacy-policy {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.privacy-policy > p {
+    font-weight: 400;
+}
+
+.privacy-policy > h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: left;
+    color: #22f0e7;
+}
+
+.privacy-policy > p > a {
+    color: #df71ef;
+    display: inline;
+}
+
+.list {
+    color: white;
+    font-weight: 400;
+}

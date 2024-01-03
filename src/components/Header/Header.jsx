@@ -80,7 +80,9 @@ export default function Header() {
                             >
                                 <div className={styles["register"]}>
                                     <div className={styles["button"]}>
-                                        <Link href="/register" prefetch={false}>Register</Link>
+                                        <Link href="/register" prefetch={false}>
+                                            Register
+                                        </Link>
                                     </div>
                                 </div>
                             </motion.div>

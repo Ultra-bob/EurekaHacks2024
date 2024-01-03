@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/Navbar";
-import styles from "@/styles/code-of-conduct.module.css";
+import styles from "@/styles/policies.module.css";
 
 export default function CodeOfConduct() {
     return (
@@ -81,9 +81,15 @@ export default function CodeOfConduct() {
                 </p>
                 <p>
                     Credit for this code of conduct is attributed to the
-                    following codes: McHacks, Major League Hacking, Hack Code,
-                    Hack@Brown, JustHack.
+                    following codes:
                 </p>
+                <ul className={styles.list}>
+                    <li>McHacks</li>
+                    <li>Major League Hacking</li>
+                    <li>Hack Code</li>
+                    <li>Hack@Brown</li>
+                    <li>JustHack</li>
+                </ul>
                 <p>
                     For any inquiries about this code of conduct, please contact{" "}
                     <a href="mailto:hello@eurekahacks.ca">

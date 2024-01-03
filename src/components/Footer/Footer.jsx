@@ -92,6 +92,14 @@ export default function Footer() {
                                     Code of Conduct
                                 </Link>
                             </li>
+                            <li className={styles.item}>
+                                <Link
+                                    className={styles.link}
+                                    href="/privacy-policy"
+                                >
+                                    Privacy Policy
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -108,10 +116,7 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className={styles.divider}></div>
-                <p className={styles.copywrite}>
-                    Copyright © EurekaHacks, 2023
-                </p>
+                <p>Last Updated: January 3rd, 2024</p>
             </div>
         </footer>
     );
