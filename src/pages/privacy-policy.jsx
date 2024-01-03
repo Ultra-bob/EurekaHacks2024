@@ -79,6 +79,21 @@ export default function PrivacyPolicy() {
                     not be utilized, and any restored versions will have the
                     data deleted if required.
                 </p>
+                <h3>Photography and Media Release</h3>
+                <p>
+                    By participating in EurekaHACKS, you acknowledge and agree
+                    that EurekaHACKS, its organizers, and affiliated partners
+                    may capture photographs, videos, or other media during the
+                    event that may include your likeness, voice, or
+                    participation. These images and recordings may be used for
+                    promotional, educational, and informational purposes, both
+                    online and offline. If you have specific concerns or
+                    objections to the use of media featuring you, please contact
+                    our team at hello@eurekahacks.ca. We will make reasonable
+                    efforts to accommodate such requests, although we cannot
+                    guarantee the complete removal of already published
+                    materials.
+                </p>
                 <h3>Questions</h3>
                 <p>
                     Any inquiries regarding the EurekaHACKS privacy policy can
@@ -96,7 +111,7 @@ export default function PrivacyPolicy() {
                         policy at any time.
                     </b>
                 </p>
-                <p>Last Updated: January 2nd, 2024.</p>
+                <p>Last Updated: January 3nd, 2024.</p>
             </div>
             <Footer />
         </>
