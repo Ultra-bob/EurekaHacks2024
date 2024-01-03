@@ -19,11 +19,13 @@ export default function Footer() {
             <div className={styles.content}>
                 <div className={styles.grid}>
                     <div className={styles.left}>
-                        <Image
-                            className={styles.logo}
-                            src={Logo}
-                            alt="EurekaIcon"
-                        />
+                        <Link href="/">
+                            <Image
+                                className={styles.logo}
+                                src={Logo}
+                                alt="EurekaIcon"
+                            />
+                        </Link>
                         <div className={styles.textLogo}>
                             <h2>Eureka</h2>
                             <h3>HACKS</h3>
@@ -74,12 +76,19 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li className={styles.item}>
-                                <Link className={styles.link} href="/register" prefetch={false}>
+                                <Link
+                                    className={styles.link}
+                                    href="/register"
+                                    prefetch={false}
+                                >
                                     Registration
                                 </Link>
                             </li>
                             <li className={styles.item}>
-                                <Link className={styles.link} href="/code-of-conduct">
+                                <Link
+                                    className={styles.link}
+                                    href="/code-of-conduct"
+                                >
                                     Code of Conduct
                                 </Link>
                             </li>
