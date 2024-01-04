@@ -87,6 +87,14 @@ export default function Footer() {
                             <li className={styles.item}>
                                 <Link
                                     className={styles.link}
+                                    href="/sponsorship-package.pdf"
+                                >
+                                    Sponsorship Package
+                                </Link>
+                            </li>
+                            <li className={styles.item}>
+                                <Link
+                                    className={styles.link}
                                     href="/code-of-conduct"
                                 >
                                     Code of Conduct
@@ -116,7 +124,6 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <p>Last Updated: January 3rd, 2024</p>
             </div>
         </footer>
     );
