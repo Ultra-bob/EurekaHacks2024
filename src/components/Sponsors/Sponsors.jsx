@@ -34,7 +34,7 @@ const sponsorBoxFadeIn = {
 
 export default function Sponsors() {
     return (
-        <section id="sponsors" className={styles.sponsors}>
+        <section id="sponsors" className={styles.sponsors} data-nosnippet={true}>
             <div className={styles["shape-container"]}>
                 <motion.div className={styles.shape1} {...shapeFadeIn} />
                 <motion.div className={styles.shape2} {...shapeFadeIn} />

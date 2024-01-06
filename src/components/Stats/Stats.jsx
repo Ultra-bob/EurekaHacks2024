@@ -48,7 +48,7 @@ export default function Stats() {
     }, []);
 
     return (
-        <section id="stats" className={styles.stats}>
+        <section id="stats" className={styles.stats} data-nosnippet={true}>
             <div className={styles.grid}>
                 <motion.div className={styles["card-1"]} {...cardAnim}>
                     <h2 className={styles.customh2} ref={countUpRef}>

@@ -42,11 +42,11 @@ export default function Home() {
                 />
                 <meta
                     property="og:description"
-                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
+                    content="Eureka Hacks is Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
                 />
                 <meta
                     property="description"
-                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
+                    content="Eureka Hacks is Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
                 />
             </Head>
             <NavBar />

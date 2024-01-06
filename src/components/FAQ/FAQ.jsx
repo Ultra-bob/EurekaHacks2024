@@ -29,7 +29,7 @@ export default function FAQ() {
     ));
 
     return (
-        <section id="faq">
+        <section id="faq" data-nosnippet={true}>
             <div className={styles["shape-container"]}>
                 <motion.div className={styles.shape1} {...shapeFadeIn} />
                 <motion.div className={styles.shape2} {...shapeFadeIn} />

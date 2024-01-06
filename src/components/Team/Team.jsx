@@ -53,7 +53,7 @@ export default function Team() {
     }, [isOnScreen]);
 
     return (
-        <section id="team" className={styles.team}>
+        <section id="team" className={styles.team} data-nosnippet={true}>
             <div className={styles.grid} ref={gridRef}>
                 <div className={styles.text}>
                     <motion.div
