@@ -42,11 +42,11 @@ export default function Home() {
                 />
                 <meta
                     property="og:description"
-                    content="Official Site for the 2024 Eureka Hackathon."
+                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
                 />
                 <meta
                     property="description"
-                    content="Official site for the 2024 Eureka Hackathon."
+                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
                 />
             </Head>
             <NavBar />

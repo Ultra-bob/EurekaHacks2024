@@ -1,10 +1,33 @@
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/Navbar";
 import styles from "@/styles/policies.module.css";
+import Head from "next/head";
 
 export default function CodeOfConduct() {
     return (
         <>
+            <Head>
+                <title>EurekaHacks Code of Conduct</title>
+                <meta name="theme-color" content="#22F0E7" />
+                <meta property="og:title" content="EurekaHacks" />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:url"
+                    content="https://eurekahacks.ca/code-of-conduct"
+                />
+                <meta
+                    property="og:image"
+                    content="https://i.imgur.com/pPsYsv6.png"
+                />
+                <meta
+                    property="og:description"
+                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
+                />
+                <meta
+                    property="description"
+                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
+                />
+            </Head>
             <NavBar />
             <div className={styles["header"]}>
                 <div className={styles["curtain"]}>

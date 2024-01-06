@@ -66,7 +66,7 @@ export default function Team() {
                         style={{ textAlign: "center" }}
                     >
                         <div className={styles.title}>
-                            <h1>EUREKA!</h1>
+                            <h1>Eureka</h1>
                             <h2>HACKS</h2>
                         </div>
 
