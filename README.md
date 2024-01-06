@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/959d847d-5fa6-40df-b44c-e01d08e6b8ce/deploy-status)](https://app.netlify.com/sites/eureka2024/deploys)
 
-Eureka Hacks 2024 Website built with Next.js
+EurekaHACKS 2024 Website built with Next.js
 
 ## Running locally
 
