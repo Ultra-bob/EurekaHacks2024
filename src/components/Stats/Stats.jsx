@@ -68,7 +68,7 @@ export default function Stats() {
                     <h2 className={styles.customh2} ref={countUpRef}>
                         $
                         {isVisible && (
-                            <CountUp end={5700} delay={0.9} formatting={true} />
+                            <CountUp end={5900} delay={0.9} formatting={true} />
                         )}
                         +
                     </h2>
