@@ -108,6 +108,11 @@ export default function Footer() {
                                     Privacy Policy
                                 </Link>
                             </li>
+                            <li className={styles.item}>
+                                <Link className={styles.link} href="https://eurekahacks-2024.devpost.com/" target="_blank">
+                                    Devpost
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div>
