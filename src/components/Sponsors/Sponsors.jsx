@@ -4,7 +4,7 @@ import SponsorBox from "./SponsorBox.jsx";
 import { motion } from "framer-motion";
 
 import APHS from "@/../public/apicon.png";
-import WolframAlpha from "@/../public/Sponsors/wolfram-logo.png";
+import WolframAlpha from "@/../public/Sponsors/wolfram.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
