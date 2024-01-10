@@ -33,7 +33,7 @@ export default function About() {
                         Abbey Park High School in Oakville, Canada. It is one of
                         the largest high school hackathons in Halton. Last year,
                         our exciting event featured workshops, fun activities,
-                        and over $1,000 worth of prizes! We&apos;re committed to
+                        and over $5,900 worth of prizes! We&apos;re committed to
                         inspiring students of all skill levels to put their
                         creativity and knowledge into practice by building
                         something awesome.
