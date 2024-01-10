@@ -62,7 +62,7 @@
 }
 
 .sponsorbox > img {
-    width: 50px;
+    width: 100px;
     height: auto;
 }
 
@@ -198,7 +198,7 @@
     .howtosponsor-outline {
         height: 6rem;
         width: 51rem;
-        margin: 2rem auto -2rem auto;
+        margin: 2rem auto 0 auto;
     }
 }
 

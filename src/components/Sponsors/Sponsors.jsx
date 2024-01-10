@@ -4,6 +4,7 @@ import SponsorBox from "./SponsorBox.jsx";
 import { motion } from "framer-motion";
 
 import APHS from "@/../public/apicon.png";
+import WolframAlpha from "@/../public/Sponsors/wolfram-logo.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -41,52 +42,26 @@ export default function Sponsors() {
             </div>
             <motion.h2 {...fadeIn}>Sponsors</motion.h2>
             <div className={styles["sponsor-panel"]}>
-                <motion.div
-                    transition={{
-                        duration: 2,
-                        type: "spring",
-                        stiffness: 300,
-                        damping: 25,
-                    }}
-                    whileHover={{ scale: 1.07 }}
-                    whileTap={{ scale: 0.9 }}
-                    className={styles["howtosponsor-outline"]}
-                    {...fadeIn}
-                >
-                    <div className={styles["howtosponsor"]}>
-                        <div className={styles["button"]}>
-                            <a href="mailto:sponsorships@eurekahacks.ca">
-                                Interested in sponsoring our event? Email us at
-                                sponsorships@eurekahacks.ca
-                            </a>
-                        </div>
-                    </div>
-                </motion.div>
                 {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["plat-sponsors"]}
                 >
                     <SponsorBox
-                        name="Abbey Park"
-                        image={APHS}
-                        link="https://aph.hdsb.ca/"
+                        name="Wolfram Alpha"
+                        image={WolframAlpha}
+                        link="https://www.wolframalpha.com/"
                     />
                 </motion.div> */}
-                {/* <motion.div
+                <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["gold-sponsors"]}
                 >
                     <SponsorBox
-                        name="Abbey Park"
-                        image={APHS}
-                        link="https://aph.hdsb.ca/"
+                        name="Wolfram Alpha"
+                        image={WolframAlpha}
+                        link="https://www.wolframalpha.com/"
                     />
-                    <SponsorBox
-                        name="Abbey Park"
-                        image={APHS}
-                        link="https://aph.hdsb.ca/"
-                    />
-                </motion.div> */}
+                </motion.div>
                 {/* <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["silver-sponsors"]}
@@ -142,6 +117,27 @@ export default function Sponsors() {
                         image={APHS}
                         link="https://aph.hdsb.ca/"
                     />
+                </motion.div>
+                <motion.div
+                    transition={{
+                        duration: 2,
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 25,
+                    }}
+                    whileHover={{ scale: 1.07 }}
+                    whileTap={{ scale: 0.9 }}
+                    className={styles["howtosponsor-outline"]}
+                    {...fadeIn}
+                >
+                    <div className={styles["howtosponsor"]}>
+                        <div className={styles["button"]}>
+                            <a href="mailto:sponsorships@eurekahacks.ca">
+                                Interested in sponsoring our event? Email us at
+                                sponsorships@eurekahacks.ca
+                            </a>
+                        </div>
+                    </div>
                 </motion.div>
             </div>
 
