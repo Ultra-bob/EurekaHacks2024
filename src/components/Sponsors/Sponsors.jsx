@@ -40,7 +40,7 @@ export default function Sponsors() {
                 <motion.div className={styles.shape1} {...shapeFadeIn} />
                 <motion.div className={styles.shape2} {...shapeFadeIn} />
             </div>
-            <motion.h2 {...fadeIn}>Sponsors</motion.h2>
+            <motion.h2 {...fadeIn}>Sponsor</motion.h2>
             <div className={styles["sponsor-panel"]}>
                 {/* <motion.div
                     {...sponsorBoxFadeIn}
