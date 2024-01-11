@@ -105,6 +105,11 @@
     max-width: 1366px;
 }
 
+.partners > a > img {
+    height: 90px;
+    width: auto;
+}
+
 .button {
     font-size: 1rem;
 }
@@ -154,6 +159,11 @@
         left: calc(50vw + 3.1rem);
         height: 50px;
         width: 50px;
+    }
+
+    .partners > a > img {
+        height: 150px;
+        width: auto;
     }
 }
 
